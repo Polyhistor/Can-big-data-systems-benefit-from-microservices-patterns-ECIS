@@ -2183,12 +2183,45 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">markus.1988</bcf:citekey>
-    <bcf:citekey order="3">avison.1995</bcf:citekey>
-    <bcf:citekey order="4">Kude2014adaptation</bcf:citekey>
-    <bcf:citekey order="6" nocite="1">Geron2013</bcf:citekey>
-    <bcf:citekey order="7" nocite="1">Delfmann2007a</bcf:citekey>
-    <bcf:citekey order="8" nocite="1">Mendling2005</bcf:citekey>
+    <bcf:citekey order="1">NewVantageSurvey</bcf:citekey>
+    <bcf:citekey order="2">DataBricksSurvey</bcf:citekey>
+    <bcf:citekey order="3">Richardson.2022</bcf:citekey>
+    <bcf:citekey order="4">Ataei.2020</bcf:citekey>
+    <bcf:citekey order="5">laigner2020monolithic</bcf:citekey>
+    <bcf:citekey order="6">zhelev2019using</bcf:citekey>
+    <bcf:citekey order="7">staegemann2021examining</bcf:citekey>
+    <bcf:citekey order="8">Phi</bcf:citekey>
+    <bcf:citekey order="9">ataei2021neomycelia</bcf:citekey>
+    <bcf:citekey order="10">Kitchenham.2004</bcf:citekey>
+    <bcf:citekey order="11">Page.2021</bcf:citekey>
+    <bcf:citekey order="12">Cruzes.2011</bcf:citekey>
+    <bcf:citekey order="13">Ataei.2020</bcf:citekey>
+    <bcf:citekey order="14">Ataei.2020</bcf:citekey>
+    <bcf:citekey order="15">SLRsearchTerms</bcf:citekey>
+    <bcf:citekey order="16">tricco2018prisma</bcf:citekey>
+    <bcf:citekey order="17">Kitchenham.2004</bcf:citekey>
+    <bcf:citekey order="18">Cruzes.2011</bcf:citekey>
+    <bcf:citekey order="19">laplante2017requirements</bcf:citekey>
+    <bcf:citekey order="20">Bughin2016</bcf:citekey>
+    <bcf:citekey order="21">rad2017big</bcf:citekey>
+    <bcf:citekey order="22">nadal2017software</bcf:citekey>
+    <bcf:citekey order="23">Chang.2019</bcf:citekey>
+    <bcf:citekey order="24">ataei2020big</bcf:citekey>
+    <bcf:citekey order="25">kassab2014state</bcf:citekey>
+    <bcf:citekey order="26">ISO29148</bcf:citekey>
+    <bcf:citekey order="27">abran2004software</bcf:citekey>
+    <bcf:citekey order="28">Richardson.2022</bcf:citekey>
+    <bcf:citekey order="29">MSPatterns</bcf:citekey>
+    <bcf:citekey order="30">lankhorst2013language</bcf:citekey>
+    <bcf:citekey order="31">Chaabane</bcf:citekey>
+    <bcf:citekey order="32">ataei2020big</bcf:citekey>
+    <bcf:citekey order="33">DataBricksSurvey</bcf:citekey>
+    <bcf:citekey order="34">ataei2021neomycelia</bcf:citekey>
+    <bcf:citekey order="35">eryurek2021data</bcf:citekey>
+    <bcf:citekey order="36">wieringa2014design</bcf:citekey>
+    <bcf:citekey order="37">kallio2016systematic</bcf:citekey>
+    <bcf:citekey order="38">kallio2016systematic</bcf:citekey>
+    <bcf:citekey order="39">interviewGuide</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
