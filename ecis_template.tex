@@ -1,0 +1,185 @@
+\documentclass[a4paper,11pt,article,oneside]{memoir}
+\usepackage{ecis2023}
+
+%%% About this LaTeX template: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This template should work with any (reasonably recent) full
+% installation of TeXLive or MikTeX. The "ecis2023" package loads a
+% number of other packages, so if some package is missing, please
+% install it using the package manager of your TeX distribution. In
+% particular, if the "tikz" package is missing, you may have to install
+% "pgf" or simply remove our example graphics (see figure example
+% below).
+%
+% The file "ecis2023.sty" should be placed somewhere in your TeX Path
+% (or simply in the same folder as your document).
+%
+% Please use PDFLaTeX to compile your document.
+%
+% You need not escape special characters or Umlauts like é ä ö ü ß (in 
+% fact, you shouldn't), as this source is inputenc'd in UTF-8.
+%
+% Note for BibTeX users: We use BibLaTeX for formatting, so we use Biber
+% as a sorting backend (default). 
+% If you still need to use the old BibTeX program, please change the 
+% BibLaTeX backend in the package file ("ecis2023.sty").
+%
+% The ERCIS 2023 template is based on the one created for ECIS 2019.
+% Adapted for ECIS 2023 by Tim A. Majchrzak.
+%
+% Greetings to all Information Systems researchers using LaTeX!
+%
+%%% Enter Document Info here: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\maintitle{Main title of paper} % ← Don't use UPPERCASE here, we do that automatically.
+\shorttitle{Short Title (up to 5 words)} % ← This goes into the header.
+\category{Complete Research and Research in Progress} % ← Choose one by deleting the others.
+
+% The review process is double blind.
+% Therefore papers submitted for review MUST NOT contain any author 
+% information – neither on the title page nor in the page header! 
+% This information will be added only once the submission is ACCEPTED.
+
+%\authors{% Separate authors by a "\par" or blank line.
+%Smith, Ellen, University of Trinithlon, Trinithlon, UK, ellen.smith@utri.ac.uk
+
+%Jönsson, Mikael, University of Oxenhagen, Oxenhagen, Sweden, mikael.jonsson@inf.uox.se}
+
+%\shortauthors{Example et al.} % ← This goes into the header. 
+
+%%% BibTeX: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\addbibresource{ecis_example.bib} % ← Your .bib file, if you're using BibTeX
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\noindent\fbox{%
+	\parbox{\textwidth}{%
+		\hfill{}
+		\vspace{10em}
+	}%
+}
+
+Don’t delete and resize the square shape in your original submission. You can delete it in the final submission and use the space for adding authors’ information.
+
+The review process is double-blind. Therefore, papers submitted for review MUST NOT contain any author information – neither on the title page nor in the page header!
+
+\begin{abstract}\noindent
+  The paper should have an abstract of not more than 150 words. The abstract should be understandable by the general IS researcher who is not an expert in the topic area. The abstract should follow the “Abstract” style as presented here.
+\end{abstract}
+
+\begin{keywords}
+  One, Two, Three, Four.
+\end{keywords}
+
+% NOTE: Important information
+%1.	Completed research papers are limited to a maximum of thirteen (13) pages. The page limit includes all text (including title, abstract, keywords), figures, tables, and appendices. The references are excluded from this page count.
+%2.	Start the main body of the paper (i.e., the Introduction section) on the FIRST page; that is, right after the Abstract/Keywords.
+%3.	Submission files must be in PDF format.
+
+
+\chapter{First level heading}
+
+Normal text \dots
+
+Another text paragraph \dots
+
+This is a normal text paragraph. This is a complementary sentence. 
+This is a complementary sentence. Here is a footnote.\footnote{Footnotes are not recommended; if used, they look like this.} References should use Harvard citation style. For example, \citet{markus.1988} is an often-cited journal article. This is a reference to a book \citep[p.~20]{avison.1995}. A reference to a conference paper is \citet{Kude2014adaptation}.
+
+\section{Second level heading}
+
+Normal text \dots
+
+\subsection{Third level heading (strongly discouraged)}
+
+Normal text \dots
+
+\section{Figure}
+
+\begin{figure}[H]
+  \ECISfigureexample % ← Remove this example.
+  % \includegraphics[width=\linewidth]{your_fancy_graphics_file} % ← Use this for external files.
+  \caption{Research model.} % The caption should always be placed below the figure.
+\end{figure}
+
+
+\section{Table}
+Tables should be titled like the example shows below. The caption should always be placed below the table. The table may not extend the margins.
+
+\begin{table}[H]
+  \begin{tabular}{@{}|l|c|c|@{}}
+    \hline
+    \bigstrut[t] Question                  & Average 1992 & Average 1999\\
+    \hline
+    \bigstrut[t] 1 How do you regard \dots & 3.4 & 3.7\\
+                 2 How do you \dots        & 2.7 & 3.4\\
+                 3 How do you \dots        & 3.9 & 3.6\\
+    \hline
+  \end{tabular}
+  \caption{Important table.}
+\end{table}
+
+\section{Lists}
+You can use lists, both unnumbered and numbered. They can also be nested. Here is an unnumbered list:
+
+\begin{itemize}
+\item This is an item in the first level list.
+\item This is another item.
+  \begin{itemize}
+  \item Here we are in the second level.
+  \item This is another item.
+  \end{itemize}
+\item And a third item on the first level.
+\end{itemize}
+
+Here is a numbered list:
+
+\begin{enumerate}
+\item This is an item in the first level list.
+\item This is another item.
+  \begin{enumerate}
+  \item Here we are in the second level.
+  \item This is another item.
+  \end{enumerate}
+\item And a third item on the first level.
+\end{enumerate}
+
+\section{Reference list}
+
+The list of references should look like the example below.
+
+Please note that some of the references are not cited in the text. This is for illustration purposes only and enforced by the \texttt{\textbackslash{}nocite\{\}} command.
+
+\nocite{Geron2013,Delfmann2007a,Mendling2005}
+
+% If you want to enter your bibliography by hand, use our "references" 
+% environment:
+
+%\chapter*{References}
+%
+%\begin{references}
+%  Avison, D. E. and G. Fitzgerald (1995). \emph{Information Systems
+%  Development. Methodologies, Techniques and Tools}. 2nd
+%  Edition. London: McGraw-Hill.
+
+%  Kautz, K. and T. McMaster (1994). ``The failure to introduce systems
+%  development methods. A factor-based analysis.'' In: \emph{Proceedings of the
+%  IFIP TC8 Working Conference on Diffusion, Transfer and
+%  Implementation of Information Technology}. Ed. by L. Levine.
+%  IFIP Transactions A-45. Amsterdam: North-Holland, p. 275.
+
+%  Markus, M. L. and Robey, D. (1988). ``Information technology and
+%  organizational change. Causal structure in theory and
+%  research.'' \emph{Management Science} 34 (5), 583--598.
+%\end{references}
+
+
+% If you are using BibTeX/Biber:
+
+\printbibliography
+
+\end{document}
