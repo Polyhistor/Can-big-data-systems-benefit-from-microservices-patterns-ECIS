@@ -1,27 +1,27 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'microservices-patterns-for-bigdata.blg'
-[83] biber-MSWIN64:322> INFO - === 
-[108] Biber.pm:415> INFO - Reading 'microservices-patterns-for-bigdata.bcf'
-[222] Biber.pm:943> INFO - Found 30 citekeys in bib section 0
-[242] Biber.pm:4256> INFO - Processing section 0
-[243] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[255] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[273] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
-[293] bibtex.pm:1653> INFO - LaTeX decoding ...
-[918] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
-[931] Utils.pm:304> WARN - Duplicate entry key: 'kitchenham2002preliminary' in file 'references.bib', skipping ...
-[937] Utils.pm:304> WARN - Duplicate entry key: 'klein2016reference' in file 'references.bib', skipping ...
-[937] Utils.pm:304> WARN - Duplicate entry key: 'gamma1995design' in file 'references.bib', skipping ...
-[940] Utils.pm:304> WARN - Duplicate entry key: 'rethlefsen2021prisma' in file 'references.bib', skipping ...
-[979] Utils.pm:304> WARN - Entry 'Richardson.2022' (references.bib): Invalid format '07.08.2022' of date field 'urldate' - ignoring
-[1006] Utils.pm:304> WARN - Possible typo (case mismatch) between citation and datasource keys: 'Phi' and 'phi' in file 'references.bib'
-[1213] Utils.pm:304> WARN - I didn't find a database entry for 'Phi' (section 0)
-[1213] Utils.pm:304> WARN - I didn't find a database entry for 'MSPatterns' (section 0)
-[1213] Utils.pm:304> WARN - I didn't find a database entry for 'interviewGuide' (section 0)
-[1283] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1283] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1284] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[1284] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[1357] bbl.pm:652> INFO - Writing 'microservices-patterns-for-bigdata.bbl' with encoding 'UTF-8'
-[1389] bbl.pm:755> INFO - Output to microservices-patterns-for-bigdata.bbl
-[1390] Biber.pm:128> INFO - WARNINGS: 9
+[85] biber-MSWIN64:322> INFO - === 
+[109] Biber.pm:415> INFO - Reading 'microservices-patterns-for-bigdata.bcf'
+[256] Biber.pm:943> INFO - Found 30 citekeys in bib section 0
+[287] Biber.pm:4256> INFO - Processing section 0
+[288] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[301] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[325] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[346] bibtex.pm:1653> INFO - LaTeX decoding ...
+[950] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[960] Utils.pm:304> WARN - Duplicate entry key: 'kitchenham2002preliminary' in file 'references.bib', skipping ...
+[967] Utils.pm:304> WARN - Duplicate entry key: 'klein2016reference' in file 'references.bib', skipping ...
+[968] Utils.pm:304> WARN - Duplicate entry key: 'gamma1995design' in file 'references.bib', skipping ...
+[971] Utils.pm:304> WARN - Duplicate entry key: 'rethlefsen2021prisma' in file 'references.bib', skipping ...
+[1006] Utils.pm:304> WARN - Entry 'Richardson.2022' (references.bib): Invalid format '07.08.2022' of date field 'urldate' - ignoring
+[1035] Utils.pm:304> WARN - Possible typo (case mismatch) between citation and datasource keys: 'Phi' and 'phi' in file 'references.bib'
+[1214] Utils.pm:304> WARN - I didn't find a database entry for 'Phi' (section 0)
+[1215] Utils.pm:304> WARN - I didn't find a database entry for 'MSPatterns' (section 0)
+[1215] Utils.pm:304> WARN - I didn't find a database entry for 'interviewGuide' (section 0)
+[1297] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1297] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1297] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1297] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[1361] bbl.pm:652> INFO - Writing 'microservices-patterns-for-bigdata.bbl' with encoding 'UTF-8'
+[1402] bbl.pm:755> INFO - Output to microservices-patterns-for-bigdata.bbl
+[1402] Biber.pm:128> INFO - WARNINGS: 9

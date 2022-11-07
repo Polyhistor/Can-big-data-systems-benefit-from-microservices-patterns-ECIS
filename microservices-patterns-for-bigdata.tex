@@ -81,7 +81,7 @@ The review process is double-blind. Therefore, papers submitted for review MUST 
 %3.	Submission files must be in PDF format.
 
 
-\section{Introduction}
+\chapter{Introduction}
 
 
 Today, we live in a world that produces data at an unprecedented rate. The attention toward these large volume of data has been growing rapidly and many strive to harness the advantages of this new material. Along these lines, academics and practitioners have considered means through which they can incorporate data-driven functions and explore patterns that were otherwise unknown. While the opportunities exist with big data (BD), there are many failed attempts. According to New Vantage Partners report in 2022, only 26.5\% of companies successfully become data-driven \cite{NewVantageSurvey}. Another survey by Databricks highlighted that only 13\% of organizations succeeded in delivering on their data strategy \cite{DataBricksSurvey}. 
@@ -111,7 +111,7 @@ The contribution of the publication, is thereby threefold: 1) it provides an upd
 
 
 % Daniel
-\section{Related Work}
+\chapter{Related Work}
 
 To the best of our knowledge, there is no study in academia that has shared the same goal as our study. Laigner et al. \cite{laigner2020monolithic} applied an action research and reported on their experience on replacing a legacy BDS with a microservice-based event-driven system. This study is not a systematic review and aims to create contextualized theory based on a specific experience. In another effort,  Zhelev et al. \cite{zhelev2019using} described why event-driven architectures could be a good alternative to monolithic architectures. This study does not follow any clear methodology, and seems to contribute only in terms of untested theory.
 
@@ -119,7 +119,7 @@ Staegemann et al \cite{staegemann2021examining} examined the interplay between B
 
 
 % Daniel
-\section{Methodology}
+\chapter{Methodology}
 
 Since the goal of this study is to map BD architectures and microservice patterns, it is consequently mandatory to get a comprehensive overview over both domains. For this purpose, it was decided to conduct two systematic literature reviews (SLR), one for each domain. Both SLRs are conducted following the guidelines presented in Kitchenham et al. \cite{Kitchenham.2004} and Page et al. \cite{Page.2021} on Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA). The former was used because of its clear instructions on critically appraising evidence for validity, impact and applicability in software engineering and the latter was used because it's a comprehensive and well-established methodology for increasing systematicity, transparency, and prevention of bias. To synthesize our findings, thematic synthesis proposed by Cruzes and Dyba was applied \cite{Cruzes.2011}. 
 
@@ -133,22 +133,22 @@ Since the goal of this study is to map BD architectures and microservice pattern
 
 % Since patterns are usually described in an informal way and the same applies to reference architectures, the matching of those two, as the primary research artifact of this paper, is also conveyed in the same way and supported by logical argumentation.
 
-\subsection{First Review}
+\section{First Review}
 
 The first SLR was the less extensive one, since it is just an update to an already existing study. For this purpose, the SLR conducted by Ataei et al. \cite{Ataei.2020}, was extended up unto the current date, providing us with the necessary overview. We followed the exact same methodology and covered the years 2020-2022. Our main objective for this SLR was to highlight the fundamental building blocks and requirements of BD systems. 
 
 While the common architectural constructs was discussed in \cite{Ataei.2020}, the study was not focused on requirements. We therefore extended the data synthesis by adding a new code: software and system requirements. This code had sub-codes each being named after one characteristics of BD. This was necessary as we needed to map patterns against requirements. This is further elaborated in the results section, subsection A.
 
-\subsection{Second Review}
+\section{Second Review}
 
 The second SLR, was a rigorous approach from scratch and was conducted in the following steps: 1) selecting data sources 2) developing a search strategy 3) developing inclusion and exclusion criteria, 4) developing the quality framework 5) pooling literature based on the search strategy, 6) removing duplicates, 7) scanning studies titles based on inclusion and exclusion criteria, 8) removing studies based on publication types, 9) scanning studies abstract and title based on inclusion and exclusion criteria, 10) assessing studies based on the quality framework (includes three phases), 11) extracting data from the remaining papers, 12) coding the extracted data, 13) creating themes out of codes, 14) presenting the results. These steps are not direct mappings to the following sub-sections. Some sub-sections include several of these steps.
 
 
-\subsubsection{Selecting data sources}
+\subsection{Selecting data sources}
 
 To assure the comprehensiveness of the review, a broad set of scientific search engines and databases was queried. To increase the likelihood of finding all relevant contributions, it was decided to not discriminate between meta databases and publisher bound registers. Thus, both types were utilized. To achieve this, ACM Digital Library, AISeL, IEEE Xplore, JSTOR, Science Direct, Scopus, Springer Link, and Wiley were included into the search process. For all of these, the initial keyword search was conducted on June 19, 2022, and there was no limitation to the considered publishing date.
 
-\subsubsection{Developing a search strategy}
+\subsection{Developing a search strategy}
 
 Since there are differences in the filters of the included search engines, it was not possible to always use the exact same search terms and settings. Nevertheless, the configurations for the search were kept as similar as possible. The exact keywords and search strategy used can be found at \cite{SLRsearchTerms}. These search terms are chosen because \emph{patterns} are exactly what was sought for, \emph{architectures} can contain such patterns, and \emph{design} is often used as a synonym for architecture. Further, patterns can be seen as \emph{building blocks}, therefore, the building blocks was also included. 
 
@@ -253,7 +253,7 @@ Since there are differences in the filters of the included search engines, it wa
 
 % As it can be seen at \cite{SLRsearchTerms}, due to the specifics of their search masks, the searches in the ACM Digital Library (title, abstract, keywords could only be searched separately), JSTOR (no support of wildcards), and Science Direct (no support of wildcards) had to be split in several parts. Those were afterwards merged for each of them, and duplicates were removed. 
 
-\subsubsection{Developing inclusion and exclusion criteria}
+\subsection{Developing inclusion and exclusion criteria}
 
 Inspired by PRISMA checklist \cite{tricco2018prisma}, Our inclusion and exclusion criteria are formulated as following:
 
@@ -261,7 +261,7 @@ Inspired by PRISMA checklist \cite{tricco2018prisma}, Our inclusion and exclusio
 
 \textbf{Exclusion Criteria:} 1) Studies that are not written in English, 2) Informal literature surveys without any clearly defined research questions or research process, 3) Duplicate reports of the same study (a conference and journal version of the same paper). In such cases, the conference paper was removed. 4) Complete duplicates (not just Updates) were also removed. 5) Short papers (less than 6 pages).
 
-\subsubsection{Developing the quality framework}
+\subsection{Developing the quality framework}
 
 Quality of the evidence collected as a result of this SLR has direct impact on the quality of the findings, making quality assessment an important undertaking. To address this, we developed a criteria made up of 7 elements. These criteria are informed by guidelines provided by Kitchenham \cite{Kitchenham.2004} on empirical research in software engineering. These 7 criteria are discussed in table \ref{qualityFramework}.
 
@@ -271,7 +271,7 @@ Quality of the evidence collected as a result of this SLR has direct impact on t
 %     \item Scholarly publications such as conference proceedings and journal papers
 % \end{enumerate}
 
-\subsubsection{Pooling literature based on the search strategy}
+\subsection{Pooling literature based on the search strategy}
 Overall, the keyword search yielded 3064 contributions. The total number of found publications per source as well as an overview of the further search process can be seen in Figure 1.
 
 \begin{figure}[h]
@@ -281,7 +281,7 @@ Overall, the keyword search yielded 3064 contributions. The total number of foun
     \label{fig:PRISMA}
 \end{figure}
 
-\subsubsection{Evaluating papers based on inclusion and exclusion criteria}
+\subsection{Evaluating papers based on inclusion and exclusion criteria}
 
 The remaining 1868 papers were filtered by title to evaluate their relevance to the concepts of microservice patterns or architectural constructs related to MS. For this purpose, the first two authors separately evaluated each entry. If both agreed, this verdict was honored. In case of disagreement, they discussed the title to come to a conclusion. In this phase, the first author initially included 113 papers and the second author 146. Of those, 41 were present in both sets and 1650 were excluded by both. This equates to an agreement rate of 90,5 percent (1691 of 1868 records) between the authors. After discussing the contributions with divergent evaluations, in total, 1699 of the 1868 papers were excluded, leaving 169 items for the next round. 
 
@@ -304,7 +304,7 @@ From there on, the papers that were not written in English (despite the abstract
 % However, while there were three corresponding records in the initially obtained set of literature (from the years 2003, 2007, and 2010), those were already filtered out for other reasons by this stage. 
 
 
-\subsubsection{Evaluating papers based on the quality framework}
+\subsection{Evaluating papers based on the quality framework}
 
 After having filtered out the pooled studies based on inclusion and exclusion criteria, we initiated a deeper probing, by running the remaining studies against the quality framework. The filtering based on the quality criteria was divided into three differently focused phases, with each of them requiring the passing of a quality gate as portrayed in Table \ref{qualityFramework}. In the first phase, the aim was to ensure that reports fulfill at least a desired minimum level of comprehensiveness. For this purpose, studies were evaluated for their content to see if they are actual research or just a mere report on some lessons or expert opinions. In addition, we checked if objectives, justification, aim and context of the studies are clearly communicated.
 
@@ -321,10 +321,10 @@ In total, the authors agreed on 51 of 69 evaluations, resulting in an agreement 
 
 Once more, the papers with the highest score (this time two) were discussed before inclusion, to further counteract possible fuzziness in the individual evaluations.  The remaining 10 papers went through the third and final phase. Here, the credibility of the reporting and the relevance of the findings were evaluated. The procedure was the same as the previous phases. However, this time, all of the remaining papers passed. In this last phase, the authors agreed on 14 of 20 evaluations, resulting in an agreement rate of exactly 70 percent. 
 
-\begin{table}[h]
+\begin{table}
     \renewcommand{\arraystretch}{1.5}
     \caption[]{The quality framework}
-    \begin{tabular}{|p{0.7cm}|p{2cm}|p{3cm}|p{1.5cm}|}
+    \begin{tabular}{|p{0.7cm}|p{2cm}|p{10cm}|p{1.5cm}|}
         \hline
         Quality Gate & Criterion & Considered Aspect & Rating to pass \\ 
 
@@ -369,7 +369,7 @@ Once more, the papers with the highest score (this time two) were discussed befo
 
 All ten publications have been published in 2018 or later, with three of them being published in 2022, which shows the timeliness of the topic. Eight of the ten papers were found via Scopus, whereas the remaining two have been identified through IEEE Xplore. 
 
-\subsubsection{Data synthesis}
+\subsection{Data synthesis}
 
 After selecting the quality papers, we embarked on the data synthesis process. For this phase we follow the guidelines of thematic synthesis discussed by Cruzes et al. \cite{Cruzes.2011}. To begin, we first extracted the following data from each paper: 1) findings, 2) research motivation, 3) author, 4) title, 5) research objectives, 6) research method, 7) year. We extracted these data through coding, using the software Nvivo. After that, we created two codes: 1) patterns, and 2) quality attributes, and coded the findings based on it. By the end of this process, various themes emerged. 
 
@@ -379,20 +379,20 @@ After selecting the quality papers, we embarked on the data synthesis process. F
 
 % Pouya
 
-\section{Results}
+\chapter{Results}
 
 In this section, we present with three integral elements: 1) BD requirements, 2) MS patterns, 3) the mapping between the two and theories that emerged as a result.  
 
-\subsection{Requirements specification}
+\section{Requirements specification}
 
 The results of our data synthesis emerged a few themes in regards to BD requirements. While we could find BD major building blocks and system requirements from the result of our SLR, our SLR did not include categorization and representation of these requirements. We also did not know what type of requirements is the most suitable to the goal of this study. To this end, we performed a lightweight literature review in the body of knowledge to realize three major elements: 1) the type of requirements that we need, 2) an approach to categorizing the requirements, 3) presentation of these requirements. 
 
-\subsubsection{Type of requirements}
+\subsection{Type of requirements}
 System and software requirements come in different flavours and can range from a formal (mathematical) specifications to sketch on a napkin. There's been various attempts to defining and classifying software and system requirements. For the purposes of this study, we opted for a well-received approach discussed by Laplante \cite{laplante2017requirements}. In this approach, requirements are classified into three major types of 1) functional requirements, 2) non-functional requirements, and 3) domain requirements. 
 
 Our objective is to define the high-level requirements of BD systems, thus we do not fully explore 'non-functional' requirements. Majority of non-functional requirements are emerged from the particularities of an environment, such as a banking sector or healthcare, and do not correlate to our study. Our primary focus is one functional and domain requirements. 
 
-\subsubsection{Categorizing requirements} After having filtered out the right type of requirement, we then sought for a rigorous and relevant method to categorize the requirements. For this purpose, we followed the well-established categorization method based on BD characteristics, that is the 5Vs. These 5Vs are velocity, veracity, volume, Variety and Value \cite{Bughin2016}, \cite{rad2017big}. We took inspiration from various studies such as Nadal et al. \cite{nadal2017software}, and the requirements categories presented in NIST BD Public Working Group \cite{Chang.2019}.
+\subsection{Categorizing requirements} After having filtered out the right type of requirement, we then sought for a rigorous and relevant method to categorize the requirements. For this purpose, we followed the well-established categorization method based on BD characteristics, that is the 5Vs. These 5Vs are velocity, veracity, volume, Variety and Value \cite{Bughin2016}, \cite{rad2017big}. We took inspiration from various studies such as Nadal et al. \cite{nadal2017software}, and the requirements categories presented in NIST BD Public Working Group \cite{Chang.2019}.
 
 % have underpinned their reference architecture on these characteristics and requirements that goes with them. Moreover, NIST BD Public Working Group embarked on a large scale study to extract requirements from variety of application domains such as Healthcare, Life Sciences, Commercial, Energy, Government, and Defense. The result of this study was the formation of general requirements under seven categories. In another effort by Volk et al. (\cite{volk2020identifying}), nine use cases for BD projects are identified by collecting theories and use cases from the literature and categorizing them using a hierarchical clustering algorithm. 
 
@@ -400,7 +400,7 @@ Our objective is to define the high-level requirements of BD systems, thus we do
 
 We've also studied the reference architectures developed for BD systems to understand general requirements. In one study, Ataei et al. \cite{ataei2020big} assessed the body of evidence and presented with a comprehensive list of BD reference architectures. This study helped us realize the spectrum of BD reference architectures, how they are designed and the general set of requirements. By analyzing these studies and by evaluating the design and requirement engineering required for BD reference architectures, we adjusted our initial categories of requirements and added security and privacy to it. 
 
-\subsubsection{Present requirements}
+\subsection{Present requirements}
 After knowing the type and category of requirements, We looked for a rigorous approach to present these requirements. There are numerous approaches used for software and system requirement representation including informal, semiformal and formal methods. For the purposes of this study, we opted for an informal method because it is a well established method in the industry and academia \cite{kassab2014state}. Our approach follows the guidelines explained in ISO/IEC/IEEE standard 29148 \cite{ISO29148} for representing functional requirements. We have also taken inspiration from Software Engineering Body of Knowledge \cite{abran2004software}. However, our requirement representation is organized in term of BD characteristics. These requirements are described in Table \ref{table-requirements}.
 
 
@@ -409,7 +409,7 @@ After knowing the type and category of requirements, We looked for a rigorous ap
     \centering
     \caption{BD system requirements}
     \renewcommand*{\arraystretch}{1.8}
-    \begin{tabular}{|m{1.2cm}|m{16cm}|}
+    \begin{tabular}{|m{1.2cm}|m{14cm}|}
 
         \hline
 
@@ -457,7 +457,7 @@ After knowing the type and category of requirements, We looked for a rigorous ap
     \end{table*}
 
 
-\subsection{Microservice Patterns}
+\section{Microservice Patterns}
 
 As a result of this SLR, our data synthesis yielded 50 MS patterns. These patterns are classified based on their function and the problem they solve. Our categories are inspired by the works of Richardson \cite{Richardson.2022}. While we elaborate the patterns adopted for BD requirements in detail, the aim of our study is not to explain each MS pattern. These patterns can be found in \cite{MSPatterns}.
   
@@ -858,7 +858,7 @@ As a result of this SLR, our data synthesis yielded 50 MS patterns. These patter
 % \end{center}
 
 
-\section{Application of Microservices Design Patterns to Big Data Systems}
+\chapter{Application of Microservices Design Patterns to Big Data Systems}
 
 
 In this section, we combine our findings from both SLRs, and present new theories on application of MS design patterns for BD systems. The patterns gleaned, are established theories that are derived from actual problems in MS systems in practice, thus we do not aim to re-validate them in this study. 
@@ -1004,7 +1004,7 @@ One solution to this problem can be the circuit breaker pattern. Circuit breaker
 % Pouya
 
 
-\section{Validation}
+\chapter{Validation}
 
 After the generation of the design theories, we sought for a suitable model of validation. This involved a thorough research in some of the well-established methods for validation such as single-case mechanism experiment, technical action research and focus groups \cite{wieringa2014design}. For the purposes of this study we chose semi-structured interviews (SSIs), following the guidelines of Kallio et al. \cite{kallio2016systematic}.  
 
@@ -1041,7 +1041,7 @@ Another feedback was the idea of having an egress that encapsulate the anti-corr
 
 
 
-\section{Discussion}
+\chapter{Discussion}
 % This study was our attempt to explore two major areas, BD systems and microservices architecture. By adopting a rigorous methodology, we aimed at applying microservices patterns to BD systems. As a result of this we created a number of theories that can help shed lights on adoption of these patterns to BD systems in practice. 
 
 % To the best of our knowledge, there is no study in academia that has shared the same goal as our study. Laigner et al. (\cite{laigner2020monolithic}) applied an action research and reported on their experience on replacing a legacy BDS with a microservice-based event-driven system. This study is not a systematic review and aims to create contextualized theory based on a specific experience. 
@@ -1058,7 +1058,7 @@ Majority of the studies that we've analyzed to understand BD systems, seems to r
 
 
 % Pouya
-\section{Conclusion}
+\chapter{Conclusion}
 
 With all the undeniable benefits of BD, the success rate of BD projects is still rare. One of the core challenges of adopting BD lies in data architecture and data engineering. While software engineers have adopted many well-established methods and technologies, data engineering and BD architectures don't seem to benefit a lot from these advancements. 
 
