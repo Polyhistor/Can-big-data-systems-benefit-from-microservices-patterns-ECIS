@@ -186,6 +186,41 @@
       \field{pages}{452\bibrangedash 462}
       \range{pages}{11}
     \endentry
+    \entry{ataei2022state}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2cbfcf6c1f060edc403539a228818399}{%
+           family={Ataei},
+           familyi={A\bibinitperiod},
+           given={Pouya},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=55cfe81c799afe0018da55940d7682f1}{%
+           family={Litchfield},
+           familyi={L\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod},
+           givenun=1}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{956b7c6489f4419e5a5b4e0cd62c247a}
+      \strng{fullhash}{956b7c6489f4419e5a5b4e0cd62c247a}
+      \strng{bibnamehash}{956b7c6489f4419e5a5b4e0cd62c247a}
+      \strng{authorbibnamehash}{956b7c6489f4419e5a5b4e0cd62c247a}
+      \strng{authornamehash}{956b7c6489f4419e5a5b4e0cd62c247a}
+      \strng{authorfullhash}{956b7c6489f4419e5a5b4e0cd62c247a}
+      \field{extraname}{3}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{The state of big data reference architectures: a systematic literature review}
+      \field{year}{2022}
+    \endentry
     \entry{ataei2020big}{proceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=2cbfcf6c1f060edc403539a228818399}{%
@@ -457,6 +492,46 @@
       \endverb
       \verb{url}
       \verb https://databricks.com/p/whitepaper/mit-technology-review-insights-report
+      \endverb
+    \endentry
+    \entry{NewVantageSurvey}{report}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=418715aadaf08f606ff3e5575fa44f4f}{%
+           family={Davenport},
+           familyi={D\bibinitperiod},
+           given={Thomas\bibnamedelima H.},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5099e067bf7921b7e7df640c862534f1}{%
+           family={Bean},
+           familyi={B\bibinitperiod},
+           given={Randy},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {NewVantage Partners}%
+      }
+      \strng{namehash}{59cfb2397e95114edbadfabe68978b0c}
+      \strng{fullhash}{59cfb2397e95114edbadfabe68978b0c}
+      \strng{bibnamehash}{59cfb2397e95114edbadfabe68978b0c}
+      \strng{authorbibnamehash}{59cfb2397e95114edbadfabe68978b0c}
+      \strng{authornamehash}{59cfb2397e95114edbadfabe68978b0c}
+      \strng{authorfullhash}{59cfb2397e95114edbadfabe68978b0c}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Big Data and AI Executive Survey 2021}
+      \field{type}{Technical Report}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.newvantage.com/thoughtleadership
+      \endverb
+      \verb{url}
+      \verb https://www.newvantage.com/thoughtleadership
       \endverb
     \endentry
     \entry{eryurek2021data}{book}{}
@@ -1031,39 +1106,6 @@
       \range{pages}{-1}
       \verb{doi}
       \verb 10.1136/bmj.n160
-      \endverb
-    \endentry
-    \entry{NewVantageSurvey}{misc}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=95e87dea226736a196294b1e9fd6d3fd}{%
-           family={Partners},
-           familyi={P\bibinitperiod},
-           given={NewVantage},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {NewVantage Partners}%
-      }
-      \strng{namehash}{95e87dea226736a196294b1e9fd6d3fd}
-      \strng{fullhash}{95e87dea226736a196294b1e9fd6d3fd}
-      \strng{bibnamehash}{95e87dea226736a196294b1e9fd6d3fd}
-      \strng{authorbibnamehash}{95e87dea226736a196294b1e9fd6d3fd}
-      \strng{authornamehash}{95e87dea226736a196294b1e9fd6d3fd}
-      \strng{authorfullhash}{95e87dea226736a196294b1e9fd6d3fd}
-      \field{sortinit}{P}
-      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Big Data and AI Executive Survey 2021}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://www.newvantage.com/thoughtleadership
-      \endverb
-      \verb{url}
-      \verb https://www.newvantage.com/thoughtleadership
       \endverb
     \endentry
     \entry{rad2017big}{article}{}
