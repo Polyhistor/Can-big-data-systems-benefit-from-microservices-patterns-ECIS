@@ -21,16 +21,16 @@
   \datalist[entry]{nyt/global//global/global}
     \entry{ISO29148}{misc}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=a1328de3acb37eebd2183a808fae18b7}{%
-           family={29148:2018},
+        {{un=0,uniquepart=base,hash=e94fd2b76afdc8ae6115f05c4cc2d211}{%
+           family={29148},
            familyi={2\bibinitperiod},
            given={ISO/IEC/IEEE},
            giveni={I\bibinitperiod},
            givenun=0}}%
       }
       \name{editor}{1}{}{%
-        {{hash=3d9412d772d7435e9989e7bdcd35028e}{%
-           family={29148:2018},
+        {{hash=2404521e720ad1332c93b0de712562af}{%
+           family={29148},
            familyi={2\bibinitperiod},
            given={ISO/IEC},
            giveni={I\bibinitperiod}}}%
@@ -38,15 +38,15 @@
       \list{publisher}{1}{%
         {ISO}%
       }
-      \strng{namehash}{a1328de3acb37eebd2183a808fae18b7}
-      \strng{fullhash}{a1328de3acb37eebd2183a808fae18b7}
-      \strng{bibnamehash}{a1328de3acb37eebd2183a808fae18b7}
-      \strng{authorbibnamehash}{a1328de3acb37eebd2183a808fae18b7}
-      \strng{authornamehash}{a1328de3acb37eebd2183a808fae18b7}
-      \strng{authorfullhash}{a1328de3acb37eebd2183a808fae18b7}
-      \strng{editorbibnamehash}{3d9412d772d7435e9989e7bdcd35028e}
-      \strng{editornamehash}{3d9412d772d7435e9989e7bdcd35028e}
-      \strng{editorfullhash}{3d9412d772d7435e9989e7bdcd35028e}
+      \strng{namehash}{e94fd2b76afdc8ae6115f05c4cc2d211}
+      \strng{fullhash}{e94fd2b76afdc8ae6115f05c4cc2d211}
+      \strng{bibnamehash}{e94fd2b76afdc8ae6115f05c4cc2d211}
+      \strng{authorbibnamehash}{e94fd2b76afdc8ae6115f05c4cc2d211}
+      \strng{authornamehash}{e94fd2b76afdc8ae6115f05c4cc2d211}
+      \strng{authorfullhash}{e94fd2b76afdc8ae6115f05c4cc2d211}
+      \strng{editorbibnamehash}{2404521e720ad1332c93b0de712562af}
+      \strng{editornamehash}{2404521e720ad1332c93b0de712562af}
+      \strng{editorfullhash}{2404521e720ad1332c93b0de712562af}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{extradatescope}{labelyear}
@@ -860,6 +860,48 @@
       \field{title}{Requirements engineering for software and systems}
       \field{year}{2017}
     \endentry
+    \entry{phi}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=29a6d651f3f1640f12822b1a756e16d5}{%
+           family={Maamouri},
+           familyi={M\bibinitperiod},
+           given={Amine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47ea74cadd32cd3b7af97570107bf3d0}{%
+           family={Sfaxi},
+           familyi={S\bibinitperiod},
+           given={Lilia},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=870505b0f2aaffd5be4d1edf9b3264e2}{%
+           family={Robbana},
+           familyi={R\bibinitperiod},
+           given={Riadh},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{8bf2dd097417d7f3575ec374d8e3673b}
+      \strng{fullhash}{8bf2dd097417d7f3575ec374d8e3673b}
+      \strng{bibnamehash}{8bf2dd097417d7f3575ec374d8e3673b}
+      \strng{authorbibnamehash}{8bf2dd097417d7f3575ec374d8e3673b}
+      \strng{authornamehash}{8bf2dd097417d7f3575ec374d8e3673b}
+      \strng{authorfullhash}{8bf2dd097417d7f3575ec374d8e3673b}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{European, Mediterranean, and Middle Eastern Conference on Information Systems}
+      \field{title}{Phi: A Generic Microservices-Based Big Data Architecture}
+      \field{year}{2021}
+      \field{pages}{3\bibrangedash 16}
+      \range{pages}{14}
+    \endentry
     \entry{nadal2017software}{article}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=054ef7b23669100f2c1275e3664868fb}{%
@@ -1386,7 +1428,6 @@
     \endentry
   \enddatalist
   \missing{MSPatterns}
-  \missing{Phi}
   \missing{interviewGuide}
 \endrefsection
 \endinput

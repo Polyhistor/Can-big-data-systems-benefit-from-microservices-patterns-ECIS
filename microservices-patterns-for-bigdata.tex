@@ -109,15 +109,15 @@ The contribution of the publication, is thereby threefold:
 % Daniel
 \chapter{Related Work}
 
-To the best of our knowledge, there is no study in academia that has shared the same goal as our study. Laigner et al. \citet{laigner2020monolithic} applied an action research and reported on their experience on replacing a legacy BDS with a microservice-based event-driven system. This study is not a systematic review and aims to create contextualized theory based on a specific experience. In another effort,  Zhelev et al. \citet{zhelev2019using} described why event-driven architectures could be a good alternative to monolithic architectures. This study does not follow any clear methodology, and seems to contribute only in terms of untested theory.
+To the best of our knowledge, there is no study in academia that has shared the same goal as our study. \citet{laigner2020monolithic} applied an action research and reported on their experience on replacing a legacy BD system with a microservice based event-driven system. This study is not a systematic review and aims to create contextualized theory based on a specific experience. In another effort, \citet{zhelev2019using} described why event-driven architectures could be a good alternative to monolithic architectures. This study does not follow any clear methodology, and seems to contribute only in terms of untested theory.
 
-Staegemann et al \citet{staegemann2021examining} examined the interplay between BD and MS by conducting a bibliometric review. This study aims to provide with a general picture of the topic, and does not aim to explore MS patterns and their relationship to BD systems.  While the problem of BD system development has been approached through a RA that absorbs some of the concepts from MS as seen in Phi \citet{Phi} and Neomycelia \citet{ataei2021neomycelia}, there is no study that aimed to apply MS patterns to BD systems through a systematic methodology.
+\citet{staegemann2021examining} examined the interplay between BD and MS by conducting a bibliometric review. This study aims to provide with a general picture of the topic, and does not aim to explore MS patterns and their relationship to BD systems.  While the problem of BD system development has been approached through a RA that absorbs some of the concepts from MS as seen in Phi \citep{phi} and Neomycelia \citep{ataei2021neomycelia}, there is no study that aimed to apply MS patterns to BD systems through a systematic methodology.
 
 
 % Daniel
 \chapter{Methodology}
 
-Since the goal of this study is to map BD architectures and microservice patterns, it is consequently mandatory to get a comprehensive overview over both domains. For this purpose, it was decided to conduct two systematic literature reviews (SLR), one for each domain. Both SLRs are conducted following the guidelines presented in Kitchenham et al. \citet{Kitchenham.2004} and Page et al. \citet{Page.2021} on Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA). The former was used because of its clear instructions on critically appraising evidence for validity, impact and applicability in software engineering and the latter was used because it's a comprehensive and well-established methodology for increasing systematicity, transparency, and prevention of bias. To synthesize our findings, thematic synthesis proposed by Cruzes and Dyba was applied \citet{Cruzes.2011}. 
+Since the goal of this study is to map BD architectures and microservice patterns, it is consequently mandatory to get a comprehensive overview over both domains. For this purpose, it was decided to combine the results of two systematic literature reviews (SLR), one for each domain. Both SLRs are conducted following the guidelines presented in \citet{Kitchenham.2004} and \citet{Page.2021} on Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA). The former was used because of its clear instructions on critically appraising evidence for validity, impact and applicability in software engineering and the latter was used because it's a comprehensive and well-established methodology for increasing systematicity, transparency, and prevention of bias. To synthesize our findings, thematic synthesis proposed by Cruzes and Dyba was applied \citep{Cruzes.2011}. 
 
 % While, Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) provided us with a strong underpinning on how to conduct a SLR, it had many assumptions that arose from the healthcare and nursing domains, and did not correlate directly to our study. To overcome some of this limitations, we combined PRISMA with the guidelines of Kitchenham et al. to form a rigorous methodology. 
 
@@ -129,15 +129,11 @@ Since the goal of this study is to map BD architectures and microservice pattern
 
 % Since patterns are usually described in an informal way and the same applies to reference architectures, the matching of those two, as the primary research artifact of this paper, is also conveyed in the same way and supported by logical argumentation.
 
+
+
 \section{First Review}
 
-The first SLR was the less extensive one, since it is just an update to an already existing study. For this purpose, the SLR conducted by Ataei et al. \citet{Ataei.2020}, was extended up unto the current date, providing us with the necessary overview. We followed the exact same methodology and covered the years 2020-2022. Our main objective for this SLR was to highlight the fundamental building blocks and requirements of BD systems. 
-
-While the common architectural constructs was discussed in \citet{Ataei.2020}, the study was not focused on requirements. We therefore extended the data synthesis by adding a new code: software and system requirements. This code had sub-codes each being named after one characteristics of BD. This was necessary as we needed to map patterns against requirements. This is further elaborated in the results section, subsection A.
-
-\section{Second Review}
-
-The second SLR, was a rigorous approach from scratch and was conducted in the following steps: 1) selecting data sources 2) developing a search strategy 3) developing inclusion and exclusion criteria, 4) developing the quality framework 5) pooling literature based on the search strategy, 6) removing duplicates, 7) scanning studies titles based on inclusion and exclusion criteria, 8) removing studies based on publication types, 9) scanning studies abstract and title based on inclusion and exclusion criteria, 10) assessing studies based on the quality framework (includes three phases), 11) extracting data from the remaining papers, 12) coding the extracted data, 13) creating themes out of codes, 14) presenting the results. These steps are not direct mappings to the following sub-sections. Some sub-sections include several of these steps.
+The first SLR, was a rigorous approach from scratch and was conducted in the following steps: 1) selecting data sources 2) developing a search strategy 3) developing inclusion and exclusion criteria, 4) developing the quality framework 5) pooling literature based on the search strategy, 6) removing duplicates, 7) scanning studies titles based on inclusion and exclusion criteria, 8) removing studies based on publication types, 9) scanning studies abstract and title based on inclusion and exclusion criteria, 10) assessing studies based on the quality framework (includes three phases), 11) extracting data from the remaining papers, 12) coding the extracted data, 13) creating themes out of codes, 14) presenting the results. These steps are not direct mappings to the following sub-sections. Some sub-sections include several of these steps.
 
 
 \subsection{Selecting data sources}
@@ -320,7 +316,7 @@ Once more, the papers with the highest score (this time two) were discussed befo
 \begin{table}
     \renewcommand{\arraystretch}{1.5}
     \caption[]{The quality framework}
-    \begin{tabular}{|p{0.7cm}|p{2cm}|p{10cm}|p{1.5cm}|}
+    \begin{tabular}{|p{1cm}|p{2cm}|p{10cm}|p{1.5cm}|}
         \hline
         Quality Gate & Criterion & Considered Aspect & Rating to pass \\ 
 
@@ -343,9 +339,9 @@ Once more, the papers with the highest score (this time two) were discussed befo
         & 3/4 \\ 
         \hline  
         3 &
-        3.1 Credibility 
+         Credibility 
 
-        3.2 Relevance 
+         Relevance 
         & 
         1) Does the study report findings in a clear and unbiased manner?
 
@@ -374,30 +370,37 @@ After selecting the quality papers, we embarked on the data synthesis process. F
 % Consequently, for the search conducted for this paper, the other databases and registers have not been necessary. However, since this fact is only determinable now, their inclusion in the initial search was still sensible.
 
 % Pouya
+
+
+\section{Second Review}
+
+The second SLR is conducted by \citet{ataei2022state} on available BD RAs in academia and industry. This study is comprehensive and covers various aspects of BD RAs such as limitations, and common architectural blocks. While the common architectural constructs was discussed in in this study, the focus was not on BD system requirements. Therefore, we assessed and coded the findings of this SLR to point out the system requirements of BD systems. This was achieved by creating a new code in Nvivo called: 'software and system requirements'. This was necessary as we needed to map patterns against requirements. This is further elaborated in the results section.
+
+
 \chapter{Results}
 
-In this section, we present with three integral elements: 1) BD requirements, 2) MS patterns, 3) the mapping between the two and theories that emerged as a result.  
 
-\section{Requirements specification}
+In this section, we present with three integral elements: 1) BD software and system requirements, 2) MS patterns, 3) the mapping between the two and theories that emerged as a result.  
 
-The results of our data synthesis emerged a few themes in regards to BD requirements. While we could find BD major building blocks and system requirements from the result of our SLR, our SLR did not include categorization and representation of these requirements. We also did not know what type of requirements is the most suitable to the goal of this study. To this end, we performed a lightweight literature review in the body of knowledge to realize three major elements: 1) the type of requirements that we need, 2) an approach to categorizing the requirements, 3) presentation of these requirements. 
+\section{Big Data Software and System Requirements}
+
+The results of our data synthesis emerged a few themes in regards to BD requirements. While we could find BD major building blocks and system requirements by coding the findings gained from \citet{ataei2022state} work, our coding process did not include categorization and representation of these requirements. We also did not know what type of requirements is the most suitable to the goal of this study. To this end, we performed a lightweight literature review in the body of knowledge to realize three major elements: 1) the type of requirements that we need, 2) an approach to categorizing the requirements, 3) presentation of these requirements. 
 
 \subsection{Type of requirements}
-System and software requirements come in different flavours and can range from a formal (mathematical) specifications to sketch on a napkin. There's been various attempts to defining and classifying software and system requirements. For the purposes of this study, we opted for a well-received approach discussed by Laplante \citet{laplante2017requirements}. In this approach, requirements are classified into three major types of 1) functional requirements, 2) non-functional requirements, and 3) domain requirements. 
+System and software requirements come in different flavours and can range from a formal (mathematical) specifications to sketch on a napkin. There's been various attempts to defining and classifying software and system requirements. For the purposes of this study, we opted for a well-received approach discussed by \citet{laplante2017requirements}. In this approach, requirements are classified into three major types of 1) functional requirements, 2) non-functional requirements, and 3) domain requirements. 
 
 Our objective is to define the high-level requirements of BD systems, thus we do not fully explore 'non-functional' requirements. Majority of non-functional requirements are emerged from the particularities of an environment, such as a banking sector or healthcare, and do not correlate to our study. Our primary focus is one functional and domain requirements. 
 
-\subsection{Categorizing requirements} After having filtered out the right type of requirement, we then sought for a rigorous and relevant method to categorize the requirements. For this purpose, we followed the well-established categorization method based on BD characteristics, that is the 5Vs. These 5Vs are velocity, veracity, volume, Variety and Value \citet{Bughin2016}, \citet{rad2017big}. We took inspiration from various studies such as Nadal et al. \citet{nadal2017software}, and the requirements categories presented in NIST BD Public Working Group \citet{Chang.2019}.
+\subsection{Categorizing requirements} After having filtered out the right type of requirement, we then sought for a rigorous and relevant method to categorize the requirements. For this purpose, we followed the well-established categorization method based on BD characteristics, that is the 5Vs. These 5Vs are velocity, veracity, volume, variety and value \citep{Bughin2016,rad2017big}. We took inspiration from various studies such as the work of \citet{nadal2017software}, and the requirements categories presented in NIST BD Public Working Group \citep{Chang.2019}.
 
 % have underpinned their reference architecture on these characteristics and requirements that goes with them. Moreover, NIST BD Public Working Group embarked on a large scale study to extract requirements from variety of application domains such as Healthcare, Life Sciences, Commercial, Energy, Government, and Defense. The result of this study was the formation of general requirements under seven categories. In another effort by Volk et al. (\citet{volk2020identifying}), nine use cases for BD projects are identified by collecting theories and use cases from the literature and categorizing them using a hierarchical clustering algorithm. 
 
 % Bashari et al. (\citet{bashari2016security}) focused on the security and privacy requirements of BD systems, Yu et al. presented the modern components of BD systems (\citet{yu2019components}), Eridaputra et al. (\citet{eridaputra2014modeling}) created a generic model for BD requirements using goal oriented approaches, and Al-jaroodi et al. (\citet{al2016characteristics}) investigated general requirements to support BD software development. 
 
-We've also studied the reference architectures developed for BD systems to understand general requirements. In one study, Ataei et al. \citet{ataei2020big} assessed the body of evidence and presented with a comprehensive list of BD reference architectures. This study helped us realize the spectrum of BD reference architectures, how they are designed and the general set of requirements. By analyzing these studies and by evaluating the design and requirement engineering required for BD reference architectures, we adjusted our initial categories of requirements and added security and privacy to it. 
+In addition, we studied the RAs developed for BD systems to understand general requirements. For this purpose, we used the SLR published by \citet{ataei2022state}. This SLR assessed the body of evidence and presented with a comprehensive list of BD RAs. This study helped us realize the spectrum of BD RAs, how they are designed and the general set of requirements. By evaluating the design and requirement engineering required for BD RAs, we adjusted our initial categories of requirements and added security and privacy to it. 
 
 \subsection{Present requirements}
-After knowing the type and category of requirements, We looked for a rigorous approach to present these requirements. There are numerous approaches used for software and system requirement representation including informal, semiformal and formal methods. For the purposes of this study, we opted for an informal method because it is a well established method in the industry and academia \citet{kassab2014state}. Our approach follows the guidelines explained in ISO/IEC/IEEE standard 29148 \citet{ISO29148} for representing functional requirements. We have also taken inspiration from Software Engineering Body of Knowledge \citet{abran2004software}. However, our requirement representation is organized in term of BD characteristics. These requirements are described in Table \ref{table-requirements}.
-
+After knowing the type and category of requirements, We looked for a rigorous approach to present these requirements. There are numerous approaches used for software and system requirement representation including informal, semiformal and formal methods. For the purposes of this study, we opted for an informal method because it is a well established method in the industry and academia \citep{kassab2014state}. Our approach follows the guidelines explained in ISO/IEC/IEEE standard \citet{ISO29148} for representing functional requirements. We have also taken inspiration from Software Engineering Body of Knowledge \citep{abran2004software}. However, our requirement representation is organized in term of BD characteristics. These requirements are described in Table \ref{table-requirements}.
 
 
 \begin{table*}[h]
@@ -851,6 +854,8 @@ As a result of this SLR, our data synthesis yielded 50 MS patterns. These patter
 %     \end{tabular}
 %     \end{table*}
 % \end{center}
+
+
 \chapter{Application of Microservices Design Patterns to Big Data Systems}
 
 
