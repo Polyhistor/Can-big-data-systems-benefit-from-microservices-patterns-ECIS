@@ -251,6 +251,44 @@
       \field{title}{Big data reference architectures, a systematic literature review}
       \field{year}{2020}
     \endentry
+    \entry{MSPatterns}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2cbfcf6c1f060edc403539a228818399}{%
+           family={Ataei},
+           familyi={A\bibinitperiod},
+           given={Pouya},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1227c774bc1c967430244320104578c2}{%
+           family={Staegemann},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8aa288f708817c80e8971ee19a1ae1ae}
+      \strng{fullhash}{8aa288f708817c80e8971ee19a1ae1ae}
+      \strng{bibnamehash}{8aa288f708817c80e8971ee19a1ae1ae}
+      \strng{authorbibnamehash}{8aa288f708817c80e8971ee19a1ae1ae}
+      \strng{authornamehash}{8aa288f708817c80e8971ee19a1ae1ae}
+      \strng{authorfullhash}{8aa288f708817c80e8971ee19a1ae1ae}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Microservices patterns classified for the Paper Titled: Application of Microservices Patterns to Big Data Systems}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://anonymous.4open.science/r/MS-Patterns-5519/
+      \endverb
+      \verb{url}
+      \verb https://anonymous.4open.science/r/MS-Patterns-5519/
+      \endverb
+    \endentry
     \entry{SLRsearchTerms}{misc}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=2cbfcf6c1f060edc403539a228818399}{%
@@ -272,8 +310,10 @@
       \strng{authorbibnamehash}{8aa288f708817c80e8971ee19a1ae1ae}
       \strng{authornamehash}{8aa288f708817c80e8971ee19a1ae1ae}
       \strng{authorfullhash}{8aa288f708817c80e8971ee19a1ae1ae}
+      \field{extraname}{2}
       \field{sortinit}{A}
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -350,12 +390,13 @@
       \strng{authorfullhash}{81a206198c1afc2846831e7bfbb766ce}
       \field{sortinit}{C}
       \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the Symposium on Applied Computing}
       \field{title}{System of systems software architecture description using the ISO/IEC/IEEE 42010 standard}
-      \field{type}{Conference Proceedings}
+      \field{year}{2017}
       \field{pages}{1793\bibrangedash 1798}
       \range{pages}{6}
     \endentry
@@ -1427,7 +1468,6 @@
       \range{pages}{1}
     \endentry
   \enddatalist
-  \missing{MSPatterns}
   \missing{interviewGuide}
 \endrefsection
 \endinput
