@@ -2241,12 +2241,11 @@
     <bcf:citekey order="55">eryurek2021data</bcf:citekey>
     <bcf:citekey order="56">eryurek2021data</bcf:citekey>
     <bcf:citekey order="57">wieringa2014design</bcf:citekey>
-    <bcf:citekey order="58">wieringa2014design</bcf:citekey>
+    <bcf:citekey order="58">kallio2016systematic</bcf:citekey>
     <bcf:citekey order="59">kallio2016systematic</bcf:citekey>
-    <bcf:citekey order="60">kallio2016systematic</bcf:citekey>
-    <bcf:citekey order="61">kallio2016systematic</bcf:citekey>
-    <bcf:citekey order="62">kallio2016systematic</bcf:citekey>
-    <bcf:citekey order="63">interviewGuide</bcf:citekey>
+    <bcf:citekey order="60">baltes2022sampling</bcf:citekey>
+    <bcf:citekey order="61">interviewGuide</bcf:citekey>
+    <bcf:citekey order="62">sriraman2018mu</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

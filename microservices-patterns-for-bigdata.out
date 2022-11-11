@@ -8,5 +8,9 @@
 \BOOKMARK [1][-]{section.4.2}{Microservice Patterns}{chapter.4}% 8
 \BOOKMARK [0][-]{chapter.5}{Application of Microservices Design Patterns to Big Data Systems}{}% 9
 \BOOKMARK [0][-]{chapter.6}{Validation}{}% 10
-\BOOKMARK [0][-]{chapter.7}{Discussion}{}% 11
-\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 12
+\BOOKMARK [1][-]{section.6.1}{Interview design}{chapter.6}% 11
+\BOOKMARK [1][-]{section.6.2}{Sampling strategy}{chapter.6}% 12
+\BOOKMARK [1][-]{section.6.3}{Data Synthesis}{chapter.6}% 13
+\BOOKMARK [1][-]{section.6.4}{Results}{chapter.6}% 14
+\BOOKMARK [0][-]{chapter.7}{Discussion}{}% 15
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 16

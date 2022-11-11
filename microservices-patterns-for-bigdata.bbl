@@ -221,7 +221,7 @@
       \field{title}{The state of big data reference architectures: a systematic literature review}
       \field{year}{2022}
     \endentry
-    \entry{MSPatterns}{misc}{}
+    \entry{interviewGuide}{misc}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=2cbfcf6c1f060edc403539a228818399}{%
            family={Ataei},
@@ -246,6 +246,44 @@
       \field{sortinit}{A}
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
       \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Interview guide for the paper: Application of microservices patterns to big data systems}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://anonymous.4open.science/r/SSI-Repo-F90E/SSI.pdf
+      \endverb
+      \verb{url}
+      \verb https://anonymous.4open.science/r/SSI-Repo-F90E/SSI.pdf
+      \endverb
+    \endentry
+    \entry{MSPatterns}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2cbfcf6c1f060edc403539a228818399}{%
+           family={Ataei},
+           familyi={A\bibinitperiod},
+           given={Pouya},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1227c774bc1c967430244320104578c2}{%
+           family={Staegemann},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8aa288f708817c80e8971ee19a1ae1ae}
+      \strng{fullhash}{8aa288f708817c80e8971ee19a1ae1ae}
+      \strng{bibnamehash}{8aa288f708817c80e8971ee19a1ae1ae}
+      \strng{authorbibnamehash}{8aa288f708817c80e8971ee19a1ae1ae}
+      \strng{authornamehash}{8aa288f708817c80e8971ee19a1ae1ae}
+      \strng{authorfullhash}{8aa288f708817c80e8971ee19a1ae1ae}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -280,10 +318,10 @@
       \strng{authorbibnamehash}{8aa288f708817c80e8971ee19a1ae1ae}
       \strng{authornamehash}{8aa288f708817c80e8971ee19a1ae1ae}
       \strng{authorfullhash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{A}
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{extradate}{2}
+      \field{extradate}{3}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -296,6 +334,44 @@
       \verb{url}
       \verb https://anonymous.4open.science/r/SLR-Search-Terms-3147/
       \endverb
+    \endentry
+    \entry{baltes2022sampling}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0b6d47e6f5cdb35d7ab61aa55aec889b}{%
+           family={Baltes},
+           familyi={B\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=588bc53e4cf35bc3750229a48a45e9f7}{%
+           family={Ralph},
+           familyi={R\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{7a2376742b87a841369d84fa0ee99348}
+      \strng{fullhash}{7a2376742b87a841369d84fa0ee99348}
+      \strng{bibnamehash}{7a2376742b87a841369d84fa0ee99348}
+      \strng{authorbibnamehash}{7a2376742b87a841369d84fa0ee99348}
+      \strng{authornamehash}{7a2376742b87a841369d84fa0ee99348}
+      \strng{authorfullhash}{7a2376742b87a841369d84fa0ee99348}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Empirical Software Engineering}
+      \field{number}{4}
+      \field{title}{Sampling in software engineering research: A critical review and guidelines}
+      \field{volume}{27}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 31}
+      \range{pages}{31}
     \endentry
     \entry{Bughin2016}{article}{}
       \name{author}{1}{}{%
@@ -1231,6 +1307,42 @@
       \endverb
       \warn{\item Entry 'Richardson.2022' (references.bib): Invalid format '07.08.2022' of date field 'urldate' - ignoring}
     \endentry
+    \entry{sriraman2018mu}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d8fb03df54522aa058b1eaff0e2f5af2}{%
+           family={Sriraman},
+           familyi={S\bibinitperiod},
+           given={Akshitha},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90ca42048340f1a0820209537adf0d8d}{%
+           family={Wenisch},
+           familyi={W\bibinitperiod},
+           given={Thomas\bibnamedelima F},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{25e2e8ab3bfc065dff41ae7533ea6d29}
+      \strng{fullhash}{25e2e8ab3bfc065dff41ae7533ea6d29}
+      \strng{bibnamehash}{25e2e8ab3bfc065dff41ae7533ea6d29}
+      \strng{authorbibnamehash}{25e2e8ab3bfc065dff41ae7533ea6d29}
+      \strng{authornamehash}{25e2e8ab3bfc065dff41ae7533ea6d29}
+      \strng{authorfullhash}{25e2e8ab3bfc065dff41ae7533ea6d29}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 IEEE International Symposium on Workload Characterization (IISWC)}
+      \field{title}{$\mu$ suite: a benchmark suite for microservices}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+    \endentry
     \entry{staegemann2021examining}{article}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=1227c774bc1c967430244320104578c2}{%
@@ -1438,7 +1550,6 @@
       \range{pages}{1}
     \endentry
   \enddatalist
-  \missing{interviewGuide}
 \endrefsection
 \endinput
 
