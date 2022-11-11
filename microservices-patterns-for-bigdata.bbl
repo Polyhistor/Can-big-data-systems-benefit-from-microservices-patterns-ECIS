@@ -122,12 +122,12 @@
            given={Pouya},
            giveni={P\bibinitperiod},
            givenun=0}}%
-        {{un=1,uniquepart=given,hash=55cfe81c799afe0018da55940d7682f1}{%
+        {{un=0,uniquepart=base,hash=55cfe81c799afe0018da55940d7682f1}{%
            family={Litchfield},
            familyi={L\bibinitperiod},
            given={Alan},
            giveni={A\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {AIS}%
@@ -157,12 +157,12 @@
            given={Pouya},
            giveni={P\bibinitperiod},
            givenun=0}}%
-        {{un=1,uniquepart=given,hash=55cfe81c799afe0018da55940d7682f1}{%
+        {{un=0,uniquepart=base,hash=55cfe81c799afe0018da55940d7682f1}{%
            family={Litchfield},
            familyi={L\bibinitperiod},
            given={Alan},
            giveni={A\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
       }
       \list{organization}{1}{%
         {IEEE}%
@@ -194,12 +194,12 @@
            given={Pouya},
            giveni={P\bibinitperiod},
            givenun=0}}%
-        {{un=1,uniquepart=given,hash=55cfe81c799afe0018da55940d7682f1}{%
+        {{un=0,uniquepart=base,hash=55cfe81c799afe0018da55940d7682f1}{%
            family={Litchfield},
            familyi={L\bibinitperiod},
            given={Alan},
            giveni={A\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {IEEE}%
@@ -220,36 +220,6 @@
       \field{journaltitle}{IEEE Access}
       \field{title}{The state of big data reference architectures: a systematic literature review}
       \field{year}{2022}
-    \endentry
-    \entry{ataei2020big}{proceedings}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=2cbfcf6c1f060edc403539a228818399}{%
-           family={Ataei},
-           familyi={A\bibinitperiod},
-           given={Pouya},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=1,uniquepart=given,hash=7dc89cc7608130136e24b34e753bb662}{%
-           family={Litchfield},
-           familyi={L\bibinitperiod},
-           given={Alan\bibnamedelima T},
-           giveni={A\bibinitperiod\bibinitdelim T\bibinitperiod},
-           givenun=1}}%
-      }
-      \strng{namehash}{5281ba1cc15c0b5896c99424949f87fe}
-      \strng{fullhash}{5281ba1cc15c0b5896c99424949f87fe}
-      \strng{bibnamehash}{5281ba1cc15c0b5896c99424949f87fe}
-      \strng{authorbibnamehash}{5281ba1cc15c0b5896c99424949f87fe}
-      \strng{authornamehash}{5281ba1cc15c0b5896c99424949f87fe}
-      \strng{authorfullhash}{5281ba1cc15c0b5896c99424949f87fe}
-      \field{sortinit}{A}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Big data reference architectures, a systematic literature review}
-      \field{year}{2020}
     \endentry
     \entry{MSPatterns}{misc}{}
       \name{author}{2}{}{%

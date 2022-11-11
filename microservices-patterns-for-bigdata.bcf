@@ -2235,21 +2235,18 @@
     <bcf:citekey order="49">MSPatterns</bcf:citekey>
     <bcf:citekey order="50">lankhorst2013language</bcf:citekey>
     <bcf:citekey order="51">Chaabane</bcf:citekey>
-    <bcf:citekey order="52">ataei2020big</bcf:citekey>
-    <bcf:citekey order="53">ataei2020big</bcf:citekey>
-    <bcf:citekey order="54">DataBricksSurvey</bcf:citekey>
-    <bcf:citekey order="55">DataBricksSurvey</bcf:citekey>
-    <bcf:citekey order="56">ataei2021neomycelia</bcf:citekey>
-    <bcf:citekey order="57">ataei2021neomycelia</bcf:citekey>
-    <bcf:citekey order="58">eryurek2021data</bcf:citekey>
-    <bcf:citekey order="59">eryurek2021data</bcf:citekey>
-    <bcf:citekey order="60">wieringa2014design</bcf:citekey>
-    <bcf:citekey order="61">wieringa2014design</bcf:citekey>
+    <bcf:citekey order="52">DataBricksSurvey</bcf:citekey>
+    <bcf:citekey order="53">ataei2021neomycelia</bcf:citekey>
+    <bcf:citekey order="54">ataei2021neomycelia</bcf:citekey>
+    <bcf:citekey order="55">eryurek2021data</bcf:citekey>
+    <bcf:citekey order="56">eryurek2021data</bcf:citekey>
+    <bcf:citekey order="57">wieringa2014design</bcf:citekey>
+    <bcf:citekey order="58">wieringa2014design</bcf:citekey>
+    <bcf:citekey order="59">kallio2016systematic</bcf:citekey>
+    <bcf:citekey order="60">kallio2016systematic</bcf:citekey>
+    <bcf:citekey order="61">kallio2016systematic</bcf:citekey>
     <bcf:citekey order="62">kallio2016systematic</bcf:citekey>
-    <bcf:citekey order="63">kallio2016systematic</bcf:citekey>
-    <bcf:citekey order="64">kallio2016systematic</bcf:citekey>
-    <bcf:citekey order="65">kallio2016systematic</bcf:citekey>
-    <bcf:citekey order="66">interviewGuide</bcf:citekey>
+    <bcf:citekey order="63">interviewGuide</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
