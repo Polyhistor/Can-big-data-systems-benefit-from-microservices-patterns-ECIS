@@ -93,7 +93,7 @@ Therefore, there is an increasing need for more research on reducing the complex
 
 % Though, because there might have been new propositions since then, an update might be necessary.
 
-Another concept that has the potential to help with development of BD systems is the use of microservices (MS) architecture. MS architecture allows for division of complex applications into small, independent, and highly scalable parts and, therefore, increase maintainability and allows for a more flexible implementation \citep[p.~20]{Richardson.2022}. Nevertheless, design and development of MS is sophisticated, since heterogenous services have to interact with each other to achieve the overall goal of the system. One way to reduce that complexity is the use of patterns. Comparable to RAs, they are proven artifacts on how certain problems could be solved. In the realm of MS, there are numerous patters that can be utilized, depending on the desired properties of the developed system. Despite the potential of RAs and MS architectures to solve some of complexities of BD development, to our knowledge, there is no study that properly bridge these two concepts. 
+Another concept that has the potential to help with development of BD systems is the use of microservices (MS) architecture. MS architecture allows for division of complex applications into small, independent, and highly scalable parts and, therefore, increase maintainability and allows for a more flexible implementation \citep[p.~20]{Richardson.2022}. Nevertheless, design and development of MS is sophisticated, since heterogenous services have to interact with each other to achieve the overall goal of the system. One way to reduce that complexity is the use of patterns. Comparable to RAs, they are proven artifacts on how certain problems could be solved. Despite the potential of RAs and MS architectures to solve some of complexities of BD development, to our knowledge, there is no study that properly bridge these two concepts. 
 
 % While practitioners in the domain of MS architecture seem to benefit from many well-established practices, data engineering does not seem be absorbing many of these concepts. 
 
@@ -255,7 +255,7 @@ Inspired by PRISMA checklist presented by \citet{tricco2018prisma}, Our inclusio
 
 \subsection{Developing the quality framework}
 
-Quality of the evidence collected as a result of this SLR has direct impact on the quality of the findings, making quality assessment an important undertaking. To address this, we developed a criteria made up of 7 elements. These criteria are informed by guidelines provided by Kitchenham \citet{Kitchenham.2004} on empirical research in software engineering. These 7 criteria are discussed in table \ref{qualityFramework}.
+Quality of the evidence collected as a result of this SLR has direct impact on the quality of the findings, making quality assessment an important undertaking. To address this, we developed a criteria made up of 7 elements. These criteria are informed by guidelines provided by Kitchenham \citet{Kitchenham.2004} on empirical research in software engineering. These 7 criteria are applied in three different stages (quality gates). These 7 criteria are discussed in Table \ref{qualityFramework}.
 
 % \begin{enumerate}
 %     \item 
@@ -298,23 +298,31 @@ The same approach was followed for abstracts. As a result, the first author eval
 
 \subsection{Evaluating papers based on the quality framework}
 
-After having filtered out the pooled studies based on inclusion and exclusion criteria, we initiated a deeper probing, by running the remaining studies against the quality framework. The filtering based on the quality criteria was divided into three differently focused phases, with each of them requiring the passing of a quality gate as portrayed in Table \ref{qualityFramework}. In the first phase, the aim was to ensure that reports fulfill at least a desired minimum level of comprehensiveness. For this purpose, studies were evaluated for their content to see if they are actual research or just a mere report on some lessons or expert opinions. In addition, we checked if objectives, justification, aim and context of the studies are clearly communicated.
+% After having filtered out the pooled studies based on inclusion and exclusion criteria, we initiated a deeper probing, by running the remaining studies against the quality framework. 
+
+The filtering based on the quality criteria was divided into three differently focused phases, with each of them requiring the passing of a quality gate as portrayed in Table \ref{qualityFramework}. 
+
+%  For this purpose, studies were evaluated for their content to see if they are actual research or just a mere report on some lessons or expert opinions. In addition, we checked if objectives, justification, aim and context of the studies are clearly communicated.
 
 % This last criterion is primarily geared towards actual experiments. In the conducted literature search, primarily literature-based studies were found, which somewhat devalues this aspect. Nevertheless, to assure completeness, it was still evaluated. 
 
 
-Authors independently rated the three aspects for all 23 remaining papers, giving one point respectively, if they deemed a criterion fulfilled and no point if they considered that aspect lacking. Consequently, for each aspect, zero to two points were achievable and for all aspects, six points were available per paper. For inclusion into the second phase, at least five out of six points were demanded to assure a sufficient base quality. This corresponds to having at least 75 percent of the points. In total, the authors agreed on 51 of 69 evaluations, resulting in an agreement rate of 73,9 percent.
+In the first phase, the aim was to ensure that reports fulfill at least a desired minimum level of comprehensiveness. Authors independently rated the three aspects for all 23 remaining papers, giving one point respectively, if they deemed a criterion fulfilled and no point if they considered that aspect lacking. Consequently, for each aspect, zero to two points were achievable and for all aspects, six points were available per paper. For inclusion into the second phase, at least five out of six points were demanded to assure a sufficient base quality. This corresponds to having at least 75 percent of the points. In total, the authors agreed on 51 of 69 evaluations, resulting in an agreement rate of 73,9 percent.
 
 % Two papers that obtained four out of six points were again discussed between the two authors to avoid any erroneous exclusion.
 
 % Despite that additional check, both were still removed. 
 
-The second phase was focused on rigor. In this phase, studies were judged based on their research design and the data collection methods. The general procedure with the first two authors independently evaluating the reports remained the same. For inclusion in the next phase, again, 75 percent of the obtainable point were needed (this time three out of four). In total, the authors agreed on 23 of 36 evaluations, resulting in an agreement rate of 63,9 percent. While this value is rather low, this is likely caused by the narrow margins for some decisions. 
+The second phase was focused on rigor. In this phase, studies were judged based on their research design and the data collection methods. For inclusion in the next phase, again, 75 percent of the obtainable point were needed (this time three out of four). In total, the authors agreed on 23 of 36 evaluations, resulting in an agreement rate of 63,9 percent. The papers with the highest score (this time two) were discussed before inclusion, to further counteract possible fuzziness in the individual evaluations.  
 
-Once more, the papers with the highest score (this time two) were discussed before inclusion, to further counteract possible fuzziness in the individual evaluations.  The remaining 10 papers went through the third and final phase. Here, the credibility of the reporting and the relevance of the findings were evaluated. The procedure was the same as the previous phases. However, this time, all of the remaining papers passed. In this last phase, the authors agreed on 14 of 20 evaluations, resulting in an agreement rate of exactly 70 percent. All ten publications have been published in 2018 or later, with three of them being published in 2022, which shows the timeliness of the topic. Eight of the ten papers were found via Scopus, whereas the remaining two have been identified through IEEE Xplore. These papers are described in \citet{foundPapers}.
+% While this value is rather low, this is likely caused by the narrow margins for some decisions. 
+
+
+
+The remaining 10 papers went through the third and final phase. Here, the credibility of the reporting and the relevance of the findings were evaluated. In this last phase, the authors agreed on 14 of 20 evaluations, resulting in an agreement rate of exactly 70 percent. All ten publications have been published in 2018 or later, with three of them being published in 2022, which shows the timeliness of the topic. Eight of the ten papers were found via Scopus, whereas the remaining two have been identified through IEEE Xplore. These papers are described in \citet{foundPapers}.
 
 \begin{table}
-    \renewcommand{\arraystretch}{1.5}
+    \renewcommand{\arraystretch}{1}
     \caption[]{The quality framework}
     \begin{tabular}{|p{1cm}|p{2cm}|p{10cm}|p{1.5cm}|}
         \hline
@@ -363,7 +371,7 @@ Once more, the papers with the highest score (this time two) were discussed befo
 
 \subsection{Data synthesis}
 
-After selecting the quality papers, we embarked on the data synthesis process. For this phase we follow the guidelines of thematic synthesis discussed by Cruzes et al. \citet{Cruzes.2011}. To begin, we first extracted the following data from each paper: 1) findings, 2) research motivation, 3) author, 4) title, 5) research objectives, 6) research method, 7) year. We extracted these data through coding, using the software Nvivo. After that, we created two codes: 1) patterns, and 2) quality attributes, and coded the findings based on it. By the end of this process, various themes emerged. 
+After selecting the quality papers, we embarked on the data synthesis process. For this phase we follow the guidelines of thematic synthesis discussed by Cruzes et al. \citet{Cruzes.2011}. To begin, we first extracted the following data from each paper: 1) findings, 2) research motivation, 3) author, 4) title, 5) research objectives, 6) research method, 7) year. We extracted these data through coding, using the software Nvivo. After that, we created two codes: 1) patterns, and 2) BD requirements, and coded the findings based on it. By the end of this process, various themes emerged. 
 
 
 
@@ -374,7 +382,13 @@ After selecting the quality papers, we embarked on the data synthesis process. F
 
 \section{Second Review}
 
-The second SLR is conducted by \citet{ataei2022state} on available BD RAs in academia and industry. This study is comprehensive and covers various aspects of BD RAs such as limitations, and common architectural blocks. While the common architectural constructs was discussed in in this study, the focus was not on BD system requirements. Therefore, we assessed and coded the findings of this SLR to point out the system requirements of BD systems. This was achieved by creating a new code in Nvivo called: 'software and system requirements'. This was necessary as we needed to map patterns against requirements. This is further elaborated in the results section.
+The second SLR is conducted by \citet{ataei2022state} on available BD RAs in academia and industry. This study is comprehensive and covers various aspects of BD RAs such as limitations, and common architectural blocks. The findings from this SLR helped us shaped the requirements necessary for BD systems. We do not aim to fully explore this SLR in this paper, and aim to only discussed the results of it.
+
+
+% While the common architectural constructs was discussed in in this study, the focus was not on BD system requirements. 
+
+
+% Therefore, we assessed and coded the findings of this SLR to point out the system requirements of BD systems. This was achieved by creating a new code in Nvivo called: 'software and system requirements'. This was necessary as we needed to map patterns against requirements. This is further elaborated in the results section. Requirements were further explored from other studies which is discussed in Section~\ref{requirements}
 
 
 \chapter{Results}
@@ -382,31 +396,39 @@ The second SLR is conducted by \citet{ataei2022state} on available BD RAs in aca
 
 In this section, we present with three integral elements: 1) BD software and system requirements, 2) MS patterns, 3) the mapping between the two and theories that emerged as a result.  
 
-\section{Big Data Software and System Requirements}
+\section{Big Data Software and System Requirements}\label{requirements}
 
-The results of our data synthesis emerged a few themes in regards to BD requirements. While we could find BD major building blocks and system requirements by coding the findings gained from \citet{ataei2022state} work, our coding process did not include categorization and representation of these requirements. To this end, we performed a lightweight literature review in the body of knowledge to realize three major elements: 1) the type of requirements that we need, 2) an approach to categorizing the requirements, 3) presentation of these requirements. 
+The results of our data synthesis emerged a few themes in regards to BD requirements. While we could find BD major building blocks and system requirements by coding the findings gained from \citet{ataei2022state} work, our coding process did not include categorization and representation of these requirements. To this end, we performed a lightweight literature review in the body of knowledge to realize what type of requirement is needed, how these requirements are categorised and what's the best way to present them. The results are as following:
 
-\subsection{Type of requirements}
-System and software requirements come in different flavours and can range from a formal (mathematical) specifications to sketch on a napkin. There's been various attempts to defining and classifying software and system requirements. For the purposes of this study, we opted for a well-received approach discussed by \citet{laplante2017requirements}. In this approach, requirements are classified into three major types of 1) functional requirements, 2) non-functional requirements, and 3) domain requirements. 
+\begin{enumerate}
+    \item \textbf{Type of requirements:} System and software requirements come in different and there's been various attempts to defining and classifying software and system requirements. For the purposes of this study, we opted for a well-received approach discussed by \citet{laplante2017requirements}. In this approach, requirements are classified into three major types of 1) functional requirements, 2) non-functional requirements, and 3) domain requirements. Our primary focus is one functional and domain requirements. 
+    \item \textbf{Categorizing Requirements:} For categorization of requirements, we followed the well-established categorization method based on BD characteristics, that is the 5Vs. These 5Vs are velocity, veracity, volume, variety and value \citep{Bughin2016,rad2017big}. We took inspiration from various studies such as the work of \citet{nadal2017software}, and the requirements categories presented in NIST BD Public Working Group \citep{Chang.2019}. This resulted in addition of `security and privacy' to the category of requirements.
+    \item \textbf{Presenting Requirements:} There are numerous approaches used for software and system requirement representation including informal, semiformal and formal methods. For the purposes of this study, we opted for an informal method because it is a well established method in the industry and academia \citep{kassab2014state}. Our approach follows the guidelines explained in ISO/IEC/IEEE standard \citet{ISO29148} for representing functional requirements. These requirements are described in Table \ref{table-requirements}.
 
-Our objective is to define the high-level requirements of BD systems, thus we do not fully explore 'non-functional' requirements. Majority of non-functional requirements are emerged from the particularities of an environment, such as a banking sector or healthcare, and do not correlate to our study. Our primary focus is one functional and domain requirements. 
+\end{enumerate}
 
-\subsection{Categorizing requirements} After having filtered out the right type of requirement, we then sought for a rigorous and relevant method to categorize the requirements. For this purpose, we followed the well-established categorization method based on BD characteristics, that is the 5Vs. These 5Vs are velocity, veracity, volume, variety and value \citep{Bughin2016,rad2017big}. We took inspiration from various studies such as the work of \citet{nadal2017software}, and the requirements categories presented in NIST BD Public Working Group \citep{Chang.2019}.
+
+% \subsection{Type of requirements}
+% System and software requirements come in different flavours and can range from a formal (mathematical) specifications to sketch on a napkin. There's been various attempts to defining and classifying software and system requirements. For the purposes of this study, we opted for a well-received approach discussed by \citet{laplante2017requirements}. In this approach, requirements are classified into three major types of 1) functional requirements, 2) non-functional requirements, and 3) domain requirements. 
+
+% Our objective is to define the high-level requirements of BD systems, thus we do not fully explore 'non-functional' requirements. Majority of non-functional requirements are emerged from the particularities of an environment, such as a banking sector or healthcare, and do not correlate to our study. Our primary focus is one functional and domain requirements. 
+
+% \subsection{Categorizing requirements} After having filtered out the right type of requirement, we then sought for a rigorous and relevant method to categorize the requirements. For this purpose, we followed the well-established categorization method based on BD characteristics, that is the 5Vs. These 5Vs are velocity, veracity, volume, variety and value \citep{Bughin2016,rad2017big}. We took inspiration from various studies such as the work of \citet{nadal2017software}, and the requirements categories presented in NIST BD Public Working Group \citep{Chang.2019}.
 
 % have underpinned their reference architecture on these characteristics and requirements that goes with them. Moreover, NIST BD Public Working Group embarked on a large scale study to extract requirements from variety of application domains such as Healthcare, Life Sciences, Commercial, Energy, Government, and Defense. The result of this study was the formation of general requirements under seven categories. In another effort by Volk et al. (\citet{volk2020identifying}), nine use cases for BD projects are identified by collecting theories and use cases from the literature and categorizing them using a hierarchical clustering algorithm. 
 
 % Bashari et al. (\citet{bashari2016security}) focused on the security and privacy requirements of BD systems, Yu et al. presented the modern components of BD systems (\citet{yu2019components}), Eridaputra et al. (\citet{eridaputra2014modeling}) created a generic model for BD requirements using goal oriented approaches, and Al-jaroodi et al. (\citet{al2016characteristics}) investigated general requirements to support BD software development. 
 
-In addition, we studied the RAs developed for BD systems to understand general requirements. For this purpose, we used the SLR published by \citet{ataei2022state}. This SLR assessed the body of evidence and presented with a comprehensive list of BD RAs. This study helped us realize the spectrum of BD RAs, how they are designed and the general set of requirements. By evaluating the design and requirement engineering required for BD RAs, we adjusted our initial categories of requirements and added security and privacy to it. 
+% In addition, we studied the RAs developed for BD systems to understand general requirements. For this purpose, we used the SLR published by \citet{ataei2022state}. This SLR assessed the body of evidence and presented with a comprehensive list of BD RAs. This study helped us realize the spectrum of BD RAs, how they are designed and the general set of requirements. By evaluating the design and requirement engineering required for BD RAs, we adjusted our initial categories of requirements and added security and privacy to it. 
 
-\subsection{Present requirements}
-After knowing the type and category of requirements, We looked for a rigorous approach to present these requirements. There are numerous approaches used for software and system requirement representation including informal, semiformal and formal methods. For the purposes of this study, we opted for an informal method because it is a well established method in the industry and academia \citep{kassab2014state}. Our approach follows the guidelines explained in ISO/IEC/IEEE standard \citet{ISO29148} for representing functional requirements. We have also taken inspiration from Software Engineering Body of Knowledge \citep{abran2004software}. However, our requirement representation is organized in term of BD characteristics. These requirements are described in Table \ref{table-requirements}.
+% \subsection{Present requirements}
+% After knowing the type and category of requirements, We looked for a rigorous approach to present these requirements. There are numerous approaches used for software and system requirement representation including informal, semiformal and formal methods. For the purposes of this study, we opted for an informal method because it is a well established method in the industry and academia \citep{kassab2014state}. Our approach follows the guidelines explained in ISO/IEC/IEEE standard \citet{ISO29148} for representing functional requirements. We have also taken inspiration from Software Engineering Body of Knowledge \citep{abran2004software}. However, our requirement representation is organized in term of BD characteristics. These requirements are described in Table \ref{table-requirements}.
 
 
 \begin{table*}[h]
     \centering
     \caption{BD system requirements}
-    \renewcommand*{\arraystretch}{1.8}
+    \renewcommand*{\arraystretch}{1.1}
     \begin{tabular}{|m{1.2cm}|m{14cm}|}
 
         \hline
@@ -1008,47 +1030,49 @@ One solution to this problem can be the circuit breaker pattern. Circuit breaker
 After the generation of the design theories, we sought for a suitable model of validation. This involved a thorough research in some of the well-established methods for validation such as single-case mechanism experiment, technical action research and focus groups \cite{wieringa2014design}. For the purposes of this study we chose semi-structured interviews (SSIs), following the guidelines of Kallio et al. \cite{kallio2016systematic}. 
 
 \section{Interview design}
-Our SSI methodology is made up of four phases: 1) identifying the rationale for using semi-structured interviews, 2) formulating the preliminary semi-structured interview guide, 3) pilot testing the interview guide, 4) presenting the results of the interview. SSI are suitable for our study, because our conceptual framework is made up of architectural constructs that can benefit from in-depth probing and analysis. Our questions are categorized into main themes and follow-up questions, with main themes being progressing and logical, as recommended by \cite{kallio2016systematic}. We pilot tested our interview guide using internal testing, which involved an evaluation of the preliminary interview guide with the members of the research team.
-
+Our SSI methodology is made up of four phases: 1) identifying the rationale for using semi-structured interviews, 2) formulating the preliminary semi-structured interview guide, 3) pilot testing the interview guide, 4) presenting the results of the interview. SSI are suitable for our study, because our conceptual framework is made up of architectural constructs that can benefit from in-depth probing and analysis. Our questions are categorized into main themes and follow-up questions, with main themes being progressing and logical, as recommended by \cite{kallio2016systematic}. We pilot tested our interview guide using internal testing, which involved an evaluation of the preliminary interview guide with the members of the research team. Our interview guide is available at \cite{interviewGuide}.
 
 \section{Sampling strategy}
 
-After having our interview guide designed, we used purposive sampling \citep{baltes2022sampling} to select experts. We chose purposive sampling because it allowed us to collect rich information by expert sampling. In addition, this approach enabled us to ensure representativeness and removed the need for a sampling frame. We also attempted `heterogeneity sampling' by approaching candidates from various industries. We reached out to colleagues, our connections on ResearchGate and Linkedin, and tried to look for experts with the titles 'data engineer', 'data architect', 'senior data engineer', 'solution architect', 'lead architect', and 'big data architect'. We also included founders of big data companies, or academics who have been working on BD systems. We interviewed 6 experts from various industries over a period of 3 months. An overview of these experts can be found at Table \ref{interviewees} 
+After having our interview guide designed, we used purposive sampling \citep{baltes2022sampling} to select experts. We chose purposive sampling because it allowed us to collect rich information by expert sampling. In addition, this approach enabled us to ensure representativeness and removed the need for a sampling frame. We also attempted `heterogeneity sampling' by approaching candidates from various industries. We reached out to colleagues, our connections on ResearchGate and Linkedin, and tried to look for experts with the titles 'data engineer', 'data architect', 'senior data engineer', 'solution architect', 'lead architect', and 'big data architect'. We also included founders of big data companies, or academics who have been working on BD systems. We interviewed 6 experts from various industries over a period of 3 months. An overview of these experts are as following:
 
-\begin{table}[h]
-%   \renewcommand{\arraystretch}{1.5}
-  \caption[]{Participants Demographics}
-  \begin{tabular}{|p{1.5cm}|p{8cm}|p{1cm}|p{3.5cm}|}
-      \hline
-      interviewee & Role & Years of Experience  & Industry \\  
+\begin{enumerate}[label=\textbf{i-\arabic*}] 
+    \item Lead development architect with 18 years of experience working in health care industry
+    \item Software architect with 8 years of experience working in human resource
+    \item Associate professor with 15 years of of exprience working in consulting
+    \item Senior Data Engineer with 20 years of experience working in Software industry
+    \item Big Data Architect with 8 years of experience working in insurance industry
+    \item Technical Solution Manager with 40 years of experience working in consulting
+\end{enumerate}
 
-      \hline
-      i1 & Lead Development Architect & 18 &  Healthcare Diagnostic Substances \\   
-      \hline
-      i2 & Software Architect & 8 &  Human Resources Services  \\   
-      \hline
-      i3 & Associate Professor and Co-founder of a Big Data company & 15 &  Consulting \\   
-      \hline
-      i4 & Senior Data Engineer & 20 &  Software (Practice Management Software) \\   
-      \hline
-      i5 & Big Data Architect & 8 &  Insurance and Finance \\   
-      \hline
-      i6 & Architect/Technical Solution Manager & 40 &  Consulting \\   
-      \hline
+% \begin{table}[h]
+% %   \renewcommand{\arraystretch}{1.5}
+%   \caption[]{Participants Demographics}
+%   \begin{tabular}{|p{1.5cm}|p{8cm}|p{1cm}|p{3.5cm}|}
+%       \hline
+%       interviewee & Role & Years of Experience  & Industry \\  
+
+%       \hline
+%       i1 & Lead Development Architect & 18 &  Healthcare Diagnostic Substances \\   
+%       \hline
+%       i2 & Software Architect & 8 &  Human Resources Services  \\   
+%       \hline
+%       i3 & Associate Professor and Co-founder of a Big Data company & 15 &  Consulting \\   
+%       \hline
+%       i4 & Senior Data Engineer & 20 &  Software (Practice Management Software) \\   
+%       \hline
+%       i5 & Big Data Architect & 8 &  Insurance and Finance \\   
+%       \hline
+%       i6 & Architect/Technical Solution Manager & 40 &  Consulting \\   
+%       \hline
       
-  \end{tabular}
-  \label{interviewees}
-\end{table}
+%   \end{tabular}
+%   \label{interviewees}
+% \end{table}
 
 \section{Data Synthesis}
 
-All the interviews have been done through the software Zoom. We saved all of the recordings, and then downloaded the automatically generated transcripts. Transcripts for each interview has been added to Nvivo and then codes are created. We created a code for each BD characteristics discussed in Section~\ref{requirementSpec}. After the initial coding process, through axial coding, we created higher level codes. These higher level codes were connected to create themes. 
-
-
-\section{Results}
-
-From the results of these interviews, we gathered a lot of insights and probed deep into our architectural constructs. Every interview involved in deep analysis of the design patterns with one question from the interviewee trying to understand the problem space and solution better. Our interviewees had at least 8 years of experience. Our interview guide is available at \cite{interviewGuide}.
-
+All the interviews have been done through the software Zoom. We saved all of the recordings, and then downloaded the automatically generated transcripts. Transcripts for each interview has been added to Nvivo and then codes are created. We created a code for each BD characteristics discussed in Section~\ref{requirementSpec}. After the initial coding process, through axial coding, we created higher level codes. These higher level codes were connected to create themes. From the results of these interviews, we gathered a lot of insights and probed deep into our architectural constructs.
 
 \subsection{Volume}
 

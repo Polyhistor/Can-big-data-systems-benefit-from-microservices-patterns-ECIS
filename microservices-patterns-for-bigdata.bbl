@@ -63,57 +63,6 @@
       \verb https://www.iso.org/standard/72089.html
       \endverb
     \endentry
-    \entry{abran2004software}{article}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=da88027f17ed8ea2cce776417a323de1}{%
-           family={Abran},
-           familyi={A\bibinitperiod},
-           given={Alain},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=59a2917882fa183afbb34535a78d8bb0}{%
-           family={Moore},
-           familyi={M\bibinitperiod},
-           given={James\bibnamedelima W},
-           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1047e5656cf5bda8cb1e42372563996c}{%
-           family={Bourque},
-           familyi={B\bibinitperiod},
-           given={Pierre},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=610153364be36d00e5b26f81db2091b4}{%
-           family={Dupuis},
-           familyi={D\bibinitperiod},
-           given={Robert},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=69a81d6142335b979eba17d5eeb314c0}{%
-           family={Tripp},
-           familyi={T\bibinitperiod},
-           given={L},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{1f2956c3439ea60859ceb81657d4d84a}
-      \strng{fullhash}{12f6e15b3a085cc01f531154877bc812}
-      \strng{bibnamehash}{12f6e15b3a085cc01f531154877bc812}
-      \strng{authorbibnamehash}{12f6e15b3a085cc01f531154877bc812}
-      \strng{authornamehash}{1f2956c3439ea60859ceb81657d4d84a}
-      \strng{authorfullhash}{12f6e15b3a085cc01f531154877bc812}
-      \field{sortinit}{A}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Computer Society, Angela Burgess}
-      \field{title}{Software engineering body of knowledge}
-      \field{year}{2004}
-      \field{pages}{25}
-      \range{pages}{1}
-    \endentry
     \entry{ataei2021neomycelia}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=2cbfcf6c1f060edc403539a228818399}{%
