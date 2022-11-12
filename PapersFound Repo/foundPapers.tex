@@ -1,0 +1,90 @@
+\documentclass[a4paper,11pt,article,oneside]{memoir}
+\usepackage{ecis2023}
+
+%%% About this LaTeX template: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This template should work with any (reasonably recent) full
+% installation of TeXLive or MikTeX. The "ecis2023" package loads a
+% number of other packages, so if some package is missing, please
+% install it using the package manager of your TeX distribution. In
+% particular, if the "tikz" package is missing, you may have to install
+% "pgf" or simply remove our example graphics (see figure example
+% below).
+%
+% The file "ecis2023.sty" should be placed somewhere in your TeX Path
+% (or simply in the same folder as your document).
+%
+% Please use PDFLaTeX to compile your document.
+%
+% You need not escape special characters or Umlauts like é ä ö ü ß (in 
+% fact, you shouldn't), as this source is inputenc'd in UTF-8.
+%
+% Note for BibTeX users: We use BibLaTeX for formatting, so we use Biber
+% as a sorting backend (default). 
+% If you still need to use the old BibTeX program, please change the 
+% BibLaTeX backend in the package file ("ecis2023.sty").
+%
+% The ERCIS 2023 template is based on the one created for ECIS 2019.
+% Adapted for ECIS 2023 by Tim A. Majchrzak.
+%
+% Greetings to all Information Systems researchers using LaTeX!
+%
+%%% Enter Document Info here: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\maintitle{Explanation of the found papers for the research titled: Application of microservices patterns to big data systems} % ← Don't use UPPERCASE here, we do that automatically.
+\shorttitle{Short Title (up to 5 words)} % ← This goes into the header.
+
+
+% The review process is double blind.
+% Therefore papers submitted for review MUST NOT contain any author 
+% information – neither on the title page nor in the page header! 
+% This information will be added only once the submission is ACCEPTED.
+
+%\authors{% Separate authors by a "\par" or blank line.
+%Smith, Ellen, University of Trinithlon, Trinithlon, UK, ellen.smith@utri.ac.uk
+
+%Jönsson, Mikael, University of Oxenhagen, Oxenhagen, Sweden, mikael.jonsson@inf.uox.se}
+
+%\shortauthors{Example et al.} % ← This goes into the header. 
+
+%%% BibTeX: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\addbibresource{ecis_example.bib} % ← Your .bib file, if you're using BibTeX
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\chapter{The found papers}
+
+To give an overview of the papers found in the literature review and, thereby, also provide context to the extracted knowledge, they are briefly described in the following.
+
+
+
+
+In \cite{Taibi.2018}, the authors conducted a systematic mapping study to identify microservice architecture patterns, create a corresponding catalogue that gives an overview of advantages and disadvantages, and, thereby, provide support developers in finding suitable solutions for their own needs. The initial search for literature yielded 2754 unique papers that were filtered for suitability, resulting in a final set of 42 contributions from conferences, workshops, journals, and grey literature. Besides describing the patterns and outlining in which papers their use has been described, the authors also highlighted the guiding principles of the microservice approach in general. Further, corresponding trends and open issues are discussed, amending the given comprehensive overview.
+
+The use of architectural patterns in open source projects that are based on microservices is addressed in \cite{Marquez.2018}. Similar to the previous one, this article also presents a catalog of microservices architectural patterns based on literature. Further, it relates them to quality attributes, compares them to patterns that are found in service oriented architectures, and investigates which patterns are used in microservice-based open source projects. While the general review process seems reasonable, it lacks a reporting of the number of papers assessed in each stage. However, including repeated mentioning across papers, the final set of 16 papers yielded 164 architectural patterns, with 52 stemming from academic papers and 112 from industrial ones. After further processing, those were reduced to 17 patterns that were deemed the most relevant and discussed in more detail.
+
+A review that is focused on the data management in the context of microservices is presented in \cite{Ntentos.2019}. For this purpose, instead of exploring the scientific body of literature, the grey literature was targeted, since much of the corresponding knowledge can be found in experience reports, blog entries, or system documentations, which makes it hard to obtain a comprehensive overview. In total, 35 contributions from practitioners were qualitatively explored, analysing, which patterns and practices were used by them, and which factors influenced their architectural decisions. Based on the findings, a model was proposed that formalizes the corresponding decisions and thereby facilitates a more comprehensive understanding of the domain.
+
+The modifiability of software and how it is influenced by the service-oriented architecture (SOA) as well as microservices is examined in \cite{Bogner.2019}. For this purpose, the authors firstly compiled a list of fifteen architectural modifiability tactics and mapped those with eight service-oriented design principles and eight microservice principles they extracted from selected publications. Subsequently, they presented the results of the mapping and discussed the results. Further, they analysed the relations of 42 microservice and 118 SOA patterns with the modifiability tactics. As with the principles, the patterns were also obtained by consulting specific selected publications. The identified relations are presented and the overall findings discussed, providing the reader with a rather comprehensive insight in the interplay of architectural modifiability, microservices, and SOA.
+
+A review on the relationship between microservice patterns, quality attributes, and metrics is given in \cite{Valdivia.2020}, which is an updated and extended version of the authors' previous work. To provide a comprehensive overview, both, scientific literature and grey literature were considered. While initially 605 results were found through the keyword search, the filtering reduced that number to 18. By backward snowballing for the grey literature, this number was increased to 27 for the final set that comprises 13 scientific papers and 14 from grey literature. In total, 54 patterns were identified. However, some of them are strongly related to each other or even redundant. The authors could link the identified patterns to six quality characteristics. Further, they assigned the patterns to one of six groups based on the provided benefits and analysed how many papers from scientific literature and grey literature are related to each group. Moreover, they also provided a comprehensive qualitative discussion of the groups, the respective patterns and the development over time.
+
+A second literature review on data management in a microservice context is presented in \cite{Laigner.2021}. For this purpose, a systematic literature review was conducted, where 300 peer-reviewed papers were analysed, leading to a final selection of 10 articles the authors deemed representative. Further, 9 microservice-based applications were analysed that were chosen from `more than 20' \cite{Laigner.2021} open-source project. Additionally, an online survey with more than 120 participants was conducted. In doing so, the authors found out that state-of-the-art database systems are often insufficient for the needs of practitioners, which leads to them combining multiple heterogeneous systems to fulfil their tasks. This, in turn, reduces the importance of database systems when dealing with microservices, since they often only provide data storage functionalities, with the data management logic being shifted to the application layer. Moreover, the data management logic and the common types of queries as well as the major challenges regarding the data management are discussed. Finally, the requirements for database management systems in the context of microservices are highlighted and avenues for future research are outlined.
+
+Microservice related deployment and communication patterns were collected in \cite{aksakalli2021deployment}. This was done by conducting a systematic literature review, in which initially 440 items were reviewed, with 34 primary studies being selected as relevant and amended by 4 additional contributions that were found by backward and forward snowballing. Subsequently, the final set is comprehensively presented regarding multiple quality metrics and the applied research methods. In the analysis part, the authors extensively discuss the varying deployment approaches and communication patterns for microservices. Further, they highlight the corresponding obstacles and issues, and promising directions for future research. The work is concluded by a comprehensive overview of its key findings, which are also visualized in the form of a taxonomy. 
+
+The selection of patterns and strategies in microservice systems is targeted in \cite{Waseem.2022}. For this purpose, the authors developed and evaluated four decision models that use requirements, in this case desired quality attributes, as input and output appropriate design elements. The models are also the main contribution of this work. Each of the models is focused on one specific theme. These are application decomposition, security, communication, and service discovery. As a foundation for the creation of the models, they searched the existing scientific and grey literature. From an initial set of 2110 publications, they kept 39 scientific papers and 23 grey literature items. Those contained 211 patterns and strategies for the former and 174 for the latter. After duplicate removal, there were 7 patterns and strategies left for application decomposition into microservices, 8 related to security, 15 for microservices communication, and 6 for service discovery. Each of them is briefly summarized and the advantages and disadvantages with respect to the quality attributes is discussed.
+
+How the use of patterns for the development of microservice systems affects the quality is examined in \cite{Vale.2022}. Further, it is regarded, how and why patterns are adopted in microservice systems and how quality attributes in a microservice context can be measured. However, at first, the authors introduce and describe the seven quality attributes that are used as foundation for the work. To gather new insights, the authors conducted nine semi-structured face-to-face interviews with practitioners and and microservice experts. They were questioned regarding the use of the 14 patterns from the “design and implementation” category of the cloud design patterns catalogue \cite{AAC.2022} provided in the Azure Architecture Center by Microsoft. These are described, the degree of use by the interviewees is stated, and they are linked with the quality attributes. Further, the advantages and disadvantages stated by the interviewees are compared with those that were already present in the documentation of the patterns catalogue.
+
+The list is concluded by a paper that focusses on a rather broad overview of the microservice domain \cite{Weerasinghe.2022}. For this purpose, a systematic literature review, following the PRISMA model \cite{Page.2021} was conducted. Hereby, an initial collection of 4056 items was reduced to a final set of 49 papers. The primarily regarded topics are the motivators for the conversion from a monolithic architecture to a microservice architecture, which technologies and architectural patterns occur in modern systems and which challenges arise when using the microservice architecture. Additionally, future trends are discussed. Here, the the increasing importance of cloud computing is highlighted. Other themes are the need to assure a low latency, due to the inherent inter-service communication, as well as the required skill for the development, which could be somewhat counteracted by the development of corresponding tools.
+
+
+\printbibliography
+
+\end{document}

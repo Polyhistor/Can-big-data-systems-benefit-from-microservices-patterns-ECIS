@@ -1,0 +1,23 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'foundPapers.blg'
+[84] biber-MSWIN64:322> INFO - === 
+[108] Biber.pm:415> INFO - Reading 'foundPapers.bcf'
+[223] Biber.pm:943> INFO - Found 12 citekeys in bib section 0
+[241] Biber.pm:4256> INFO - Processing section 0
+[242] Utils.pm:75> INFO - Globbing data source 'ecis_example.bib'
+[252] Utils.pm:91> INFO - Globbed data source 'ecis_example.bib' to ecis_example.bib
+[270] Biber.pm:4455> INFO - Looking for bibtex format file 'ecis_example.bib' for section 0
+[288] bibtex.pm:1653> INFO - LaTeX decoding ...
+[913] bibtex.pm:1471> INFO - Found BibTeX data source 'ecis_example.bib'
+[927] Utils.pm:304> WARN - Duplicate entry key: 'kitchenham2002preliminary' in file 'ecis_example.bib', skipping ...
+[933] Utils.pm:304> WARN - Duplicate entry key: 'klein2016reference' in file 'ecis_example.bib', skipping ...
+[934] Utils.pm:304> WARN - Duplicate entry key: 'gamma1995design' in file 'ecis_example.bib', skipping ...
+[938] Utils.pm:304> WARN - Duplicate entry key: 'rethlefsen2021prisma' in file 'ecis_example.bib', skipping ...
+[1081] Utils.pm:304> WARN - Entry 'AAC.2022' (ecis_example.bib): Invalid format '06.10.2022' of date field 'urldate' - ignoring
+[1197] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1197] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1197] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1197] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[1247] bbl.pm:652> INFO - Writing 'foundPapers.bbl' with encoding 'UTF-8'
+[1277] bbl.pm:755> INFO - Output to foundPapers.bbl
+[1278] Biber.pm:128> INFO - WARNINGS: 5

@@ -114,41 +114,6 @@
       \field{pages}{25}
       \range{pages}{1}
     \endentry
-    \entry{Ataei.2020}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=2cbfcf6c1f060edc403539a228818399}{%
-           family={Ataei},
-           familyi={A\bibinitperiod},
-           given={Pouya},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=55cfe81c799afe0018da55940d7682f1}{%
-           family={Litchfield},
-           familyi={L\bibinitperiod},
-           given={Alan},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {AIS}%
-      }
-      \strng{namehash}{956b7c6489f4419e5a5b4e0cd62c247a}
-      \strng{fullhash}{956b7c6489f4419e5a5b4e0cd62c247a}
-      \strng{bibnamehash}{956b7c6489f4419e5a5b4e0cd62c247a}
-      \strng{authorbibnamehash}{956b7c6489f4419e5a5b4e0cd62c247a}
-      \strng{authornamehash}{956b7c6489f4419e5a5b4e0cd62c247a}
-      \strng{authorfullhash}{956b7c6489f4419e5a5b4e0cd62c247a}
-      \field{extraname}{1}
-      \field{sortinit}{A}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Australasian Conference on Information Systems (ACIS) 2020}
-      \field{title}{Big Data Reference Architectures, a systematic literature review}
-      \field{year}{2020}
-    \endentry
     \entry{ataei2021neomycelia}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=2cbfcf6c1f060edc403539a228818399}{%
@@ -173,7 +138,7 @@
       \strng{authorbibnamehash}{956b7c6489f4419e5a5b4e0cd62c247a}
       \strng{authornamehash}{956b7c6489f4419e5a5b4e0cd62c247a}
       \strng{authorfullhash}{956b7c6489f4419e5a5b4e0cd62c247a}
-      \field{extraname}{2}
+      \field{extraname}{1}
       \field{sortinit}{A}
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
       \field{extradatescope}{labelyear}
@@ -210,7 +175,7 @@
       \strng{authorbibnamehash}{956b7c6489f4419e5a5b4e0cd62c247a}
       \strng{authornamehash}{956b7c6489f4419e5a5b4e0cd62c247a}
       \strng{authorfullhash}{956b7c6489f4419e5a5b4e0cd62c247a}
-      \field{extraname}{3}
+      \field{extraname}{2}
       \field{sortinit}{A}
       \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
       \field{extradatescope}{labelyear}
@@ -220,120 +185,6 @@
       \field{journaltitle}{IEEE Access}
       \field{title}{The state of big data reference architectures: a systematic literature review}
       \field{year}{2022}
-    \endentry
-    \entry{interviewGuide}{misc}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=2cbfcf6c1f060edc403539a228818399}{%
-           family={Ataei},
-           familyi={A\bibinitperiod},
-           given={Pouya},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1227c774bc1c967430244320104578c2}{%
-           family={Staegemann},
-           familyi={S\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \strng{fullhash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \strng{bibnamehash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \strng{authorbibnamehash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \strng{authornamehash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \strng{authorfullhash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \field{extraname}{1}
-      \field{sortinit}{A}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{extradate}{1}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Interview guide for the paper: Application of microservices patterns to big data systems}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://anonymous.4open.science/r/SSI-Repo-F90E/SSI.pdf
-      \endverb
-      \verb{url}
-      \verb https://anonymous.4open.science/r/SSI-Repo-F90E/SSI.pdf
-      \endverb
-    \endentry
-    \entry{MSPatterns}{misc}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=2cbfcf6c1f060edc403539a228818399}{%
-           family={Ataei},
-           familyi={A\bibinitperiod},
-           given={Pouya},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1227c774bc1c967430244320104578c2}{%
-           family={Staegemann},
-           familyi={S\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \strng{fullhash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \strng{bibnamehash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \strng{authorbibnamehash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \strng{authornamehash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \strng{authorfullhash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \field{extraname}{2}
-      \field{sortinit}{A}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{extradate}{2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Microservices patterns classified for the Paper Titled: Application of Microservices Patterns to Big Data Systems}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://anonymous.4open.science/r/MS-Patterns-5519/
-      \endverb
-      \verb{url}
-      \verb https://anonymous.4open.science/r/MS-Patterns-5519/
-      \endverb
-    \endentry
-    \entry{SLRsearchTerms}{misc}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=2cbfcf6c1f060edc403539a228818399}{%
-           family={Ataei},
-           familyi={A\bibinitperiod},
-           given={Pouya},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1227c774bc1c967430244320104578c2}{%
-           family={Staegemann},
-           familyi={S\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \strng{fullhash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \strng{bibnamehash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \strng{authorbibnamehash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \strng{authornamehash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \strng{authorfullhash}{8aa288f708817c80e8971ee19a1ae1ae}
-      \field{extraname}{3}
-      \field{sortinit}{A}
-      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
-      \field{extradate}{3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Systematic literature review search terms table for the Paper Titled: Application of Microservices Patterns to Big Data Systems}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://anonymous.4open.science/r/SLR-Search-Terms-3147/
-      \endverb
-      \verb{url}
-      \verb https://anonymous.4open.science/r/SLR-Search-Terms-3147/
-      \endverb
     \endentry
     \entry{baltes2022sampling}{article}{}
       \name{author}{2}{}{%
@@ -672,6 +523,21 @@
       \field{title}{Data Governance: The Definitive Guide}
       \field{year}{2021}
     \endentry
+    \entry{interviewGuide}{misc}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{title}{Interview guide for the paper: Application of microservices patterns to big data systems}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://anonymous.4open.science/r/SSI-Repo-F90E/SSI.pdf
+      \endverb
+      \verb{url}
+      \verb https://anonymous.4open.science/r/SSI-Repo-F90E/SSI.pdf
+      \endverb
+    \endentry
     \entry{kallio2016systematic}{article}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=672c663452d1cd4f4bc93ceb7f48d7a0}{%
@@ -989,6 +855,21 @@
       \field{pages}{3\bibrangedash 16}
       \range{pages}{14}
     \endentry
+    \entry{MSPatterns}{misc}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{title}{Microservices patterns classified for the Paper Titled: Application of Microservices Patterns to Big Data Systems}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://anonymous.4open.science/r/MS-Patterns-5519/
+      \endverb
+      \verb{url}
+      \verb https://anonymous.4open.science/r/MS-Patterns-5519/
+      \endverb
+    \endentry
     \entry{nadal2017software}{article}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=054ef7b23669100f2c1275e3664868fb}{%
@@ -1237,6 +1118,21 @@
       \verb 10.1136/bmj.n160
       \endverb
     \endentry
+    \entry{foundPapers}{misc}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{title}{Papers found for the paper: Application of microservices patterns to big data systems}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://anonymous.4open.science/r/found-papers-for-MS-and-BD-83E5/foundPapers.pdf
+      \endverb
+      \verb{url}
+      \verb https://anonymous.4open.science/r/found-papers-for-MS-and-BD-83E5/foundPapers.pdf
+      \endverb
+    \endentry
     \entry{rad2017big}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=4de3c18d6104532e8e041481f10691cd}{%
@@ -1359,6 +1255,21 @@
       \field{year}{2021}
       \field{pages}{87\bibrangedash 118}
       \range{pages}{32}
+    \endentry
+    \entry{SLRsearchTerms}{misc}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{title}{Systematic literature review search terms table for the Paper Titled: Application of Microservices Patterns to Big Data Systems}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://anonymous.4open.science/r/SLR-Search-Terms-3147/
+      \endverb
+      \verb{url}
+      \verb https://anonymous.4open.science/r/SLR-Search-Terms-3147/
+      \endverb
     \endentry
     \entry{tricco2018prisma}{article}{}
       \true{moreauthor}

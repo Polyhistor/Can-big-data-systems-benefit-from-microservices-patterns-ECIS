@@ -31,9 +31,9 @@
 %
 %%% Enter Document Info here: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\maintitle{Main title of paper} % ← Don't use UPPERCASE here, we do that automatically.
+\maintitle{Application of Microservices Patterns to Big Data Systems} % ← Don't use UPPERCASE here, we do that automatically.
 \shorttitle{Short Title (up to 5 words)} % ← This goes into the header.
-\category{Complete Research and Research in Progress} % ← Choose one by deleting the others.
+\category{Complete Research} % ← Choose one by deleting the others.
 
 % The review process is double blind.
 % Therefore papers submitted for review MUST NOT contain any author 
@@ -97,13 +97,13 @@ Another concept that has the potential to help with development of BD systems is
 
 % While practitioners in the domain of MS architecture seem to benefit from many well-established practices, data engineering does not seem be absorbing many of these concepts. 
 
-To this end, this study aims to explore the application of MS patterns to BD system, in aspiration to solve some of the complexities of BD system development. For this purposes, the result of two distinct systematic literature review (SLR) are combined. The first SLR is done by \citet{Ataei.2020} to find all BD RAs available in the body of knowledge and to point out architectural constructus and limitations. The second SLR is conducted as part of this study to collect all MS patterns in the body of knowledge. The results of these SLRs are collected, captured and combined through thematic synthesis. As a result, various design theories are generated and validated through a semi-structured interview.
+To this end, this study aims to explore the application of MS patterns to BD system, in aspiration to solve some of the complexities of BD system development. For this purposes, the result of two distinct systematic literature review (SLR) are combined. The first SLR is done by \citet{ataei2022state} to find all BD RAs available in the body of knowledge and to point out architectural constructus and limitations. The second SLR is conducted as part of this study to collect all MS patterns in the body of knowledge. The results of these SLRs are collected, captured and combined through thematic synthesis. As a result, various design theories are generated and validated through a semi-structured interview.
 
 
 % For this purpose, following this introduction as well as a background section and a description of the followed methodology, the literature review on BD reference architectures (Ataei and Litchfield 2020) is updated up until June 2022. Further, a thorough literature review on microservice patterns is conducted, complying with the Prisma guidelines (Page et al. 2021). Subsequently, the identified patterns are matched to the updated list of BD reference architectures. Finally, the results are discussed and a conclusion is given.
 
 The contribution of the publication, is thereby threefold: 
-1) it generates numerous design theories and validate them through expert opinion, 2) it assembles an overview of relevant microservice patterns and, most importantly, 2) it creates a connection between the two SLRs to facilitate BD system development and architecture.
+1) it generates numerous design theories and validate them through expert opinion, 2) it assembles an overview of relevant microservice patterns and, most importantly, 3) it creates a connection between the two SLRs to facilitate BD system development and architecture.
 
 
 % Daniel
@@ -117,7 +117,7 @@ To the best of our knowledge, there is no study in academia that has shared the 
 % Daniel
 \chapter{Methodology}
 
-Since the goal of this study is to map BD architectures and microservice patterns, it is consequently mandatory to get a comprehensive overview over both domains. For this purpose, it was decided to combine the results of two systematic literature reviews (SLR), one for each domain. Both SLRs are conducted following the guidelines presented in \citet{Kitchenham.2004} and \citet{Page.2021} on Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA). The former was used because of its clear instructions on critically appraising evidence for validity, impact and applicability in software engineering and the latter was used because it's a comprehensive and well-established methodology for increasing systematicity, transparency, and prevention of bias. To synthesize our findings, thematic synthesis proposed by Cruzes and Dyba was applied \citep{Cruzes.2011}. 
+Since the goal of this study is to map BD architectures and microservice patterns, it is consequently mandatory to get a comprehensive overview over both domains. For this purpose, it was decided to combine the results of two systematic literature reviews (SLR), one for each domain. Both SLRs are conducted following the guidelines presented in \citet{Kitchenham.2004} and \citet{Page.2021} on Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA). The former was used because of its clear instructions on critically appraising evidence for validity, impact and applicability in software engineering and the latter was used because it's a comprehensive and well-established methodology for increasing systematicity, transparency, and prevention of bias. To synthesize our findings, thematic synthesis proposed by \citet{Cruzes.2011} was applied. 
 
 % While, Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) provided us with a strong underpinning on how to conduct a SLR, it had many assumptions that arose from the healthcare and nursing domains, and did not correlate directly to our study. To overcome some of this limitations, we combined PRISMA with the guidelines of Kitchenham et al. to form a rigorous methodology. 
 
@@ -247,7 +247,7 @@ Since there are differences in the filters of the included search engines, it wa
 
 \subsection{Developing inclusion and exclusion criteria}
 
-Inspired by PRISMA checklist \citet{tricco2018prisma}, Our inclusion and exclusion criteria are formulated as following:
+Inspired by PRISMA checklist presented by \citet{tricco2018prisma}, Our inclusion and exclusion criteria are formulated as following:
 
 \textbf{Inclusion Criteria:} 1) Primary and secondary studies between Jan 1st 2012 and June 19th 2022, 2) The focus of the study is on MS patterns, and MS architectural constructs, 3) Scholarly publications such as conference proceedings and journal papers.
 
@@ -277,7 +277,7 @@ Overall, the keyword search yielded 3064 contributions. The total number of foun
 
 The remaining 1868 papers were filtered by title to evaluate their relevance to the concepts of microservice patterns or architectural constructs related to MS. For this purpose, the first two authors separately evaluated each entry. If both agreed, this verdict was honored. In case of disagreement, they discussed the title to come to a conclusion. In this phase, the first author initially included 113 papers and the second author 146. Of those, 41 were present in both sets and 1650 were excluded by both. This equates to an agreement rate of 90,5 percent (1691 of 1868 records) between the authors. After discussing the contributions with divergent evaluations, in total, 1699 of the 1868 papers were excluded, leaving 169 items for the next round. 
 
-The same approach was followed for abstracts. As a result, the first author evaluated 40 papers positively, and the second one 28. Both agreed on the inclusion of 22 papers and the exclusion of 123. This equates to an agreement rate of 85,8 percent (145 of 169 records) between the authors. In total of the 169 papers, 138 were removed and 31 were included in the next phase.
+The same approach was followed for abstracts. As a result, the first author evaluated 40 papers positively, and the second one 28. Both agreed on the inclusion of 22 papers and the exclusion of 123. This equates to an agreement rate of 85,8 percent (145 of 169 records) between the authors. In total of the 169 papers, 138 were removed and 31 were included in the next phase. From there on, the papers that were not written in English (despite the abstract being in English), were published before the year 2012, and had a length of less than six pages were removed.
 
 % It was stipulated so if the agreement could not be reached, an arbitrator would be invited to the research Yet, this was not necessary. 
 
@@ -291,7 +291,7 @@ The same approach was followed for abstracts. As a result, the first author eval
 
 % Furthermore, in SpringerLink, conference papers are classified as book chapter, since conference proceedings are published as books. This makes them indistinguishable from real book chapters, when only looking at the metadata. Book chapters are, however, not part of the search’s scope. Consequently, the removal of book chapters for SpringerLink could only be processed when inspecting the respective publications. To slightly reduce the effort, it was decided to only do this for those publications that passed the filtering by title.
 
-From there on, the papers that were not written in English (despite the abstract being in English), were published before the year 2012, and had a length of less than six pages were removed.
+
 
 % However, while there were three corresponding records in the initially obtained set of literature (from the years 2003, 2007, and 2010), those were already filtered out for other reasons by this stage. 
 
@@ -303,15 +303,15 @@ After having filtered out the pooled studies based on inclusion and exclusion cr
 % This last criterion is primarily geared towards actual experiments. In the conducted literature search, primarily literature-based studies were found, which somewhat devalues this aspect. Nevertheless, to assure completeness, it was still evaluated. 
 
 
-Authors independently rated the three aspects for all 23 remaining papers, giving one point respectively, if they deemed a criterion fulfilled and no point if they considered that aspect lacking. Consequently, for each aspect, zero to two points were achievable and for all aspects, six points were available per paper. For inclusion into the second phase, at least five out of six points were demanded to assure a sufficient base quality. This corresponds to having at least 75 percent of the points. 
+Authors independently rated the three aspects for all 23 remaining papers, giving one point respectively, if they deemed a criterion fulfilled and no point if they considered that aspect lacking. Consequently, for each aspect, zero to two points were achievable and for all aspects, six points were available per paper. For inclusion into the second phase, at least five out of six points were demanded to assure a sufficient base quality. This corresponds to having at least 75 percent of the points. In total, the authors agreed on 51 of 69 evaluations, resulting in an agreement rate of 73,9 percent.
 
 % Two papers that obtained four out of six points were again discussed between the two authors to avoid any erroneous exclusion.
 
 % Despite that additional check, both were still removed. 
 
-In total, the authors agreed on 51 of 69 evaluations, resulting in an agreement rate of 73,9 percent. The second phase was focused on rigor. In this phase, studies were judged based on their research design and the data collection methods. The general procedure with the first two authors independently evaluating the reports remained the same. For inclusion in the next phase, again, 75 percent of the obtainable point were needed (this time three out of four). In total, the authors agreed on 23 of 36 evaluations, resulting in an agreement rate of 63,9 percent. While this value is rather low, this is likely caused by the narrow margins for some decisions. 
+The second phase was focused on rigor. In this phase, studies were judged based on their research design and the data collection methods. The general procedure with the first two authors independently evaluating the reports remained the same. For inclusion in the next phase, again, 75 percent of the obtainable point were needed (this time three out of four). In total, the authors agreed on 23 of 36 evaluations, resulting in an agreement rate of 63,9 percent. While this value is rather low, this is likely caused by the narrow margins for some decisions. 
 
-Once more, the papers with the highest score (this time two) were discussed before inclusion, to further counteract possible fuzziness in the individual evaluations.  The remaining 10 papers went through the third and final phase. Here, the credibility of the reporting and the relevance of the findings were evaluated. The procedure was the same as the previous phases. However, this time, all of the remaining papers passed. In this last phase, the authors agreed on 14 of 20 evaluations, resulting in an agreement rate of exactly 70 percent. 
+Once more, the papers with the highest score (this time two) were discussed before inclusion, to further counteract possible fuzziness in the individual evaluations.  The remaining 10 papers went through the third and final phase. Here, the credibility of the reporting and the relevance of the findings were evaluated. The procedure was the same as the previous phases. However, this time, all of the remaining papers passed. In this last phase, the authors agreed on 14 of 20 evaluations, resulting in an agreement rate of exactly 70 percent. All ten publications have been published in 2018 or later, with three of them being published in 2022, which shows the timeliness of the topic. Eight of the ten papers were found via Scopus, whereas the remaining two have been identified through IEEE Xplore. These papers are described in \citet{foundPapers}.
 
 \begin{table}
     \renewcommand{\arraystretch}{1.5}
@@ -359,7 +359,7 @@ Once more, the papers with the highest score (this time two) were discussed befo
 % TBC
 % The final set of literature that is the output of the conducted review process is shown in Table 4.  
 
-All ten publications have been published in 2018 or later, with three of them being published in 2022, which shows the timeliness of the topic. Eight of the ten papers were found via Scopus, whereas the remaining two have been identified through IEEE Xplore. 
+
 
 \subsection{Data synthesis}
 
@@ -384,7 +384,7 @@ In this section, we present with three integral elements: 1) BD software and sys
 
 \section{Big Data Software and System Requirements}
 
-The results of our data synthesis emerged a few themes in regards to BD requirements. While we could find BD major building blocks and system requirements by coding the findings gained from \citet{ataei2022state} work, our coding process did not include categorization and representation of these requirements. We also did not know what type of requirements is the most suitable to the goal of this study. To this end, we performed a lightweight literature review in the body of knowledge to realize three major elements: 1) the type of requirements that we need, 2) an approach to categorizing the requirements, 3) presentation of these requirements. 
+The results of our data synthesis emerged a few themes in regards to BD requirements. While we could find BD major building blocks and system requirements by coding the findings gained from \citet{ataei2022state} work, our coding process did not include categorization and representation of these requirements. To this end, we performed a lightweight literature review in the body of knowledge to realize three major elements: 1) the type of requirements that we need, 2) an approach to categorizing the requirements, 3) presentation of these requirements. 
 
 \subsection{Type of requirements}
 System and software requirements come in different flavours and can range from a formal (mathematical) specifications to sketch on a napkin. There's been various attempts to defining and classifying software and system requirements. For the purposes of this study, we opted for a well-received approach discussed by \citet{laplante2017requirements}. In this approach, requirements are classified into three major types of 1) functional requirements, 2) non-functional requirements, and 3) domain requirements. 
