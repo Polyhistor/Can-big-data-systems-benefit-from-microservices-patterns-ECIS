@@ -93,7 +93,7 @@ Therefore, there is an increasing need for more research on reducing the complex
 
 % Though, because there might have been new propositions since then, an update might be necessary.
 
-Another concept that has the potential to help with development of BD systems is the use of microservices (MS) architecture. MS architecture allows for division of complex applications into small, independent, and highly scalable parts and, therefore, increase maintainability and allows for a more flexible implementation \citep[p.~20]{Richardson.2022}. Nevertheless, design and development of MS is sophisticated, since heterogenous services have to interact with each other to achieve the overall goal of the system. One way to reduce that complexity is the use of patterns. Comparable to RAs, they are proven artifacts on how certain problems could be solved. Despite the potential of RAs and MS architectures to solve some of complexities of BD development, to our knowledge, there is no study that properly bridge these two concepts. 
+Another concept that has the potential to help with development of BD systems is the use of microservices (MS) architecture. MS architecture allows for division of complex applications into small, independent, and highly scalable parts and, therefore, increase maintainability and allows for a more flexible implementation \citep[p.~20]{Richardson.2022}. Nevertheless, design and development of MS is sophisticated, since heterogenous services have to interact with each other to achieve the overall goal of the system. One way to reduce that complexity is the use of patterns. Comparable to RAs, they are proven artifacts on how certain problems could be solved. Despite the potential of MS architectures to solve some of complexities of BD development, to our knowledge, there is no study that properly bridge these two concepts. 
 
 % While practitioners in the domain of MS architecture seem to benefit from many well-established practices, data engineering does not seem be absorbing many of these concepts. 
 
@@ -111,7 +111,7 @@ The contribution of the publication, is thereby threefold:
 
 To the best of our knowledge, there is no study in academia that has shared the same goal as our study. \citet{laigner2020monolithic} applied an action research and reported on their experience on replacing a legacy BD system with a microservice based event-driven system. This study is not a systematic review and aims to create contextualized theory based on a specific experience. In another effort, \citet{zhelev2019using} described why event-driven architectures could be a good alternative to monolithic architectures. This study does not follow any clear methodology, and seems to contribute only in terms of untested theory.
 
-\citet{staegemann2021examining} examined the interplay between BD and MS by conducting a bibliometric review. This study aims to provide with a general picture of the topic, and does not aim to explore MS patterns and their relationship to BD systems.  While the problem of BD system development has been approached through a RA that absorbs some of the concepts from MS as seen in Phi \citep{phi} and Neomycelia \citep{ataei2021neomycelia}, there is no study that aimed to apply MS patterns to BD systems through a systematic methodology.
+\citet{staegemann2021examining} examined the interplay between BD and MS by conducting a bibliometric review. This study aims to provide with a general picture of the topic, and does not aim to explore MS patterns and their relationship to BD systems.  While the problem of BD system development has been approached through a RA that absorbs some of the concepts from MS as seen in Phi \citep{phi} and Neomycelia \citep{ataei2021neomycelia}, there is no study that aimed to apply MS patterns to BD systems through a systematic syntehsis.
 
 
 % Daniel
@@ -136,11 +136,9 @@ Since the goal of this study is to map BD architectures and microservice pattern
 The first SLR, was a rigorous approach from scratch and was conducted in the following steps: 1) selecting data sources 2) developing a search strategy 3) developing inclusion and exclusion criteria, 4) developing the quality framework 5) pooling literature based on the search strategy, 6) removing duplicates, 7) scanning studies titles based on inclusion and exclusion criteria, 8) removing studies based on publication types, 9) scanning studies abstract and title based on inclusion and exclusion criteria, 10) assessing studies based on the quality framework (includes three phases), 11) extracting data from the remaining papers, 12) coding the extracted data, 13) creating themes out of codes, 14) presenting the results. These steps are not direct mappings to the following sub-sections. Some sub-sections include several of these steps.
 
 
-\subsection{Selecting data sources}
+\subsection{Selecting data sources and developing a search strategy}
 
 To assure the comprehensiveness of the review, a broad set of scientific search engines and databases was queried. To increase the likelihood of finding all relevant contributions, it was decided to not discriminate between meta databases and publisher bound registers. Thus, both types were utilized. To achieve this, ACM Digital Library, AISeL, IEEE Xplore, JSTOR, Science Direct, Scopus, Springer Link, and Wiley were included into the search process. For all of these, the initial keyword search was conducted on June 19, 2022, and there was no limitation to the considered publishing date.
-
-\subsection{Developing a search strategy}
 
 Since there are differences in the filters of the included search engines, it was not possible to always use the exact same search terms and settings. Nevertheless, the configurations for the search were kept as similar as possible. The exact keywords and search strategy used can be found at \citet{SLRsearchTerms}. These search terms are chosen because \emph{patterns} are exactly what was sought for, \emph{architectures} can contain such patterns, and \emph{design} is often used as a synonym for architecture. Further, patterns can be seen as \emph{building blocks}, therefore, the building blocks was also included. 
 
@@ -245,7 +243,7 @@ Since there are differences in the filters of the included search engines, it wa
 
 % As it can be seen at \citet{SLRsearchTerms}, due to the specifics of their search masks, the searches in the ACM Digital Library (title, abstract, keywords could only be searched separately), JSTOR (no support of wildcards), and Science Direct (no support of wildcards) had to be split in several parts. Those were afterwards merged for each of them, and duplicates were removed. 
 
-\subsection{Developing inclusion and exclusion criteria}
+\subsection{Developing inclusion, exclusion criteria and the quality framework}
 
 Inspired by PRISMA checklist presented by \citet{tricco2018prisma}, Our inclusion and exclusion criteria are formulated as following:
 
@@ -253,9 +251,9 @@ Inspired by PRISMA checklist presented by \citet{tricco2018prisma}, Our inclusio
 
 \textbf{Exclusion Criteria:} 1) Studies that are not written in English, 2) Informal literature surveys without any clearly defined research questions or research process, 3) Duplicate reports of the same study (a conference and journal version of the same paper). In such cases, the conference paper was removed. 4) Complete duplicates (not just Updates) were also removed. 5) Short papers (less than 6 pages).
 
-\subsection{Developing the quality framework}
+% \subsection{Developing the quality framework}
+\textbf{Quality Framework:} Quality of the evidence collected as a result of this SLR has direct impact on the quality of the findings, making quality assessment an important undertaking. To address this, we developed a criteria made up of 7 elements. These criteria are informed by guidelines provided by Kitchenham \citet{Kitchenham.2004} on empirical research in software engineering. These 7 criteria are applied in three different stages (quality gates). These 7 criteria are discussed in Table \ref{qualityFramework}.
 
-Quality of the evidence collected as a result of this SLR has direct impact on the quality of the findings, making quality assessment an important undertaking. To address this, we developed a criteria made up of 7 elements. These criteria are informed by guidelines provided by Kitchenham \citet{Kitchenham.2004} on empirical research in software engineering. These 7 criteria are applied in three different stages (quality gates). These 7 criteria are discussed in Table \ref{qualityFramework}.
 
 % \begin{enumerate}
 %     \item 
@@ -382,7 +380,7 @@ After selecting the quality papers, we embarked on the data synthesis process. F
 
 \section{Second Review}
 
-The second SLR is conducted by \citet{ataei2022state} on available BD RAs in academia and industry. This study is comprehensive and covers various aspects of BD RAs such as limitations, and common architectural blocks. The findings from this SLR helped us shaped the requirements necessary for BD systems. We do not aim to fully explore this SLR in this paper, and aim to only discussed the results of it.
+The second SLR is conducted by \citet{ataei2022state} on available BD RAs in academia and industry. This is comprehensive study that covers various aspects of BD RAs such as limitations, and common architectural blocks. The findings from this SLR helped us shaped the requirements necessary for BD systems. We do not explore this SLR in this paper, and aim to only discuss the results of it.
 
 
 % While the common architectural constructs was discussed in in this study, the focus was not on BD system requirements. 
@@ -882,9 +880,7 @@ As a result of this SLR, our data synthesis yielded 50 MS patterns. These patter
 \chapter{Application of Microservices Design Patterns to Big Data Systems}
 
 
-In this section, we combine our findings from both SLRs, and present new theories on application of MS design patterns for BD systems. The patterns gleaned are established theories that are derived from actual problems in MS systems in practice, thus we do not aim to re-validate them in this study. 
-
-The main contribution of our work is to propose new theories and try to apply some of the well-known software engineering patterns to the realm of data engineering and in specific BD. Based on this, we map BD system requirements against a pattern and provide with reasoning on why such pattern might work for BD systems. We support our arguments by the means of modeling. We use Archimate \citep{lankhorst2013language} as recommend in ISO/IEC/IEEE 42010 \citep{Chaabane}. 
+In this section, we combine our findings from both SLRs, and present new theories on application of MS design patterns for BD systems. The patterns gleaned are established theories that are derived from actual problems in MS systems in practice, thus we do not aim to re-validate them in this study. The main contribution of our work is to propose new theories in regards to application of MS patterns to BD systems. To achieve this, we map BD system requirements against a pattern and provide with reasoning on why such pattern might work for BD systems. We support our arguments by the means of modeling. We use Archimate \citep{lankhorst2013language} as recommend in ISO/IEC/IEEE 42010 \citep{Chaabane}. 
 
 % BD systems and microservices architecture are both inherently distributed. While many of the current BD systems are designed underlying a monolithic data pipeline architecture, here, we propose microservices architecture for a domain-driven and decentralized BD architecture.
 
@@ -906,9 +902,10 @@ Given the challenges and particularities of data types, different nodes may be s
 % Another popular approach is the segregation of concerns by separating batch and streaming processing nodes. Given the requirement of horizontal scaling for BD systems, it is safe to assume that there is usually more then one node associated to ingesting data.
 
 
-Moreover, if data producers directly communicate with the processing nodes, they will have to update the endpoint address every now and on. This issue is exacerbated when the data producer tries to communicate to a service that is down. Given that lifecycle of a service in a typical distributed cloud environment is not deterministic and many container orchestration systems constantly recycle services to proactively address this issue, reliability and maintainability of the BD system can be compromised. 
+Moreover, if data producers directly communicate with the processing nodes, they will have to update the endpoint address every now and on. This issue is exacerbated when the data producer tries to communicate to a service that is down. Given that lifecycle of a service in a typical distributed cloud environment is not deterministic and many container orchestration systems constantly recycle services to proactively address this issue, reliability and maintainability of the BD system can be compromised. This pattern is portrayed in Figure \ref{fig:RA}. 
 
-Additionally, the gateway can increase the system reliability and availability by doing a constant health check on services, and distribute traffic based on liveliness probes. There are other benefits to to these patterns suich as weighted distribution, customized cache mechanism through specific HTTP headers, and consolidated security. This also means that if the gateway is down, service nodes won't introduce bad state into the overall system. We have portrayed a simplistic representation of this pattern in Figure \ref{fig:RA}. 
+% on the fence!
+% Additionally, the gateway can increase the system reliability and availability by doing a constant health check on services, and distribute traffic based on liveliness probes. There are other benefits to to these patterns suich as weighted distribution, customized cache mechanism through specific HTTP headers, and consolidated security. This also means that if the gateway is down, service nodes won't introduce bad state into the overall system. We have portrayed a simplistic representation of this pattern in Figure \ref{fig:RA}. 
 
 \subsubsection{External Configuration Store}
 
@@ -920,7 +917,7 @@ By externalizing all nodes configuration to another service, each node can reque
 
 \begin{figure*}[h]
     \centering 
-    \includegraphics[width=17cm]{Media/All together.jpg}
+    \includegraphics[width=16.5cm]{Media/All together.jpg}
     \caption{Big data reference architecture with microservices patterns}
     \label{fig:RA}
 \end{figure*}
@@ -1275,7 +1272,7 @@ Majority of the studies that we've analyzed to understand BD systems, seems to r
 
 With all the undeniable benefits of BD, the success rate of BD projects is still rare. One of the core challenges of adopting BD lies in data architecture and data engineering. While software engineers have adopted many well-established methods and technologies, data engineering and BD architectures don't seem to benefit a lot from these advancements. 
 
-The aim of this study was to explore the relationship and application of MS architecture to BD systems through two distinct SLR. The results derived from these SLRs presented us with interesting data on the potential of MS patterns for BD systems. Given the distributed nature of BD systems, MS architectures seems to be a natural fit to solve myriad of problems that comes with decentralization. Even though we created many design theories, modeled patterns against systems, and validated our theories, we believe that our results could be further validated by more empirical studies, prototyping, and even creation of RAs.
+The aim of this study was to explore the relationship and application of MS architecture to BD systems through two distinct SLR. The results derived from these SLRs presented us with interesting data on the potential of MS patterns for BD systems. Given the distributed nature of BD systems, MS architectures seems to be a natural fit to solve myriad of problems that comes with decentralization. Even though we created many design theories, modeled patterns against systems, and validated our theories, we believe that our results could be further validated by more empirical studies, such as prototyping.
 
 
 
