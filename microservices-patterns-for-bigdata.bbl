@@ -421,57 +421,6 @@
       \verb https://www.newvantage.com/thoughtleadership
       \endverb
     \endentry
-    \entry{eryurek2021data}{book}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=7deed8201d7ecdf92db88da71d83ee97}{%
-           family={Eryurek},
-           familyi={E\bibinitperiod},
-           given={Evren},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1e5b868a4a74c46a0006a58b891d4bc2}{%
-           family={Gilad},
-           familyi={G\bibinitperiod},
-           given={Uri},
-           giveni={U\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=543dd8410294b25575aa63d099a47804}{%
-           family={Lakshmanan},
-           familyi={L\bibinitperiod},
-           given={Valliappa},
-           giveni={V\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=77e293f6f3ec237b5554bcfd0dfc0a57}{%
-           family={Kibunguchy-Grant},
-           familyi={K\bibinithyphendelim G\bibinitperiod},
-           given={Anita},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=e30a0e5b3fd53c218d7c897b14d11669}{%
-           family={Ashdown},
-           familyi={A\bibinitperiod},
-           given={Jessi},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {" OŔeilly Media, Inc."}%
-      }
-      \strng{namehash}{8d1aa26a5daeb138f5b62300d8419544}
-      \strng{fullhash}{6212a1749cfe48e46ba7e4414355dca0}
-      \strng{bibnamehash}{6212a1749cfe48e46ba7e4414355dca0}
-      \strng{authorbibnamehash}{6212a1749cfe48e46ba7e4414355dca0}
-      \strng{authornamehash}{8d1aa26a5daeb138f5b62300d8419544}
-      \strng{authorfullhash}{6212a1749cfe48e46ba7e4414355dca0}
-      \field{sortinit}{E}
-      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Data Governance: The Definitive Guide}
-      \field{year}{2021}
-    \endentry
     \entry{interviewGuide}{misc}{}
       \field{sortinit}{I}
       \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
@@ -1120,6 +1069,48 @@
       \field{year}{2017}
       \field{pages}{38}
       \range{pages}{1}
+    \endentry
+    \entry{rada2017hype}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=3520cd79043c68c84def25dd372fd577}{%
+           family={Rada},
+           familyi={R\bibinitperiod},
+           given={Babak\bibnamedelima Bashari},
+           giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c486d829146eb8b342ab58befa882d0}{%
+           family={Ataeib},
+           familyi={A\bibinitperiod},
+           given={Pouya},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c977c2522164e93ae27e4c0b3660c301}{%
+           family={Khakbizc},
+           familyi={K\bibinitperiod},
+           given={Yasaman},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8ffcc74253b721ebd108665525c4b8d2}{%
+           family={Akbarzadehd},
+           familyi={A\bibinitperiod},
+           given={Nafisseh},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{171b52c36a9c5b8910f24ab9c239d2eb}
+      \strng{fullhash}{5b2acccae0e3dd4d30595bbb22ec7057}
+      \strng{bibnamehash}{5b2acccae0e3dd4d30595bbb22ec7057}
+      \strng{authorbibnamehash}{5b2acccae0e3dd4d30595bbb22ec7057}
+      \strng{authornamehash}{171b52c36a9c5b8910f24ab9c239d2eb}
+      \strng{authorfullhash}{5b2acccae0e3dd4d30595bbb22ec7057}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The hype of emerging technologies: Big data as a service}
+      \field{year}{2017}
     \endentry
     \entry{Richardson.2022}{misc}{}
       \name{author}{1}{}{%
