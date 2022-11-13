@@ -1022,14 +1022,12 @@ One approach to this problem could be the pipes and filters pattern. By implemen
 
 \chapter{Validation}
 
-After the generation of the design theories, we sought for a suitable model of validation. This involved a thorough research in some of the well-established methods for validation such as single-case mechanism experiment, technical action research and focus groups \cite{wieringa2014design}. For the purposes of this study we chose semi-structured interviews (SSIs), following the guidelines of Kallio et al. \cite{kallio2016systematic}. 
+After the generation of the design theories, we sought for a suitable model of validation. This involved a thorough research in some of the well-established methods for validation such as single-case mechanism experiment, technical action research and focus groups \cite{wieringa2014design}. For the purposes of this study we chose semi-structured interviews (SSIs), following the guidelines of \cite{kallio2016systematic}. 
 
-\section{Interview design}
-Our SSI methodology is made up of four phases: 1) identifying the rationale for using semi-structured interviews, 2) formulating the preliminary semi-structured interview guide, 3) pilot testing the interview guide, 4) presenting the results of the interview. SSI are suitable for our study, because our conceptual framework is made up of architectural constructs that can benefit from in-depth probing and analysis. Our questions are categorized into main themes and follow-up questions, with main themes being progressing and logical, as recommended by \cite{kallio2016systematic}. We pilot tested our interview guide using internal testing, which involved an evaluation of the preliminary interview guide with the members of the research team. Our interview guide is available at \cite{interviewGuide}.
+\section{Interview design and Sampling strategy}
+Our SSI methodology is made up of four phases: 1) identifying the rationale for using semi-structured interviews, 2) formulating the preliminary semi-structured interview guide, 3) pilot testing the interview guide, 4) presenting the results of the interview. SSI are suitable for our study, because our conceptual framework is made up of architectural constructs that can benefit from in-depth probing and analysis. Our questions are categorized into main themes and follow-up questions, with main themes being progressing and logical. We pilot tested our interview guide using internal testing, which involved an evaluation of the preliminary interview guide with the members of the research team. Our interview guide is available at \cite{interviewGuide}.
 
-\section{Sampling strategy}
-
-After having our interview guide designed, we used purposive sampling \citep{baltes2022sampling} to select experts. We chose purposive sampling because it allowed us to collect rich information by expert sampling. In addition, this approach enabled us to ensure representativeness and removed the need for a sampling frame. We also attempted `heterogeneity sampling' by approaching candidates from various industries. We reached out to colleagues, our connections on ResearchGate and Linkedin, and tried to look for experts with the titles 'data engineer', 'data architect', 'senior data engineer', 'solution architect', 'lead architect', and 'big data architect'. We also included founders of big data companies, or academics who have been working on BD systems. We interviewed 6 experts from various industries over a period of 3 months. An overview of these experts are as following:
+For sampling strategy, we used purposive sampling \citep{baltes2022sampling} to select experts. We chose purposive sampling because it allowed us to collect rich information by expert sampling. In addition, this approach enabled us to ensure representativeness and removed the need for a sampling frame. We also attempted `heterogeneity sampling' by approaching candidates from various industries. We reached out to colleagues, our connections on ResearchGate and Linkedin, and tried to look for experts with the titles 'data engineer', 'data architect', 'senior data engineer', 'solution architect', 'lead architect', and 'big data architect'. In addition, we included academics who have been working on BD systems. We interviewed 6 experts from various industries over a period of 3 months. An overview of these experts are as following:
 
 \begin{enumerate}[label=\textbf{i-\arabic*}] 
     \item Lead development architect with 18 years of experience working in health care industry
@@ -1067,24 +1065,32 @@ After having our interview guide designed, we used purposive sampling \citep{bal
 
 \section{Data Synthesis}
 
-All the interviews have been done through the software Zoom. We saved all of the recordings, and then downloaded the automatically generated transcripts. Transcripts for each interview has been added to Nvivo and then codes are created. We created a code for each BD characteristics discussed in Section~\ref{requirementSpec}. After the initial coding process, through axial coding, we created higher level codes. These higher level codes were connected to create themes. From the results of these interviews, we gathered a lot of insights and probed deep into our architectural constructs.
+All the interviews have been done through the software Zoom. We saved all of the recordings, and then downloaded the automatically generated transcripts. Transcripts for each interview has been added to Nvivo and then codes are created. We created a code for each BD characteristics discussed in Section~\ref{requirements}. 
+
+% After the initial coding process, through axial coding, we created higher level codes. These higher level codes were connected to create themes. From the results of these interviews, we gathered a lot of insights and probed deep into our architectural constructs.
 
 \subsection{Volume}
 
-For volume, we went through the theories elaborated in Section~\ref{volumeSection}. All of the interviewees took the idea of API gateway and gateway offloading naturally, while we had to explore the 'external configuration store' a bit deeper. We used the idea of Kubernetes ingress to help with elaboration of API gateway. We used AWS load balancer example, and discussed the challenges of maintaining certificates and authentication. For the externalized configuration pattern we had to go a bit deeper and talk about a scenario in a which the developer of the batch processing node may need to account for the development, trial and production workloads that have different DNS requirements, and configurations. We discussed how environment variables may vary, have development and trial environments may not need as much resources as the production, how ingress may vary.
+For volume, we went through the theories elaborated in Section~\ref{volumeSection}. All of the interviewees took the idea of API gateway and gateway offloading naturally, while we had to explore the 'external configuration store' a bit deeper. We used the idea of Kubernetes ingress to help with elaboration of API gateway. For the externalized configuration pattern, We discussed how environment variables may vary, have development and trial environments may not need as much resources as the production.
 
-\,
+After explaining a scenario, interviewees agreed that external configuration store pattern can help with some of the challenges of data engineering. One interviewee mentioned that this can even be utilized for special privacy requirements. In addition, there's been discussion in regards to regional privacy and security requirements and how configuration can help derive them. One of the interviewees from insurance and finance sector mentioned that scaling the gateway and corresponding nodes may not be as easy as it seems. He mentioned that during normal days there are hardly any claims, and while there's a special event, the storm comes.  Another interviewee from the financial sector has affirmed us that gateway offloading and API gateways are pretty common patterns, and he has witnessed it in several major banks
 
-\setlength{\fboxsep}{0.7em}
-\noindent\fbox{%
-    \parbox{\textwidth}{%
-       Gateways are useful constructs. External configuration store can help alleviate challenges with distributed systems in multi-environment multi-region setups. 
-    }%
-}
+% \,
 
-% After explaining a scenario, interviewees agreed that external configuration store pattern can help with some of the challenges of data engineering. One interviewee mentioned that this can even be utilized for special privacy requirements. In addition, there's been discussion in regards to regional privacy and security requirements and how configuration can help derive them. Some interviewees discussed that this is a general pattern that any system can utilize to its benefit. 
+% \setlength{\fboxsep}{0.7em}
+% \noindent\fbox{%
+%     \parbox{\textwidth}{%
+%        Gateways are useful constructs. External configuration store can help alleviate challenges with distributed systems in multi-environment multi-region setups. 
+%     }%
+% }
 
-% Another interviewee discussed how they are taking extensive measures to embark on a fully event-driven process, and how a lot of things that we theorize and modeled may sound easy to do, but daunting to implement. The interviewee explained how they are planning to store data in their AWS S3 initially and then having a Lambda function trigger to start the ETL process. The interviewee then explained how they need to obtain different configurations from different data providers, and how that can affect the data prepared for data consumers. He discussed an archetype in which the data would be stored in AWS S3, which triggers a Lambda function to initial an ETL process. Furthermore, he added how externalized configuration pattern could be implemented with DynamoDB and Lambda functions.
+
+
+%  Some interviewees discussed that this is a general pattern that any system can utilize to its benefit. 
+
+% Another interviewee discussed how they are taking extensive measures to embark on a fully event-driven process, and how a lot of things that we theorize and modeled may sound easy to do, but daunting to implement. 
+
+% The interviewee explained how they are planning to store data in their AWS S3 initially and then having a Lambda function trigger to start the ETL process. The interviewee then explained how they need to obtain different configurations from different data providers, and how that can affect the data prepared for data consumers. He discussed an archetype in which the data would be stored in AWS S3, which triggers a Lambda function to initial an ETL process. Furthermore, he added how externalized configuration pattern could be implemented with DynamoDB and Lambda functions.
 
 % One of the interviewees from insurance and finance sector mentioned that scaling the gateway and corresponding nodes may not be as easy as it seems. He mentioned that during normal days there are hardly any claims, and while there's a special event, the storm comes. The interviewee mentioned that scaling forecast is usually based on historical data. Further, he mentioned that even the delay in auto-scaling groups in AWS can be problematic for them. 
 
@@ -1097,18 +1103,18 @@ For volume, we went through the theories elaborated in Section~\ref{volumeSectio
 
 \subsection{Velocity}
 
-For Velocity, we first started by exploring an event-driven data engineering architecture, and then justified the idea of competing consumers. We then explored how competing consumers can fail, and how circuit breaker pattern can help. Finally we explore the idea of logging and how tail logging and distributed tracing can be achieved through it. An interviewee challenged the idea of competing consumer and stated that a leader election may be a better choice for a distributed setup as such. The interviewee also mentioned that circuit breakers could be implemented on the competing consumers themselves, but he could see the value of separating it to its own service. Of particular argument was the fact that circuit breaker's implementation may not be that complicated and a dedicated service for it can increase costs.  
+For Velocity, we first started by exploring an event-driven data engineering architecture, and then justified the idea of competing consumers. We then explored how competing consumers can fail, and how circuit breaker pattern can help. Finally we explore the idea of logging and how tail logging and distributed tracing can be achieved through it. An interviewee challenged the idea of competing consumer and stated that a leader election may be a better choice for a distributed setup as such. The interviewee also mentioned that circuit breakers could be implemented on the competing consumers themselves, but he could see the value of separating it to its own service.  
 
-In another interview, interviewee asked about the amalgamation technique for the logs, and discussed how dimensionality of the logs can be challenging. In an another interviewee, the candidate brough to light the challenges of time-sychroonization in log aggregator pattern. The candidate, who had a background in financial sector, discussed how handling logs from a large amount of can introduce a challenge of its own. He continued to describe how critical these logs can be during sensitive stream processing tasks, and how data can easily get into petabytes in the banks. 
+In another interview, interviewee asked about the amalgamation technique for the logs, and discussed how dimensionality of the logs can be challenging. One candidate brough to light the challenges of time-sychroonization in log aggregator pattern. The candidate, who had a background in financial sector, discussed how handling large amount of log data can introduce a challenge of its own. He continued to describe how critical these logs can be during sensitive stream processing tasks, and how data can easily get into petabytes in the banks. 
 
-\,
+% \,
 
-\setlength{\fboxsep}{0.7em}
-\noindent\fbox{%
-    \parbox{\textwidth}{%
-       Competing consumers comes naturall to data engineering. Circuit breakers can increase reliability of the pipelines. Log aggregator requires a multi-level presentation with time-synchronization in mind.
-    }%
-}
+% \setlength{\fboxsep}{0.7em}
+% \noindent\fbox{%
+%     \parbox{\textwidth}{%
+%        Competing consumers comes naturall to data engineering. Circuit breakers can increase reliability of the pipelines. Log aggregator requires a multi-level presentation with time-synchronization in mind.
+%     }%
+% }
 
 
 % We took both feedbacks of 'leader election' and 'more in-detailed logging approach' into consideration. We researched deeper into leader election, logging approaches, and distributed tracing. We found leader election a bit hard to justify, as it introduces a single point of failure, can potentially introduce faulty data as there's only one point of trust, and partial deployments are really hard to apply. We found that benefits of 'leader election' pattern to be outweighed by the complexity it introduces. In regards to logging, we found various approaches to distributed tracing and log merging, however these were mostly in-detailed micro approaches, which is not in the scope of our study. 
@@ -1128,24 +1134,24 @@ In another interview, interviewee asked about the amalgamation technique for the
 
 \subsection{Variety}
 
-For variety, we discussed common data types that need support, and how system may use parquet, JSON, or how unstructured data can introduce challenges. By this point, interviewees had a better grasp of our models and the gateway patterns, thus there weren't much questions. An interviewee suggested the 'API composition' pattern and suggested that we may have various services that handle different data types, but the composition of these data may be necessary. The interviewee suggested that 'API composition' can occur at the egress level. 
+For variety, we discussed common data types that need support, and how system may use parquet, JSON, or how unstructured data can introduce challenges. An interviewee suggested the 'API composition' pattern and suggested that we may have various services that handle different data types, but the composition of these data may be necessary. The interviewee suggested that 'API composition' can occur at the egress level. 
 
-One interviewee provided details on how painful it has been for his team to onboard new data producers and how that dramatically slowed the project deadline. The interviewee added that data received from data producers hardly have the standards necessary, as these data are generated by third-party software that they have no control over. 
+One interviewee provided details on how painful it has been for his team to onboard new data producers and how that dramatically slowed the project deadline. The interviewee added that data received from data producers hardly have the standards necessary, as these data are generated by third-party software that they have no control over. Another interviewee from insurance sector discussed how the rate of change is very low and most things are standard in insurance and finance sectors. For instance, he stated that if Avro is being used as the data format, the industry will be using the same format for the next 5 years. 
 
 % He explained how different versions of the same software create different schema and how this can sometimes break the data engineering pipelines. 
 
 % Then, the interviewee suggested off-loading more compute intensive checks to gateways. We discussed how that could result in a bloated architectural construct and both parties decided that BFF pattern is probably a better suit.  
 
-Another interviewee from insurance sector discussed how the rate of change is very low and most things are standard in insurance and finance sectors. For instance, he stated that if Avro is being used as the data format, the industry will be using the same format for the next 5 years. 
 
-\,
 
-\setlength{\fboxsep}{0.7em}
-\noindent\fbox{%
-    \parbox{\textwidth}{%
-       Variety of data structures depends on the context in which data engineering is taking place. While gateways are useful, they may not be necessary relevant to variety. 
-    }%
-}
+% \,
+
+% \setlength{\fboxsep}{0.7em}
+% \noindent\fbox{%
+%     \parbox{\textwidth}{%
+%        Variety of data structures depends on the context in which data engineering is taking place. While gateways are useful, they may not be necessary relevant to variety. 
+%     }%
+% }
 
 % Additionally, the interviewee explained breaking that changes, specially schema changes are usually avoided. He added that in German insurance companies, almost everything is standard, and introducing any change would require large scale communication with all insurance companies which is an extensive measure. 
 
@@ -1157,9 +1163,7 @@ Another interviewee from insurance sector discussed how the rate of change is ve
 
 \subsection{Value}
 
-For value, we discussed CQRS and anti-corruption layer. We first began by exploring the challenges of having to optimize for read and write loads. We discussed how it could be essential for the business to provide read queries in a timely manner, and how trying to model for both read and write queries may not be efficient. For instance, we explored snowflake schemas against star schemas, discussed a typical data analysis flow and provided with challenges. None of our interviewees have had an experience with CQRS in practice, but they were aware of the pattern. 
-
-An interviewee discussed how this pattern can be helpful in companies that have adopted domain-driven design, and how each bounded context can decide how the data should be modeled. Our interviewees shared the same idea that CQRS should only be applied when the needs arise and not proactively. This is due to the fact that implementing and getting CQRS right comes with complexity, and can dramatically increase cost.
+For value, we discussed CQRS and anti-corruption layer. We first began by exploring the challenges of having to optimize for read and write loads. We discussed how it could be essential for the business to provide read queries in a timely manner, and how trying to model for both read and write queries may not be efficient. An interviewee discussed how this pattern can be helpful in companies that have adopted domain-driven design, and how each bounded context can decide how the data should be modeled. Our interviewees shared the same idea that CQRS should only be applied when the needs arise and not proactively. This is due to the fact that implementing and getting CQRS right comes with complexity, and can dramatically increase cost.
 
 
 % An interviewee suggested that CQRS is perhaps unnecessary in many cases and should be utilized only in special cases. 
@@ -1180,18 +1184,18 @@ An interviewee discussed how this pattern can be helpful in companies that have 
 
 % In another interview, the interviewee discussed the known issues for not applying CQRS to big data systems. The main argument was around the management of overall data volume and the stress that CQRS can introduce to storage media. The interviewee discussed how CQRS is challenging even in non data-intensive systems, and how BD can make it challenging. In addition, as discussed by the interviewee, the network and OS overheads introduces CQRS and microservices in general \cite{sriraman2018mu} may not perform well in BD systems.
 
-Furthermore, we explained the anti-corruption layer. We discussed how the consumer needs can emerge, and how coupling it all to the read service can affect the system modifiability negatively. This pattern was well-perceived by interviewees, however there were concerns about the anti-corruption layer itself getting bloated and introducing 'corruption'! However a system architect can tackle this by introducing several anti-corruption layers, or egress nodes that are each responsible for a class of data consumers. 
+Furthermore, we explained the anti-corruption layer. We discussed how the consumer needs can emerge, and how coupling it all to the read service can affect the system modifiability negatively. An interviewee raised the concern that defining the scope of anti-corruption layer may be a challenge. In his experience, data scientists need `all the data' available in the company, and that's been a challenge for his team in the past. He continued discussing that this pattern can be useful not only from decoupling perspective but from a security and governance point of view.
 
 % An interviewee raised the concern that defining the scope of anti-corruption layer may be a challenge. In his experience, data scientists need `all the data' available in the company, and that's been a challenge for his team in the past. He continued discussing that this pattern can be useful not only from decoupling perspective but from a security and governance point of view. We failed to realize this in our research. The interviewee discussed that at times his team has been asked to provide with a lot of data, and providing it could have cause major security issues. He added that defining these anti-corruption layers with clearly defined contracts between the consumers and the big data system canonical data can be an effective measure to govern what should be provided, and is a great opportunity to eliminate security risks. 
 
-\,
+% \,
 
-\setlength{\fboxsep}{0.7em}
-\noindent\fbox{%
-    \parbox{\textwidth}{%
-        CQRS introduces complexity, thus it's better to introduce when requirements exist. Anti-corruption layer can be effective in translating domains, but should be carefuly maintained to avoid turning into a bloated monolith. 
-    }%
-}
+% \setlength{\fboxsep}{0.7em}
+% \noindent\fbox{%
+%     \parbox{\textwidth}{%
+%         CQRS introduces complexity, thus it's better to introduce when requirements exist. Anti-corruption layer can be effective in translating domains, but should be carefuly maintained to avoid turning into a bloated monolith. 
+%     }%
+% }
 
 
 \subsection{Security and Privacy}
@@ -1200,52 +1204,50 @@ For security and privacy, we started the discussion by exploring how different c
 
 % An interviewee discussed how data engineers are usually not well educated on security matters in his professional experience. He added how expensive it is to train engineers to a good level on security and privacy and even after that the company may not be able to retain them. The interviewee explained how IT giant companies like Google have the resources necessary to constantly account for emerging privacy and security requirements, while small to medium sized businesses are struggling. Finally he stated that following privacy and security standards is really costly for companies.
 
-In another interviewe, the participant elaborated on how challenging it would be to have several ingresses into the system, and how BFF pattern may provide some stress on security and platform teams. While he admitted that performance and maintainability may be increase, he found challenges of controlling what comes into the system significant. 
-
-The interviewee added that going BFF requires substantial resources and may not be ideal for every company. From his perspective, BFF was only an unnecessary complexity, stating that his life is gonna be hard if he brought something like this into production.
+In another interviewe, the participant elaborated on how challenging it would be to have several ingresses into the system, and how BFF pattern may provide some stress on security and platform teams. While he admitted that performance and maintainability may be increase, he found challenges of controlling what comes into the system significant. The interviewee added that going BFF requires substantial resources and may not be ideal for every company. From his perspective, BFF was only an unnecessary complexity, stating that his life is gonna be hard if he brought something like this into production.
 
 % Moreover, an interview discussed how encryption should be taken more seriously in BD world. He admitted that in his experience, most BD architects and data engineers were not in favour of data encryption. This was due to performance issues associated to encryption of large amount of data. The interviewee then further elaborated on issues that may arise if data is not encrypted. From his perspective, in today's world there is really no borders with data connectivity and one has to make sure that data is safe. He added that if the architecture depends on the perimeters, you need to make sure these perimeters are concretly defined, he then stated that 'there are no concretly defined perimeters'! 
 
 % In his view, having access to data storage should not mean having access to data. He suggested hardware encryption to solve some of the performance challenges. The same interviewee pointed out the challenges of GDPR and privacy. He suggested that 'deleting data' is as important as storing it, and one should proactively look for opportunities to delete senstivie data. 
 
 
-\,
+% \,
 
-\setlength{\fboxsep}{0.7em}
-\noindent\fbox{%
-    \parbox{\textwidth}{%
-        BFF is a useful pattern for segregation of API gateways to increase security and privacy, but it increases operational overhead.
-    }%
-}
+% \setlength{\fboxsep}{0.7em}
+% \noindent\fbox{%
+%     \parbox{\textwidth}{%
+%         BFF is a useful pattern for segregation of API gateways to increase security and privacy, but it increases operational overhead.
+%     }%
+% }
 
 
 \subsection{Veracity}
 
-For veracity, for discussed the transformation process required for any data engineering pipeline, and how this pattern was tacitly incorporated to all of our models. We made an analogy to Linux philosophies and how different commands pipe into each other. This pattern was perceived to be one of the defacto patterns that many data engineering pipelines use. In addition, we discussed circuit breakers again, but this time for capturing transformation nodes that are unavailable. This section did not require a lot of deep probing and discussions. 
+For veracity, we discussed the transformation process required for any data engineering pipeline. We made an analogy to Linux philosophies and how different commands pipe into each other. This pattern was perceived to be one of the defacto patterns that many data engineering pipelines use. In addition, we discussed circuit breakers again, but this time for capturing transformation nodes that are unavailable.
 
 
-An interviewee discussed how pipe and filters have been the key for them in production, and how it helped them scale and avoid data corruption. He added that without adopting such pattern, if something broke in a large transformation, you'd never know what went wrong, and you might be forced to rerun a process that takes 5 hours to complete. Furthermore, the interviewee depicted how data quality is becoming more and more important for his team and company. This is due to the fact that the interviewee works in the insurance sector, and data is used in deciding some of the claims. 
+An interviewee discussed how pipe and filters have been the key for them in production, and how it helped them scale and avoid data corruption. He added that without adopting such pattern, if something broke in a large transformation, you'd never know what went wrong, and you might be forced to rerun a process that takes 5 hours to complete. In another interview, the participant discussed how circuit breaker should be tied to the end of the data processing and not only to the beginning of it. He elaborated that the server might be healthy when the transformation starts, but that might not be the case when it's about to end, therefore corrupting the data. He added that this can introduce unnecessary reprocessing. 
 
 % The interviewee admitted that sometimes in the past, many years ago, they had to make difficult decisions because data did not posses the qualities necessary. Moreover, he added that separating transformation into their own service (filters), creates an opportunity for introducing data quality metrics for each transformation, which can be used later to probe what has gone wrong and the team can recover from a corrupted data.
 
 % In another interview, the participant discussed how circuit breaker should be tied to the end of the data processing and not only to the beginning of it. He elaborated that the server might be healthy when the transformation starts, but that might not be the case when it's about to end, therefore corrupting the data. He added that this can introduce unnecessary reprocessing. 
 
 
-\,
+% \,
 
-\setlength{\fboxsep}{0.7em}
-\noindent\fbox{%
-    \parbox{\textwidth}{%
-        Pipes and filters is a defacto standard for data engineering piplines. Circuit breakers futher improve filters.
-    }%
-}
+% \setlength{\fboxsep}{0.7em}
+% \noindent\fbox{%
+%     \parbox{\textwidth}{%
+%         Pipes and filters is a defacto standard for data engineering piplines. Circuit breakers futher improve filters.
+%     }%
+% }
 
 \subsection{Other feedbacks, closing thoughts}
 
 
-One of the most experienced interviewee (14 years) suggested us to further break down our processing requirements into domains and then utilize gateway aggregate patterns to do 'data as a service'. This idea was driven by data mesh and data fabrics. All of our interviewees found the study interesting, and were eager to know more after the interview. 
+One of the most experienced interviewee suggested us to further break down our processing requirements into domains and then utilize gateway aggregate patterns to do 'data as a service'. This idea was driven by data mesh and data fabrics. All of our interviewees found the study interesting, and were eager to know more after the interview. Another feedback was the idea of having an egress that encapsulate the anti-corruption layer and adds some more into it as well. The pattern 'backend for frontend' was well received, and our event driven thinking seemed to be very well accepted by the interviewees. 
 
-Another feedback was the idea of having an egress that encapsulate the anti-corruption layer and adds some more into it as well. The pattern 'backend for frontend' was well received, and our event driven thinking seemed to be very well accepted by the interviewees. By the result of this interview we realized that we have missed an architectural construct while discussing velocity requirements, which was the message queue. These interviews increased our confidence in our results and reasoning and have shed some lights on possible new patterns that we could employ.
+% By the result of this interview we realized that we have missed an architectural construct while discussing velocity requirements, which was the message queue. These interviews increased our confidence in our results and reasoning and have shed some lights on possible new patterns that we could employ.
 
 % We have received a lot of good insights into how else we could model and approach this problem. While some of these ideas are really interesting, due to time and resource constraint, we opted not to apply all suggestions for the purposes of this study. Lastly, some of our interviewees connected some of the patterns discussed to their own context of practice and helped us realized further improvements. 
 
@@ -1259,7 +1261,7 @@ Another feedback was the idea of having an egress that encapsulate the anti-corr
 
 % In another effort,  Zhelev et al (\citet{zhelev2019using}) described why event-driven architectures could be a good alternative to monolithic architectures. This study does not follow any clear methodology, and seems to contribute only in terms of untested hypothesis. Staegemann et al (\citet{staegemann2021examining}) examined the interplay between BD and microservices by conducting a bibliometric review. This study aims to provide with a general picture of the topic, and does not aim to explore microservices patterns and their relationship to BD systems.  
 
-The result of this study have provided us with two major findings; 1) the progress in the data engineering space seems to be uneven in comparison to software engineering, 2) MS pattern provide with a great potential for resolving some of the BD system development challenges. While there has been adoption of a few practices from software engineering into data engineer like DataOps, we posit that data engineering space can benefit from some of the well-established practices of software engineering. 
+The result of this study have provided us with two major findings; 1) the progress in the data engineering space seems to be uneven in comparison to software engineering, 2) MS pattern provide with a great potential for resolving some of the BD system development challenges. While there has been adoption of a few practices from software engineering into data engineering like DataOps, we posit that data engineering space can benefit more from well-established practices of software engineering. 
 
 Majority of the studies that we've analyzed to understand BD systems, seems to revolve around crunching and transforming data without much attention to data lifecycle management. This is bold when it comes to addressing major cross-cutting concerns of successful data engineering practice such as security, data quality, DataOps, data architecture, data interoperability, data versioning and testing. In fact, while we found a lot of mature approaches in MS and event driven architectures, we could not find many well-established patterns in the data engineering space. Based on this, we think that data architecture remains a significant challenge and requires more attention from both academia and industry. 
 
@@ -1273,7 +1275,7 @@ Majority of the studies that we've analyzed to understand BD systems, seems to r
 
 With all the undeniable benefits of BD, the success rate of BD projects is still rare. One of the core challenges of adopting BD lies in data architecture and data engineering. While software engineers have adopted many well-established methods and technologies, data engineering and BD architectures don't seem to benefit a lot from these advancements. 
 
-The aim of this study was to explore the relationship and application of MS architecture to BD systems through two distinct SLR. The results derived from these SLRs presented us with interesting data on the potential of MS patterns for BD systems. Given the distributed nature of BD systems, MS architectures seems to be a natural fit to solve myriad of problems that comes with decentralization. Even though we created many design theories, modeled patterns against systems, and validated our theories, we believe that our results could be further validated by an empirical study. We therefore posit that there is a need for more attention in the area of MS and event-driven architectures in relation to BD systems from both academia and industry. 
+The aim of this study was to explore the relationship and application of MS architecture to BD systems through two distinct SLR. The results derived from these SLRs presented us with interesting data on the potential of MS patterns for BD systems. Given the distributed nature of BD systems, MS architectures seems to be a natural fit to solve myriad of problems that comes with decentralization. Even though we created many design theories, modeled patterns against systems, and validated our theories, we believe that our results could be further validated by more empirical studies, prototyping, and even creation of RAs.
 
 
 

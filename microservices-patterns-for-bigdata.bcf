@@ -2242,9 +2242,8 @@
     <bcf:citekey order="56">ataei2021neomycelia</bcf:citekey>
     <bcf:citekey order="57">wieringa2014design</bcf:citekey>
     <bcf:citekey order="58">kallio2016systematic</bcf:citekey>
-    <bcf:citekey order="59">kallio2016systematic</bcf:citekey>
-    <bcf:citekey order="60">interviewGuide</bcf:citekey>
-    <bcf:citekey order="61">baltes2022sampling</bcf:citekey>
+    <bcf:citekey order="59">interviewGuide</bcf:citekey>
+    <bcf:citekey order="60">baltes2022sampling</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
