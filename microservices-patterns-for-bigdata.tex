@@ -887,13 +887,13 @@ In this section, we combine our findings from both SLRs, and present new theorie
 We posit that a pattern alone would not be significantly useful to a data engineering or a data architect, and propose that a collection of patterns in relation to current defacto standard of BD architectures is a better means of communication. To achieve this, we've portray patterns selected for each requirement in a reference architecture. We then justify the components and describe how patterns could address the requirement. These descriptions are presented as sub section, each describing one characteristic of BD systems. 
 
 
-\subsection{Volume} \label{volumeSection}
+\section{Volume} \label{volumeSection}
 
 % There has been two requirements associated to the Volume aspect of big data systems which are about handling various data types (Vol-1) and providing with a scalable storage (Vol-2). 
 
 To address the volume requirements of BD , and in specific for Vol-1 and Vol-2 we suggest the following patterns to be effective; 1) Gateway offloading, 2) API gateway, 3) External Configuration Store
 
-\subsubsection{Gateway Offloading and API Gateway}
+\subsection{Gateway Offloading and API Gateway}
 
 In a typical flow of data engineering, data goes from ingestion, to storage, to transformation and finally to serving. However there are various challenges to maintain this. One challenge is the realization of various data sources as described in Vol-1. Data comes in various formats from structured to semi-structured to unstructured, and system needs to handle different data through different interfaces. So some of the key engineering consideration for the ingestion process is that; 1) is the BD system ingesting data reliably? How frequently should data be ingested? In what volume the data typically arrives?
 
@@ -902,12 +902,12 @@ Given the challenges and particularities of data types, different nodes may be s
 % Another popular approach is the segregation of concerns by separating batch and streaming processing nodes. Given the requirement of horizontal scaling for BD systems, it is safe to assume that there is usually more then one node associated to ingesting data.
 
 
-Moreover, if data producers directly communicate with the processing nodes, they will have to update the endpoint address every now and on. This issue is exacerbated when the data producer tries to communicate to a service that is down. Given that lifecycle of a service in a typical distributed cloud environment is not deterministic and many container orchestration systems constantly recycle services to proactively address this issue, reliability and maintainability of the BD system can be compromised. This pattern is portrayed in Figure \ref{fig:RA}. 
+Moreover, if data producers directly communicate with the processing nodes, they will have to update the endpoint address every now and on. This issue is exacerbated when the data producer tries to communicate to a service that is down. Given that lifecycle of a service in a typical distributed cloud environment is not deterministic and many container orchestration systems constantly recycle services to proactively address this issue, reliability and maintainability of the BD system can be compromised. These pattern are portrayed in Figure \ref{fig:RA}. 
 
 % on the fence!
 % Additionally, the gateway can increase the system reliability and availability by doing a constant health check on services, and distribute traffic based on liveliness probes. There are other benefits to to these patterns suich as weighted distribution, customized cache mechanism through specific HTTP headers, and consolidated security. This also means that if the gateway is down, service nodes won't introduce bad state into the overall system. We have portrayed a simplistic representation of this pattern in Figure \ref{fig:RA}. 
 
-\subsubsection{External Configuration Store}
+\subsection{External Configuration Store}
 
 As discussed earlier, BD systems are made up of various services in order to achieve horizontal scalability. These services will have to communicate with each other in order to achieve the goal of the system. Thus, each one of them will require a set of runtime environmental configurations. 
 
@@ -922,27 +922,31 @@ By externalizing all nodes configuration to another service, each node can reque
     \label{fig:RA}
 \end{figure*}
 
-\subsection{Velocity}
+\section{Velocity}
 
 To address some of the challenges associated with the velocity aspect of BD systems, we recommend the following patterns for the requirements Vel-1, Vel-2, Vel-3, and Vel-5; 1) Competing Consumers, 2) Circuit Breaker and 3) Log Aggregation.
 
-\subsubsection{Competing Consumers}
+\subsection{Competing Consumers}
 
 BD doesn't imply only 'big' or a lot of data, it also implies the rate at which data can be ingested, stored and analyzed to produce insights. According to a recent MIT report in collaboration with Databricks, one of the main challenges of BD 'low-achievers' is the 'slow processing of large amounts of data' \citep{DataBricksSurvey}. If the business desires to go data driven, it should be able to have an acceptable time-to-insight, as critical business decisions cannot wait for data engineering pipelines. 
 
-Given the very contrived scenario of a BD system described in the previous section, at the very core, data needs to be ingested quickly, stored in a timely manner, micro-batch, batch, or stream processed, and lastly served to the consumers. So what happens if one node goes down or becomes unavailable? in a traditional Hadoop setup, if Mesos is utilized as the scheduler, the node will be restarted and will go through a lifecycle again. 
+% Given the very contrived scenario of a BD system described in the previous section, at the very core, 
 
-This means during this period of time, the node is unavailable, and any workload for stream processing has to wait, failing to achieve requirements Vel-2, Vel-3 and Vel-5. This issue is exacerbated if the system is designed and architected underlying monolithic pipeline architecture with point-to-point communications. One way to solve some of these issues, is to introduce an event driven communication as portrayed in the works of \citet{ataei2021neomycelia}, and try to increase fault tolerance and availability through competing consumers, circuit breaker, and log aggregation. 
+Data needs to be ingested quickly, stored in a timely manner, micro-batch, batch, or stream processed, and lastly served to the consumers. So what happens if one node goes down or becomes unavailable? This means during this period of time, the node is unavailable, and any workload for stream processing has to wait, failing to achieve requirements Vel-2, Vel-3 and Vel-5. This issue is exacerbated if the system is designed and architected underlying monolithic pipeline architecture with point-to-point communications. One way to solve some of these issues, is to introduce an event driven communication as portrayed in the works of \citet{ataei2021neomycelia}, and try to increase fault tolerance and availability through competing consumers, circuit breaker, and log aggregation. 
 
-Underlying the event-driven approach, we can assume that nodes are sending each other events as a means of communication. This implies that node A can send an event to node B in a 'dispatch and forget' model on a certain topic. However this pattern introduces the same problem as the point-to-point REST communication style; if node B is down, then this will have a ripple effect on the whole system. To address this challenge, we can adopt the competing consumer pattern. Adopting this pattern means instead of one node listening on the topic, there will be a few nodes. 
+% in a traditional Hadoop setup, if Mesos is utilized as the scheduler, the node will be restarted and will go through a lifecycle again. 
+
+
+
+Underlying the event-driven approach, we can assume that nodes are sending each other events as a means of communication. This implies that node A can send an event to node B in a 'dispatch and forget' model on a certain topic. However this pattern introduces the same problem as the point-to-point REST communication style. To address this challenge, we can adopt the competing consumer pattern. Adopting this pattern means instead of one node listening on the topic, there will be a few nodes. 
 
 This can change the nature of the communication to asynchronous mode, and allow for a better fault tolerance, because if one node is down, the other nodes can listen to the event and handle it. In other terms, because now there are a few consumers listening on the events being dispatched on a certain topic, there's a competition of consumers, therefore the name 'competing consumers'. This pattern will help alleviate challenges in regards to Vel-2, Vel-3 and Vel-5. 
 
-\subsubsection{Circuit Breaker}
+\subsection{Circuit Breaker}
 
 On the other hand, given the large number of nodes one can assume for any BD system, one can employ the circuit breaker pattern to signal the service unavailability. Circuit breakers can protect the overall integrity of data and processes by tripping and closing the incoming request to the unhealthy service. This communicates effectively to the rest of the system that the node is unavailable, allowing engineers to handle such incidents gracefully. This pattern, mixed with competing consumers pattern can increase the overall availability and reliability of the system, and this is achieved by providing an even-driven asynchronous fault tolerance communication mechanisms among BD services. This allows system to be able to be resilient and responsive to bursty, high-throughput data as well as small, batch oriented data, addressing requirements Vel-1, Vel-4, and Vel-5. 
     
-\subsubsection{Log Aggregator}
+\subsection{Log Aggregator}
 
 Given that BD systems are comprising of many services, log aggregation can be implemented to shed lights on these services and their audit trail. Traditional single node logging does not work very well in distributed environments, as engineers are required to understand the whole flow of data from one end to another. To address this issue, log aggregation can be implemented, which usually comes with a unified interface that services communicate to and log their processes from. This interface then, does the necessary processes on the logs, and finally store the logs. 
 
