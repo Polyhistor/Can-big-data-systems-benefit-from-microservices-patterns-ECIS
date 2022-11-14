@@ -1,23 +1,25 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'microservices-patterns-for-bigdata.blg'
-[106] biber-MSWIN64:322> INFO - === 
-[130] Biber.pm:415> INFO - Reading 'microservices-patterns-for-bigdata.bcf'
-[264] Biber.pm:943> INFO - Found 30 citekeys in bib section 0
-[287] Biber.pm:4256> INFO - Processing section 0
-[288] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[304] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[323] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
-[343] bibtex.pm:1653> INFO - LaTeX decoding ...
-[1016] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
-[1028] Utils.pm:304> WARN - Duplicate entry key: 'kitchenham2002preliminary' in file 'references.bib', skipping ...
-[1036] Utils.pm:304> WARN - Duplicate entry key: 'klein2016reference' in file 'references.bib', skipping ...
-[1037] Utils.pm:304> WARN - Duplicate entry key: 'gamma1995design' in file 'references.bib', skipping ...
-[1040] Utils.pm:304> WARN - Duplicate entry key: 'rethlefsen2021prisma' in file 'references.bib', skipping ...
-[1086] Utils.pm:304> WARN - Entry 'Richardson.2022' (references.bib): Invalid format '07.08.2022' of date field 'urldate' - ignoring
-[1398] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1398] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1398] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[1399] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[1460] bbl.pm:652> INFO - Writing 'microservices-patterns-for-bigdata.bbl' with encoding 'UTF-8'
-[1508] bbl.pm:755> INFO - Output to microservices-patterns-for-bigdata.bbl
-[1508] Biber.pm:128> INFO - WARNINGS: 5
+[78] biber-MSWIN64:322> INFO - === 
+[99] Biber.pm:415> INFO - Reading 'microservices-patterns-for-bigdata.bcf'
+[218] Biber.pm:943> INFO - Found 27 citekeys in bib section 0
+[242] Biber.pm:4256> INFO - Processing section 0
+[242] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[254] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[274] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[294] bibtex.pm:1653> INFO - LaTeX decoding ...
+[873] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[884] Utils.pm:304> WARN - Duplicate entry key: 'kitchenham2002preliminary' in file 'references.bib', skipping ...
+[891] Utils.pm:304> WARN - Duplicate entry key: 'klein2016reference' in file 'references.bib', skipping ...
+[892] Utils.pm:304> WARN - Duplicate entry key: 'gamma1995design' in file 'references.bib', skipping ...
+[896] Utils.pm:304> WARN - Duplicate entry key: 'page2021prisma' in file 'references.bib', skipping ...
+[896] Utils.pm:304> WARN - Duplicate entry key: 'rethlefsen2021prisma' in file 'references.bib', skipping ...
+[904] Utils.pm:304> WARN - Duplicate entry key: 'richardson2018microservices' in file 'references.bib', skipping ...
+[948] Utils.pm:304> WARN - Entry 'Richardson.2022' (references.bib): Invalid format '07.08.2022' of date field 'urldate' - ignoring
+[1226] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1226] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1226] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1227] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[1274] bbl.pm:652> INFO - Writing 'microservices-patterns-for-bigdata.bbl' with encoding 'UTF-8'
+[1301] bbl.pm:755> INFO - Output to microservices-patterns-for-bigdata.bbl
+[1302] Biber.pm:128> INFO - WARNINGS: 7

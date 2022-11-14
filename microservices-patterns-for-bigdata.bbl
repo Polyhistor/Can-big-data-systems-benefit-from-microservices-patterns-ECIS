@@ -173,40 +173,6 @@
       \field{pages}{1\bibrangedash 31}
       \range{pages}{31}
     \endentry
-    \entry{Bughin2016}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=cc8c46f4ffc92504dfc851403c388c32}{%
-           family={Bughin},
-           familyi={B\bibinitperiod},
-           given={Jacques},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{cc8c46f4ffc92504dfc851403c388c32}
-      \strng{fullhash}{cc8c46f4ffc92504dfc851403c388c32}
-      \strng{bibnamehash}{cc8c46f4ffc92504dfc851403c388c32}
-      \strng{authorbibnamehash}{cc8c46f4ffc92504dfc851403c388c32}
-      \strng{authornamehash}{cc8c46f4ffc92504dfc851403c388c32}
-      \strng{authorfullhash}{cc8c46f4ffc92504dfc851403c388c32}
-      \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2196-1115}
-      \field{journaltitle}{Journal of Big Data}
-      \field{number}{1}
-      \field{title}{Big data, Big bang?}
-      \field{type}{Journal Article}
-      \field{volume}{3}
-      \field{year}{2016}
-      \field{pages}{2}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1186/s40537-015-0014-3
-      \endverb
-    \endentry
     \entry{Chaabane}{inproceedings}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=7b5a6321b64c71ea57743845a5733f8d}{%
@@ -654,36 +620,6 @@
       \field{pages}{213\bibrangedash 220}
       \range{pages}{8}
     \endentry
-    \entry{lankhorst2013language}{incollection}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d8c9db5629589e9d1d85ab29f0081fd5}{%
-           family={Lankhorst},
-           familyi={L\bibinitperiod},
-           given={Marc},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{d8c9db5629589e9d1d85ab29f0081fd5}
-      \strng{fullhash}{d8c9db5629589e9d1d85ab29f0081fd5}
-      \strng{bibnamehash}{d8c9db5629589e9d1d85ab29f0081fd5}
-      \strng{authorbibnamehash}{d8c9db5629589e9d1d85ab29f0081fd5}
-      \strng{authornamehash}{d8c9db5629589e9d1d85ab29f0081fd5}
-      \strng{authorfullhash}{d8c9db5629589e9d1d85ab29f0081fd5}
-      \field{sortinit}{L}
-      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Enterprise Architecture at Work}
-      \field{title}{A Language for Enterprise Modelling}
-      \field{year}{2013}
-      \field{pages}{75\bibrangedash 114}
-      \range{pages}{40}
-    \endentry
     \entry{laplante2017requirements}{book}{}
       \name{author}{1}{}{%
         {{un=1,uniquepart=given,hash=ec2eb990fdebfd88bd6e3a9670c5ad7c}{%
@@ -710,48 +646,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Requirements engineering for software and systems}
       \field{year}{2017}
-    \endentry
-    \entry{phi}{inproceedings}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=29a6d651f3f1640f12822b1a756e16d5}{%
-           family={Maamouri},
-           familyi={M\bibinitperiod},
-           given={Amine},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=47ea74cadd32cd3b7af97570107bf3d0}{%
-           family={Sfaxi},
-           familyi={S\bibinitperiod},
-           given={Lilia},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=870505b0f2aaffd5be4d1edf9b3264e2}{%
-           family={Robbana},
-           familyi={R\bibinitperiod},
-           given={Riadh},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{organization}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{8bf2dd097417d7f3575ec374d8e3673b}
-      \strng{fullhash}{8bf2dd097417d7f3575ec374d8e3673b}
-      \strng{bibnamehash}{8bf2dd097417d7f3575ec374d8e3673b}
-      \strng{authorbibnamehash}{8bf2dd097417d7f3575ec374d8e3673b}
-      \strng{authornamehash}{8bf2dd097417d7f3575ec374d8e3673b}
-      \strng{authorfullhash}{8bf2dd097417d7f3575ec374d8e3673b}
-      \field{sortinit}{M}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{European, Mediterranean, and Middle Eastern Conference on Information Systems}
-      \field{title}{Phi: A Generic Microservices-Based Big Data Architecture}
-      \field{year}{2021}
-      \field{pages}{3\bibrangedash 16}
-      \range{pages}{14}
     \endentry
     \entry{MSPatterns}{misc}{}
       \field{sortinit}{M}
@@ -835,24 +729,26 @@
       \field{pages}{75\bibrangedash 92}
       \range{pages}{18}
     \endentry
-    \entry{Page.2021}{article}{}
-      \name{author}{26}{}{%
+    \entry{page2021prisma}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
         {{un=0,uniquepart=base,hash=016b86afb0a98379bf77b3f074f34761}{%
            family={Page},
            familyi={P\bibinitperiod},
-           given={Matthew\bibnamedelima J.},
+           given={Matthew\bibnamedelima J},
            giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=af56ff14657d1110bff4b784198b0505}{%
-           family={Moher},
+        {{un=0,uniquepart=base,hash=8c647eae0c93ec008ebe092eb144eeee}{%
+           family={McKenzie},
            familyi={M\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod},
+           given={Joanne\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=c342b2f9e98d8bcaabcbd5ec10522ad4}{%
            family={Bossuyt},
            familyi={B\bibinitperiod},
-           given={Patrick\bibnamedelima M.},
+           given={Patrick\bibnamedelima M},
            giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=fa885033d820893c45692b99c8b4bbc6}{%
@@ -864,13 +760,13 @@
         {{un=0,uniquepart=base,hash=8fd2430e75c6bb84661c811e408f6377}{%
            family={Hoffmann},
            familyi={H\bibinitperiod},
-           given={Tammy\bibnamedelima C.},
+           given={Tammy\bibnamedelima C},
            giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=9da5818ae381747539d8a98ecf2d13b1}{%
            family={Mulrow},
            familyi={M\bibinitperiod},
-           given={Cynthia\bibnamedelima D.},
+           given={Cynthia\bibnamedelima D},
            giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=d1c6b0b224969ed1ccfe648b31dc7de4}{%
@@ -882,139 +778,44 @@
         {{un=0,uniquepart=base,hash=640f8392f6a7388c779d2b60fdd93350}{%
            family={Tetzlaff},
            familyi={T\bibinitperiod},
-           given={Jennifer\bibnamedelima M.},
+           given={Jennifer\bibnamedelima M},
            giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=4ca61686dc125837a0d9741be62f3427}{%
            family={Akl},
            familyi={A\bibinitperiod},
-           given={Elie\bibnamedelima A.},
+           given={Elie\bibnamedelima A},
            giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod},
            givenun=0}}%
         {{un=0,uniquepart=base,hash=e822c8724e88eb518ec5eb8015bbaab0}{%
            family={Brennan},
            familyi={B\bibinitperiod},
-           given={Sue\bibnamedelima E.},
+           given={Sue\bibnamedelima E},
            giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=01e789422f68da54234ac2f1e791eac4}{%
-           family={Chou},
-           familyi={C\bibinitperiod},
-           given={Roger},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=19c8626c5dbf0aaa5ca05c6fa19ad49f}{%
-           family={Glanville},
-           familyi={G\bibinitperiod},
-           given={Julie},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=18acccd95580a48bd6c5f4010bb058a7}{%
-           family={Grimshaw},
-           familyi={G\bibinitperiod},
-           given={Jeremy\bibnamedelima M.},
-           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=aa6b6295cc5b496c1858297b2a62fa5f}{%
-           family={Hr{ó}bjartsson},
-           familyi={H\bibinitperiod},
-           given={Asbj{ø}rn},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=0a2541509ccb6793b91fce2cf0f72dcc}{%
-           family={Lalu},
-           familyi={L\bibinitperiod},
-           given={Manoj\bibnamedelima M.},
-           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=0100456cf4ced53a2aab31f2c3055f6a}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Tianjing},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=6e270d436c864242b119a3605283c8bf}{%
-           family={Loder},
-           familyi={L\bibinitperiod},
-           given={Elizabeth\bibnamedelima W.},
-           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d149e7026acd95db856d30314dba9a9e}{%
-           family={Mayo-Wilson},
-           familyi={M\bibinithyphendelim W\bibinitperiod},
-           given={Evan},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4ed61e5ea9f906c20e5e737e3d84c854}{%
-           family={McDonald},
-           familyi={M\bibinitperiod},
-           given={Steve},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b7314b4cde4c01764b4b3580e015b768}{%
-           family={McGuinness},
-           familyi={M\bibinitperiod},
-           given={Luke\bibnamedelima A.},
-           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d600e9a8a01053464e53fc2aadeb009b}{%
-           family={Stewart},
-           familyi={S\bibinitperiod},
-           given={Lesley\bibnamedelima A.},
-           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1ad8d835a95f8df394e6faf5d8e0548f}{%
-           family={Thomas},
-           familyi={T\bibinitperiod},
-           given={James},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=0b396572e13e5a8b08e1ee1d493aaa2a}{%
-           family={Tricco},
-           familyi={T\bibinitperiod},
-           given={Andrea\bibnamedelima C.},
-           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=75fdbaed8e43fddb210da313631d8639}{%
-           family={Welch},
-           familyi={W\bibinitperiod},
-           given={Vivian\bibnamedelima A.},
-           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=792d7051a4c2169e6aac0073ce62ba8e}{%
-           family={Whiting},
-           familyi={W\bibinitperiod},
-           given={Penny},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8c647eae0c93ec008ebe092eb144eeee}{%
-           family={McKenzie},
-           familyi={M\bibinitperiod},
-           given={Joanne\bibnamedelima E.},
-           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
-           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {BioMed Central}%
       }
       \strng{namehash}{69c1efa4f6ab0deea3df12876fea0709}
-      \strng{fullhash}{95da0662bd7f8a855af307b9f5baa381}
-      \strng{bibnamehash}{95da0662bd7f8a855af307b9f5baa381}
-      \strng{authorbibnamehash}{95da0662bd7f8a855af307b9f5baa381}
+      \strng{fullhash}{08f33e5f05736222a2897bd6a7666935}
+      \strng{bibnamehash}{08f33e5f05736222a2897bd6a7666935}
+      \strng{authorbibnamehash}{08f33e5f05736222a2897bd6a7666935}
       \strng{authornamehash}{69c1efa4f6ab0deea3df12876fea0709}
-      \strng{authorfullhash}{95da0662bd7f8a855af307b9f5baa381}
+      \strng{authorfullhash}{08f33e5f05736222a2897bd6a7666935}
       \field{sortinit}{P}
       \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{BMJ (Clinical research ed.)}
-      \field{title}{PRISMA 2020 explanation and elaboration: updated guidance and exemplars for reporting systematic reviews}
-      \field{volume}{372}
+      \field{journaltitle}{Systematic reviews}
+      \field{number}{1}
+      \field{title}{The PRISMA 2020 statement: an updated guideline for reporting systematic reviews}
+      \field{volume}{10}
       \field{year}{2021}
-      \field{pages}{n160}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1136/bmj.n160
-      \endverb
+      \field{pages}{1\bibrangedash 11}
+      \range{pages}{11}
     \endentry
     \entry{foundPapers}{misc}{}
       \field{sortinit}{P}
@@ -1112,6 +913,35 @@
       \field{title}{The hype of emerging technologies: Big data as a service}
       \field{year}{2017}
     \endentry
+    \entry{richardson2018microservices}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d0740bcf48754b8fa2cd3549a1d73461}{%
+           family={Richardson},
+           familyi={R\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Simon}%
+        {Schuster}%
+      }
+      \strng{namehash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{fullhash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{bibnamehash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{authorbibnamehash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{authornamehash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \strng{authorfullhash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \field{extraname}{1}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Microservices patterns: with examples in Java}
+      \field{year}{2018}
+    \endentry
     \entry{Richardson.2022}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d0740bcf48754b8fa2cd3549a1d73461}{%
@@ -1127,6 +957,7 @@
       \strng{authorbibnamehash}{d0740bcf48754b8fa2cd3549a1d73461}
       \strng{authornamehash}{d0740bcf48754b8fa2cd3549a1d73461}
       \strng{authorfullhash}{d0740bcf48754b8fa2cd3549a1d73461}
+      \field{extraname}{2}
       \field{sortinit}{R}
       \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
       \field{extradatescope}{labelyear}
@@ -1325,44 +1156,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Design science methodology for information systems and software engineering}
       \field{year}{2014}
-    \endentry
-    \entry{zhelev2019using}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=029c361d628202c1c7d264ea6cd50b4c}{%
-           family={Zhelev},
-           familyi={Z\bibinitperiod},
-           given={Svetoslav},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=e3bfeb045ddaa5e79f34108f35425bde}{%
-           family={Rozeva},
-           familyi={R\bibinitperiod},
-           given={Anna},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{organization}{1}{%
-        {AIP Publishing LLC}%
-      }
-      \strng{namehash}{f7b4e1df0f6558079ea10e4a4a2acc41}
-      \strng{fullhash}{f7b4e1df0f6558079ea10e4a4a2acc41}
-      \strng{bibnamehash}{f7b4e1df0f6558079ea10e4a4a2acc41}
-      \strng{authorbibnamehash}{f7b4e1df0f6558079ea10e4a4a2acc41}
-      \strng{authornamehash}{f7b4e1df0f6558079ea10e4a4a2acc41}
-      \strng{authorfullhash}{f7b4e1df0f6558079ea10e4a4a2acc41}
-      \field{sortinit}{Z}
-      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{AIP Conference Proceedings}
-      \field{number}{1}
-      \field{title}{Using microservices and event driven architecture for big data stream processing}
-      \field{volume}{2172}
-      \field{year}{2019}
-      \field{pages}{090010}
-      \range{pages}{1}
     \endentry
   \enddatalist
 \endrefsection
