@@ -122,7 +122,7 @@ To the best of our knowledge, there is no study in academia that has shared the 
 % Daniel
 \chapter{Methodology}
 
-To get a comprehensive overview over both domains it was decided to combine the results of two (SLR), one for each domain. Both SLRs are conducted following the guidelines presented in \citet{Kitchenham.2004} and \citet{page2021prisma} on Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA). The former was used because of its clear instructions on critically appraising evidence for validity, impact and applicability in software engineering and the latter was used because it's a comprehensive and well-established methodology for increasing systematicity, transparency, and prevention of bias. To synthesize our findings, thematic synthesis proposed by \citet{Cruzes.2011} was applied. 
+To get a comprehensive overview over both domains it was decided to combine the results of two (SLR), one for each domain. Both SLRs are conducted following the guidelines presented in \citet{Kitchenham.2004} and \citet{page2021prisma} on Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA). The former was used because of its clear instructions on critically appraising evidence for validity, impact and applicability in software engineering and the latter was used because it's a comprehensive methodology for increasing systematicity, transparency, and prevention of bias. To synthesize our findings, thematic synthesis proposed by \citet{Cruzes.2011} was applied. 
 
 % While, Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) provided us with a strong underpinning on how to conduct a SLR, it had many assumptions that arose from the healthcare and nursing domains, and did not correlate directly to our study. To overcome some of this limitations, we combined PRISMA with the guidelines of Kitchenham et al. to form a rigorous methodology. 
 
@@ -138,16 +138,122 @@ To get a comprehensive overview over both domains it was decided to combine the 
 
 \section{First Review}
 
-The first SLR, was a rigorous approach from scratch and was conducted in six major phases. These phases are described in the following-subsections.
+The first SLR, was a rigorous approach from scratch and was conducted in six major phases. These phases are described as following:
 
 % the following steps: 1) selecting data sources 2) developing a search strategy 3) developing inclusion and exclusion criteria, 4) developing the quality framework 5) pooling literature based on the search strategy, 6) removing duplicates, 7) scanning studies titles based on inclusion and exclusion criteria, 8) removing studies based on publication types, 9) scanning studies abstract and title based on inclusion and exclusion criteria, 10) assessing studies based on the quality framework (includes three phases), 11) extracting data from the remaining papers, 12) coding the extracted data, 13) creating themes out of codes, 14) presenting the results. These steps are not direct mappings to the following sub-sections. Some sub-sections include several of these steps.
 
+\begin{description}
+    \item[Selecting data sources and developing a search strategy:] To assure the comprehensiveness of the review, both meta databases and publisher bound registers have been chosen. For this study, ACM Digital Library, AISeL, IEEE Xplore, JSTOR, Science Direct, Scopus, Springer Link, and Wiley were included into the search process. For all of these, the initial keyword search was conducted on June 19, 2022, and there was no limitation to the considered publishing date.
 
-\subsection{Selecting data sources and developing a search strategy}
+    Since there are differences in the filters of the included search engines, it was not possible to always use the exact same search terms and settings. Nevertheless, the configurations for the search were kept as similar as possible. The exact keywords and search strategy used can be found at \citet{SLRsearchTerms}. 
 
-To assure the comprehensiveness of the review, both meta databases and publisher bound registers have been chosen. For this study, ACM Digital Library, AISeL, IEEE Xplore, JSTOR, Science Direct, Scopus, Springer Link, and Wiley were included into the search process. For all of these, the initial keyword search was conducted on June 19, 2022, and there was no limitation to the considered publishing date.
+    \item[Developing inclusion, exclusion criteria and the quality framework:] Inspired by PRISMA checklist presented by \citet{tricco2018prisma}, Our inclusion and exclusion criteria are formulated as following:
 
-Since there are differences in the filters of the included search engines, it was not possible to always use the exact same search terms and settings. Nevertheless, the configurations for the search were kept as similar as possible. The exact keywords and search strategy used can be found at \citet{SLRsearchTerms}. 
+    \textbf{Inclusion Criteria:} 1) Primary and secondary studies between Jan 1st 2012 and June 19th 2022, 2) The focus of the study is on MS patterns, and MS architectural constructs, 3) Scholarly publications such as conference proceedings and journal papers.
+    
+    \textbf{Exclusion Criteria:} 1) Studies that are not written in English, 2) Informal literature surveys without any clearly defined research questions or research process, 3) Duplicate reports of the same study (a conference and journal version of the same paper). In such cases, the conference paper was removed. 4) Complete duplicates (not just Updates) were also removed. 5) Short papers (less than 6 pages).
+    
+    % \subsection{Developing the quality framework}
+    \textbf{Quality Framework:} Quality of the evidence collected as a result of this SLR has direct impact on the quality of the findings, making quality assessment an important undertaking. To address this, we developed a criteria made up of 7 elements. These criteria are informed by guidelines provided by Kitchenham \citet{Kitchenham.2004} on empirical research in software engineering. These 7 criteria are applied in three different stages (quality gates). These 7 criteria are discussed in Table \ref{qualityFramework}.
+
+    \begin{table}[h]
+        \renewcommand{\arraystretch}{1}
+        \caption[]{The quality framework}
+        \begin{tabular}{|p{1cm}|p{2cm}|p{10cm}|p{1.5cm}|}
+            \hline
+            Quality Gate & Criterion & Considered Aspect & Rating to pass \\ 
+    
+            \hline
+    
+            1 & Minimum quality threshold & 
+            
+            1) Does the study report empirical research or is it merely a 'lesson learnt' report based on expert opinion?
+    
+            2) The objectives and aims of the study are clearly communicated, including the reasoning for why the study was undertaken?
+    
+            3) Does the study provide with adequate information regarding the context in which the research was carried out?
+            & 5/6 \\ 
+            \hline
+            2 & Rigor & 
+            
+            1) Is the research design appropriate to address the objectives of the research?
+    
+            2) Is there any data collection method used and is it appropriate?
+            & 3/4 \\ 
+            \hline  
+            3 &
+             Credibility 
+    
+             Relevance 
+            & 
+            1) Does the study report findings in a clear and unbiased manner?
+    
+            2) Does the study provide value for practice or research?
+            & 
+            3/4 \\ 
+            \hline   
+        \end{tabular}
+        \label{qualityFramework}
+    \end{table}
+    
+
+    \item[Pooling literature and evaluation:] Overall, the keyword search yielded 3064 contributions. The total number of found publications per source as well as an overview of the further search process can be seen in Figure 1.
+    \begin{figure}[h]
+        \centering 
+        \includegraphics[width=14cm]{Media/PRISMA-Flowchart-Compact.JPG}
+        \caption{Overview of the search process}
+        \label{fig:PRISMA}
+    \end{figure}
+    
+    % \subsection{Evaluating papers based on inclusion and exclusion criteria}
+    
+    The remaining 1868 papers were filtered by title to evaluate their relevance to the concepts of microservice patterns or architectural constructs related to MS. For this purpose, the first two authors separately evaluated each entry. If both agreed, this verdict was honored. In case of disagreement, they discussed the title to come to a conclusion. In this phase 1699 papers were excluded. The same approach was followed for abstracts. next, out of 169 remaining papers, 138 papers has been exluceded. From there on, the papers that were not written in English (despite the abstract being in English), were published before the year 2012, and had a length of less than six pages were removed. 23 papers have been selected for the quality assement against the quality framework. The agreement rate among researchers for this phase equates to 88 percent. 
+    
+    % the first author initially included 113 papers and the second author 146. Of those, 41 were present in both sets and 1650 were excluded by both. 
+    
+    % This equates to an agreement rate of 90,5 percent (1691 of 1868 records) between the authors. After discussing the contributions with divergent evaluations, in total, 1699 of the 1868 papers were excluded, leaving 169 items for the next round. 
+    
+    %  As a result, the first author evaluated 40 papers positively, and the second one 28. Both agreed on the inclusion of 22 papers and the exclusion of 123. This equates to an agreement rate of 85,8 percent (145 of 169 records) between the authors. In total of the 169 papers, 138 were removed and 31 were included in the next phase. From there on, the papers that were not written in English (despite the abstract being in English), were published before the year 2012, and had a length of less than six pages were removed.
+    
+    % It was stipulated so if the agreement could not be reached, an arbitrator would be invited to the research Yet, this was not necessary. 
+    
+    
+    
+    % With a difference that authors agreed to also allow themselves to look into the actual paper and not just the abstract, if they wanted to further explore certain aspects of the study to improve their judgement.
+    
+    
+    
+    % While conducting the first steps of our filter process, we encountered several hurdles that shall be highlighted to ensure transparency, especially since they can slightly affect the number of remaining entries after those initial phases. However, the final set of literature was not impacted and, therefore, those factors did not pose a threat to the studies validity. For once, since not all entries of the combined literature list specified a digital object identifier (DOI), the duplicate removal had to be conducted based on the publication title. Yet, in some rare cases, there were duplicates for which the spelling of the title was slightly altered (e.g., the two parts of a title were in one search engine separated by a hyphen and in another by a double colon), and which were, therefore, not detected in the initial duplicate removal phase. Instead, they were only identified during the scanning of the title. 
+    
+    % Furthermore, in SpringerLink, conference papers are classified as book chapter, since conference proceedings are published as books. This makes them indistinguishable from real book chapters, when only looking at the metadata. Book chapters are, however, not part of the search’s scope. Consequently, the removal of book chapters for SpringerLink could only be processed when inspecting the respective publications. To slightly reduce the effort, it was decided to only do this for those publications that passed the filtering by title.
+    
+    
+    
+    % However, while there were three corresponding records in the initially obtained set of literature (from the years 2003, 2007, and 2010), those were already filtered out for other reasons by this stage. 
+    
+    
+    % \subsection{Evaluating papers based on the quality framework}
+    
+    % After having filtered out the pooled studies based on inclusion and exclusion criteria, we initiated a deeper probing, by running the remaining studies against the quality framework. 
+    
+    
+    
+    %  For this purpose, studies were evaluated for their content to see if they are actual research or just a mere report on some lessons or expert opinions. In addition, we checked if objectives, justification, aim and context of the studies are clearly communicated.
+    
+    % This last criterion is primarily geared towards actual experiments. In the conducted literature search, primarily literature-based studies were found, which somewhat devalues this aspect. Nevertheless, to assure completeness, it was still evaluated. 
+    
+    
+    In the first phase, the aim was to ensure that reports fulfill at least a desired minimum level of comprehensiveness. Authors independently rated the three aspects for all 23 remaining papers, giving one point respectively, if they deemed a criterion fulfilled and no point if they considered that aspect lacking. For passing the first phase at least 5/6 points required. In this phase 5 papers have been exlcuded. In the second phase, studies were judged based on their research design and the data collection methods. Minimum rating to pass was 3/4 and 8 papers has been excluded. Finally, the remaining 10 papers went through the third. Here, the credibility of the reporting and the relevance of the findings were evaluated. No paper has been removed in this phase.
+    
+    The overall agreement rate between researchers is 71.6 percent. All ten studies selected have been published in 2018 or later, with three of them being published in 2022, which shows the timeliness of the topic. Eight of the ten papers were found via Scopus, whereas the remaining two have been identified through IEEE Xplore. These papers are described in \citet{foundPapers}.
+
+    \item[Data Synthesis:] After selecting the quality papers, we embarked on the data synthesis process. For this phase we follow the guidelines of thematic synthesis discussed by Cruzes et al. \citet{Cruzes.2011}. To begin, we first extracted the following data from each paper: 1) findings, 2) research motivation, 3) author, 4) title, 5) research objectives, 6) research method, 7) year. We extracted these data through coding, using the software Nvivo. After that, we created two codes: 1) patterns, and 2) BD requirements, and coded the findings based on it. By the end of this process, various themes emerged. 
+    
+\end{description}
+
+% \subsection{}
+
+
 
 % These search terms are chosen because \emph{patterns} are exactly what was sought for, \emph{architectures} can contain such patterns, and \emph{design} is often used as a synonym for architecture. Further, patterns can be seen as \emph{building blocks}, therefore, the building blocks was also included. 
 
@@ -252,16 +358,16 @@ Since there are differences in the filters of the included search engines, it wa
 
 % As it can be seen at \citet{SLRsearchTerms}, due to the specifics of their search masks, the searches in the ACM Digital Library (title, abstract, keywords could only be searched separately), JSTOR (no support of wildcards), and Science Direct (no support of wildcards) had to be split in several parts. Those were afterwards merged for each of them, and duplicates were removed. 
 
-\subsection{Developing inclusion, exclusion criteria and the quality framework}
+% \subsection{Developing inclusion, exclusion criteria and the quality framework}
 
-Inspired by PRISMA checklist presented by \citet{tricco2018prisma}, Our inclusion and exclusion criteria are formulated as following:
+% Inspired by PRISMA checklist presented by \citet{tricco2018prisma}, Our inclusion and exclusion criteria are formulated as following:
 
-\textbf{Inclusion Criteria:} 1) Primary and secondary studies between Jan 1st 2012 and June 19th 2022, 2) The focus of the study is on MS patterns, and MS architectural constructs, 3) Scholarly publications such as conference proceedings and journal papers.
+% \textbf{Inclusion Criteria:} 1) Primary and secondary studies between Jan 1st 2012 and June 19th 2022, 2) The focus of the study is on MS patterns, and MS architectural constructs, 3) Scholarly publications such as conference proceedings and journal papers.
 
-\textbf{Exclusion Criteria:} 1) Studies that are not written in English, 2) Informal literature surveys without any clearly defined research questions or research process, 3) Duplicate reports of the same study (a conference and journal version of the same paper). In such cases, the conference paper was removed. 4) Complete duplicates (not just Updates) were also removed. 5) Short papers (less than 6 pages).
+% \textbf{Exclusion Criteria:} 1) Studies that are not written in English, 2) Informal literature surveys without any clearly defined research questions or research process, 3) Duplicate reports of the same study (a conference and journal version of the same paper). In such cases, the conference paper was removed. 4) Complete duplicates (not just Updates) were also removed. 5) Short papers (less than 6 pages).
 
-% \subsection{Developing the quality framework}
-\textbf{Quality Framework:} Quality of the evidence collected as a result of this SLR has direct impact on the quality of the findings, making quality assessment an important undertaking. To address this, we developed a criteria made up of 7 elements. These criteria are informed by guidelines provided by Kitchenham \citet{Kitchenham.2004} on empirical research in software engineering. These 7 criteria are applied in three different stages (quality gates). These 7 criteria are discussed in Table \ref{qualityFramework}.
+% % \subsection{Developing the quality framework}
+% \textbf{Quality Framework:} Quality of the evidence collected as a result of this SLR has direct impact on the quality of the findings, making quality assessment an important undertaking. To address this, we developed a criteria made up of 7 elements. These criteria are informed by guidelines provided by Kitchenham \citet{Kitchenham.2004} on empirical research in software engineering. These 7 criteria are applied in three different stages (quality gates). These 7 criteria are discussed in Table \ref{qualityFramework}.
 
 
 % \begin{enumerate}
@@ -270,19 +376,21 @@ Inspired by PRISMA checklist presented by \citet{tricco2018prisma}, Our inclusio
 %     \item Scholarly publications such as conference proceedings and journal papers
 % \end{enumerate}
 
-\subsection{Pooling literature based on the search strategy}
-Overall, the keyword search yielded 3064 contributions. The total number of found publications per source as well as an overview of the further search process can be seen in Figure 1.
+% \subsection{Pooling literature based on the search strategy}
+% \subsection{Pooling literature and evaluation}
 
-\begin{figure}
-    \centering 
-    \includegraphics[width=14cm]{Media/PRISMA-Flowchart-Compact.JPG}
-    \caption{Overview of the search process}
-    \label{fig:PRISMA}
-\end{figure}
+% Overall, the keyword search yielded 3064 contributions. The total number of found publications per source as well as an overview of the further search process can be seen in Figure 1.
 
-\subsection{Evaluating papers based on inclusion and exclusion criteria}
+% \begin{figure}
+%     \centering 
+%     \includegraphics[width=14cm]{Media/PRISMA-Flowchart-Compact.JPG}
+%     \caption{Overview of the search process}
+%     \label{fig:PRISMA}
+% \end{figure}
 
-The remaining 1868 papers were filtered by title to evaluate their relevance to the concepts of microservice patterns or architectural constructs related to MS. For this purpose, the first two authors separately evaluated each entry. If both agreed, this verdict was honored. In case of disagreement, they discussed the title to come to a conclusion. In this phase 1699 papers were excluded. The same approach was followed for abstracts. next, out of 169 remaining papers, 123 exluceded has been included. From there on, the papers that were not written in English (despite the abstract being in English), were published before the year 2012, and had a length of less than six pages were removed. The agreement rate among researchers for this phase equates to 88 percent for all phases.
+% \subsection{Evaluating papers based on inclusion and exclusion criteria}
+
+% The remaining 1868 papers were filtered by title to evaluate their relevance to the concepts of microservice patterns or architectural constructs related to MS. For this purpose, the first two authors separately evaluated each entry. If both agreed, this verdict was honored. In case of disagreement, they discussed the title to come to a conclusion. In this phase 1699 papers were excluded. The same approach was followed for abstracts. next, out of 169 remaining papers, 138 papers has been exluceded. From there on, the papers that were not written in English (despite the abstract being in English), were published before the year 2012, and had a length of less than six pages were removed. 23 papers have been selected for the quality assement against the quality framework. The agreement rate among researchers for this phase equates to 88 percent. 
 
 % the first author initially included 113 papers and the second author 146. Of those, 41 were present in both sets and 1650 were excluded by both. 
 
@@ -307,20 +415,20 @@ The remaining 1868 papers were filtered by title to evaluate their relevance to 
 % However, while there were three corresponding records in the initially obtained set of literature (from the years 2003, 2007, and 2010), those were already filtered out for other reasons by this stage. 
 
 
-\subsection{Evaluating papers based on the quality framework}
+% \subsection{Evaluating papers based on the quality framework}
 
 % After having filtered out the pooled studies based on inclusion and exclusion criteria, we initiated a deeper probing, by running the remaining studies against the quality framework. 
 
-The filtering based on the quality criteria was divided into three differently focused phases, with each of them requiring the passing of a quality gate as portrayed in Table \ref{qualityFramework}. 
+
 
 %  For this purpose, studies were evaluated for their content to see if they are actual research or just a mere report on some lessons or expert opinions. In addition, we checked if objectives, justification, aim and context of the studies are clearly communicated.
 
 % This last criterion is primarily geared towards actual experiments. In the conducted literature search, primarily literature-based studies were found, which somewhat devalues this aspect. Nevertheless, to assure completeness, it was still evaluated. 
 
 
-In the first phase, the aim was to ensure that reports fulfill at least a desired minimum level of comprehensiveness. Authors independently rated the three aspects for all 23 remaining papers, giving one point respectively, if they deemed a criterion fulfilled and no point if they considered that aspect lacking. For passing the first phase at least 5/6 points required. In this phase 5 papers have been exlcuded. In the second phase, studies were judged based on their research design and the data collection methods. Minimum rating to pass was 3/4 and 8 papers has been excluded. Finally, the remaining 10 papers went through the third. Here, the credibility of the reporting and the relevance of the findings were evaluated. No paper has been removed in this phase.
+% In the first phase, the aim was to ensure that reports fulfill at least a desired minimum level of comprehensiveness. Authors independently rated the three aspects for all 23 remaining papers, giving one point respectively, if they deemed a criterion fulfilled and no point if they considered that aspect lacking. For passing the first phase at least 5/6 points required. In this phase 5 papers have been exlcuded. In the second phase, studies were judged based on their research design and the data collection methods. Minimum rating to pass was 3/4 and 8 papers has been excluded. Finally, the remaining 10 papers went through the third. Here, the credibility of the reporting and the relevance of the findings were evaluated. No paper has been removed in this phase.
 
-The overall agreement rate between researchers is 71.6 percent. All ten studies selected have been published in 2018 or later, with three of them being published in 2022, which shows the timeliness of the topic. Eight of the ten papers were found via Scopus, whereas the remaining two have been identified through IEEE Xplore. These papers are described in \citet{foundPapers}.
+% The overall agreement rate between researchers is 71.6 percent. All ten studies selected have been published in 2018 or later, with three of them being published in 2022, which shows the timeliness of the topic. Eight of the ten papers were found via Scopus, whereas the remaining two have been identified through IEEE Xplore. These papers are described in \citet{foundPapers}.
 
 
 
@@ -339,49 +447,10 @@ The overall agreement rate between researchers is 71.6 percent. All ten studies 
 
 % The remaining 10 papers went through the third and final phase. Here, the credibility of the reporting and the relevance of the findings were evaluated. In this last phase, the authors agreed on 14 of 20 evaluations, resulting in an agreement rate of exactly 70 percent. All ten publications have been published in 2018 or later, with three of them being published in 2022, which shows the timeliness of the topic. Eight of the ten papers were found via Scopus, whereas the remaining two have been identified through IEEE Xplore. These papers are described in \citet{foundPapers}.
 
-\begin{table}
-    \renewcommand{\arraystretch}{1}
-    \caption[]{The quality framework}
-    \begin{tabular}{|p{1cm}|p{2cm}|p{10cm}|p{1.5cm}|}
-        \hline
-        Quality Gate & Criterion & Considered Aspect & Rating to pass \\ 
 
-        \hline
+% \subsection{Data synthesis}
 
-        1 & Minimum quality threshold & 
-        
-        1) Does the study report empirical research or is it merely a 'lesson learnt' report based on expert opinion?
-
-        2) The objectives and aims of the study are clearly communicated, including the reasoning for why the study was undertaken?
-
-        3) Does the study provide with adequate information regarding the context in which the research was carried out?
-        & 5/6 \\ 
-        \hline
-        2 & Rigor & 
-        
-        1) Is the research design appropriate to address the objectives of the research?
-
-        2) Is there any data collection method used and is it appropriate?
-        & 3/4 \\ 
-        \hline  
-        3 &
-         Credibility 
-
-         Relevance 
-        & 
-        1) Does the study report findings in a clear and unbiased manner?
-
-        2) Does the study provide value for practice or research?
-        & 
-        3/4 \\ 
-        \hline   
-    \end{tabular}
-    \label{qualityFramework}
-\end{table}
-
-\subsection{Data synthesis}
-
-After selecting the quality papers, we embarked on the data synthesis process. For this phase we follow the guidelines of thematic synthesis discussed by Cruzes et al. \citet{Cruzes.2011}. To begin, we first extracted the following data from each paper: 1) findings, 2) research motivation, 3) author, 4) title, 5) research objectives, 6) research method, 7) year. We extracted these data through coding, using the software Nvivo. After that, we created two codes: 1) patterns, and 2) BD requirements, and coded the findings based on it. By the end of this process, various themes emerged. 
+% After selecting the quality papers, we embarked on the data synthesis process. For this phase we follow the guidelines of thematic synthesis discussed by Cruzes et al. \citet{Cruzes.2011}. To begin, we first extracted the following data from each paper: 1) findings, 2) research motivation, 3) author, 4) title, 5) research objectives, 6) research method, 7) year. We extracted these data through coding, using the software Nvivo. After that, we created two codes: 1) patterns, and 2) BD requirements, and coded the findings based on it. By the end of this process, various themes emerged. 
 
 
 
@@ -414,6 +483,56 @@ While we could find BD major building blocks and system requirements by coding t
     \item \textbf{Type of requirements:} For the purposes of this study, we opted for a well-received approach discussed by \citet{laplante2017requirements}. In this approach, requirements are classified into three major types of 1) functional requirements, 2) non-functional requirements, and 3) domain requirements. Our primary focus is one functional and domain requirements. 
     \item \textbf{Categorizing Requirements:} For categorization of requirements, we followed the well-established categorization method based on BD characteristic, that is the 5Vs. These 5Vs are velocity, veracity, volume, variety and value \citep{rad2017big}. We took inspiration from various studies such as the work of \citet{nadal2017software}, and the requirements categories presented in NIST BD Public Working Group \citep{Chang.2019}. This resulted in addition of `security and privacy' to the category of requirements. We do not aim to define these characteristics in this study. This can be found in the works of \citet{rada2017hype}.
     \item \textbf{Presenting Requirements:} For the purposes of this study, we opted for an informal method because it is a well established method in the industry and academia \citep{kassab2014state}. Our approach follows the guidelines explained in ISO/IEC/IEEE standard \citet{ISO29148} for representing functional requirements. These requirements are described in Table \ref{table-requirements}.
+    \begin{table*}[h]
+        \centering
+        \caption{BD system requirements}
+        \renewcommand*{\arraystretch}{1.1}
+        \begin{tabular}{|m{1.2cm}|m{14cm}|}
+    
+            \hline
+    
+            Volume &
+    
+            \textbf{Vol-1)} System needs to support asynchronous, streaming, and batch processing to collect data from centralized, distributed, and other sources, \textbf{Vol-2)} System needs to provide a scalable storage for massive data sets 
+            \\
+            \hline
+            Velocity & 
+            
+            \textbf{Vel-1)} System needs to support slow, bursty, and high-throughput data transmission between data sources, \textbf{Vel-2)} System needs to stream data to data consumers in a timely manner, \textbf{Vel-3)} System needs to be able to ingest multiple, continuous, time varying data streams, \textbf{Vel-4)} System should be able to process data in real-time or near real-time manner 
+            \\ 
+    
+            \hline
+    
+            Variety & 
+    
+            \textbf{Var-1)} System needs to support data in various formats ranging from structured to semi-structured and unstructured data, \textbf{Var-2)} System needs to support aggregation, standardization, and normalization of data from disparate sources, \textbf{Var-3)} System shall support adaptations mechanisms for schema evolution, \textbf{Var-4)} System can provide mechanisms to automatically include new data sources 
+            \\
+    
+            \hline
+    
+            Value & 
+            
+            \textbf{Val-1)} System needs to able to handle compute-intensive analytical processing and machine learning techniques, \textbf{Val-2)} System needs to support two types of analytical processing: batch and streaming, \textbf{Val-3)} System needs to support different output file formats for different purposes, \textbf{Val-4)} System needs to support streaming results to the consumers 
+            \\
+    
+            \hline
+    
+            Security \& Privacy & 
+            
+            \textbf{SaP-1)} System needs to protect and retain privacy and security of sensitive data, \textbf{SaP-2)} System needs to have access control, and multi-level, policy-driven authentication on protected data and processing nodes. 
+            \\
+    
+            \hline
+            
+            Veracity &
+            
+            \textbf{Ver-1)} System needs to support data quality curation including classification, pre-processing, format, reduction, and  transformation, \textbf{Ver-2)} System needs to support data provenance including data life cycle management and long-term preservation.
+            \\
+            \hline
+      
+        \end{tabular}
+        \label{table-requirements}
+        \end{table*}
 
 \end{enumerate}
 
@@ -435,56 +554,7 @@ While we could find BD major building blocks and system requirements by coding t
 % After knowing the type and category of requirements, We looked for a rigorous approach to present these requirements. There are numerous approaches used for software and system requirement representation including informal, semiformal and formal methods. For the purposes of this study, we opted for an informal method because it is a well established method in the industry and academia \citep{kassab2014state}. Our approach follows the guidelines explained in ISO/IEC/IEEE standard \citet{ISO29148} for representing functional requirements. We have also taken inspiration from Software Engineering Body of Knowledge \citep{abran2004software}. However, our requirement representation is organized in term of BD characteristics. These requirements are described in Table \ref{table-requirements}.
 
 
-\begin{table*}[h]
-    \centering
-    \caption{BD system requirements}
-    \renewcommand*{\arraystretch}{1.1}
-    \begin{tabular}{|m{1.2cm}|m{14cm}|}
 
-        \hline
-
-        Volume &
-
-        \textbf{Vol-1)} System needs to support asynchronous, streaming, and batch processing to collect data from centralized, distributed, and other sources, \textbf{Vol-2)} System needs to provide a scalable storage for massive data sets 
-        \\
-        \hline
-        Velocity & 
-        
-        \textbf{Vel-1)} System needs to support slow, bursty, and high-throughput data transmission between data sources, \textbf{Vel-2)} System needs to stream data to data consumers in a timely manner, \textbf{Vel-3)} System needs to be able to ingest multiple, continuous, time varying data streams, \textbf{Vel-4)} System should be able to process data in real-time or near real-time manner 
-        \\ 
-
-        \hline
-
-        Variety & 
-
-        \textbf{Var-1)} System needs to support data in various formats ranging from structured to semi-structured and unstructured data, \textbf{Var-2)} System needs to support aggregation, standardization, and normalization of data from disparate sources, \textbf{Var-3)} System shall support adaptations mechanisms for schema evolution, \textbf{Var-4)} System can provide mechanisms to automatically include new data sources 
-        \\
-
-        \hline
-
-        Value & 
-        
-        \textbf{Val-1)} System needs to able to handle compute-intensive analytical processing and machine learning techniques, \textbf{Val-2)} System needs to support two types of analytical processing: batch and streaming, \textbf{Val-3)} System needs to support different output file formats for different purposes, \textbf{Val-4)} System needs to support streaming results to the consumers 
-        \\
-
-        \hline
-
-        Security \& Privacy & 
-        
-        \textbf{SaP-1)} System needs to protect and retain privacy and security of sensitive data, \textbf{SaP-2)} System needs to have access control, and multi-level, policy-driven authentication on protected data and processing nodes. 
-        \\
-
-        \hline
-        
-        Veracity &
-        
-        \textbf{Ver-1)} System needs to support data quality curation including classification, pre-processing, format, reduction, and  transformation, \textbf{Ver-2)} System needs to support data provenance including data life cycle management and long-term preservation.
-        \\
-        \hline
-  
-    \end{tabular}
-    \label{table-requirements}
-    \end{table*}
 
 
 \section{Microservice Patterns}
@@ -896,7 +966,7 @@ In this section, we combine our findings from both SLRs, and present new theorie
 
 % BD systems and microservices architecture are both inherently distributed. While many of the current BD systems are designed underlying a monolithic data pipeline architecture, here, we propose microservices architecture for a domain-driven and decentralized BD architecture.
 
-We posit that a pattern alone would not be significantly useful to a data engineering or a data architect, and propose that a collection of patterns in relation to current defacto standard of BD architectures is a better means of communication. To achieve this, we portray patterns selected for each requirement in a reference architecture. We then justify the components and describe how patterns could address the requirement. These descriptions are presented as sub section, each describing one characteristic of BD systems. 
+We posit that a pattern alone would not be significantly useful to a data engineering or a data architect, and propose that a collection of patterns in relation to current defacto standard of BD architectures is a better means of communication. To achieve this, we provide theories on how MS patterns can address BD requirements. Additionally, we portray selected patterns in a reference architecture.
 
 
 \section{Volume} \label{volumeSection}
@@ -905,9 +975,8 @@ We posit that a pattern alone would not be significantly useful to a data engine
 
 To address the volume requirements of BD , and in specific for Vol-1 and Vol-2 we suggest the following patterns to be effective; 1) Gateway offloading, 2) API gateway, 3) External Configuration Store
 
-\subsection{Gateway Offloading and API Gateway}
-
-In a typical flow of data engineering, data goes from ingestion, to storage, to transformation and finally to serving. However there are various challenges to maintain this. One challenge is the realization of various data sources as described in Vol-1. Data comes in various formats from and system needs to handle different data through different interfaces. 
+\vspace{6px}
+\textbf{1.Gateway Offloading and API Gateway:} In a typical flow of data engineering, data goes from ingestion, to storage, to transformation and finally to serving. However there are various challenges to maintain this. One challenge is the realization of various data sources as described in Vol-1. Data comes in various formats from and system needs to handle different data through different interfaces. 
 
 % So some of the key engineering consideration for the ingestion process is that; 1) is the BD system ingesting data reliably? How frequently should data be ingested? In what volume the data typically arrives?
 
@@ -918,16 +987,26 @@ Given the challenges and particularities of data types, different nodes may be s
 
 Moreover, if data producers directly communicate with the processing nodes, they will have to update the endpoint address every now and on. This issue is exacerbated when the data producer tries to communicate to a service that is down. Given that lifecycle of a service in a typical distributed cloud environment is not deterministic and many container orchestration systems constantly recycle services to proactively address this issue, reliability and maintainability of the BD system can be compromised. This also increases round-trips, and introduces security issues. To address this, we introduce the API gateway pattern. API gateway can be the single point of entry to the system, providing with request aggregation, gateway routing and proxying. This is an effective pattern in tackling cross-cutting concerns specially in distributed system with many nodes. These pattern are portrayed in Figure \ref{fig:RA}. 
 
-% on the fence!
-% Additionally, the gateway can increase the system reliability and availability by doing a constant health check on services, and distribute traffic based on liveliness probes. There are other benefits to to these patterns suich as weighted distribution, customized cache mechanism through specific HTTP headers, and consolidated security. This also means that if the gateway is down, service nodes won't introduce bad state into the overall system. We have portrayed a simplistic representation of this pattern in Figure \ref{fig:RA}. 
 
-\subsection{External Configuration Store}
 
-As discussed earlier, BD systems are made up of various services in order to achieve horizontal scalability. These services will have to communicate with each other in order to achieve the goal of the system. Thus, each one of them will require a set of runtime environmental configurations. 
+% \subsection{Gateway Offloading and API Gateway:} In a typical flow of data engineering, data goes from ingestion, to storage, to transformation and finally to serving. However there are various challenges to maintain this. One challenge is the realization of various data sources as described in Vol-1. Data comes in various formats from and system needs to handle different data through different interfaces. 
 
-These configurations could be database network locations, feature flags, and third party credentials. Moreover, different stages of the data engineering may have different environments for different purposes, for instance, privacy engineers may require a completely different environment to achieve their requirements. Therefore, the challenge is the management of these configurations as the system scales, and enabling services to run in different environments without modification. To address this problem, we propose the external configuration store pattern.
+% % So some of the key engineering consideration for the ingestion process is that; 1) is the BD system ingesting data reliably? How frequently should data be ingested? In what volume the data typically arrives?
 
-By externalizing all nodes configuration to another service, each node can request its configuration from an external store on boot up. This pattern solves the challenges of handling large number of nodes in BD systems and provide with a scalable solution for handling configurations. This pattern is portrayed in Figure \ref{fig:RA}.
+% Given the challenges and particularities of data types, different nodes may be spawned to handle the volume of data. This can be problematic as different nodes will need to account for cross-cutting concerns such as certificate management, throttling, logging, monitoring and authentication. If each node reimplement the same interface for the cross-cutting concerns, scalability and maintainability can be a daunting task. This also introduces unnecessary repetition of codes and can result in incompatible interfaces. To solve this problem, we explore the concept of gateway offloading. Offloading cross-cutting concerns to a single architectural construct, achieves `separation of concerns'. This simplifies development and removes the need for a re-implementing cross-cutting concerns. In addition, it introduces consistency in terms of logging and monitoring and allow teams to work on things that they are specialized in.
+
+% % Another popular approach is the segregation of concerns by separating batch and streaming processing nodes. Given the requirement of horizontal scaling for BD systems, it is safe to assume that there is usually more then one node associated to ingesting data.
+
+
+% Moreover, if data producers directly communicate with the processing nodes, they will have to update the endpoint address every now and on. This issue is exacerbated when the data producer tries to communicate to a service that is down. Given that lifecycle of a service in a typical distributed cloud environment is not deterministic and many container orchestration systems constantly recycle services to proactively address this issue, reliability and maintainability of the BD system can be compromised. This also increases round-trips, and introduces security issues. To address this, we introduce the API gateway pattern. API gateway can be the single point of entry to the system, providing with request aggregation, gateway routing and proxying. This is an effective pattern in tackling cross-cutting concerns specially in distributed system with many nodes. These pattern are portrayed in Figure \ref{fig:RA}. 
+
+% % on the fence!
+% % Additionally, the gateway can increase the system reliability and availability by doing a constant health check on services, and distribute traffic based on liveliness probes. There are other benefits to to these patterns suich as weighted distribution, customized cache mechanism through specific HTTP headers, and consolidated security. This also means that if the gateway is down, service nodes won't introduce bad state into the overall system. We have portrayed a simplistic representation of this pattern in Figure \ref{fig:RA}. 
+
+\vspace{6px}
+\textbf{2. External Configuration Store:} As discussed earlier, BD systems are made up of various services in order to achieve horizontal scalability. These services will have to communicate with each other in order to achieve the goal of the system. Thus, each one of them will require a set of runtime environmental configurations. These configurations could be database network locations, feature flags, and third party credentials. Moreover, different stages of the data engineering may have different environments for different purposes, for instance, privacy engineers may require a completely different environment to achieve their requirements. 
+
+Therefore, the challenge is the management of these configurations as the system scales, and enabling services to run in different environments without modification. To address this problem, we propose the external configuration store pattern. By externalizing all nodes configuration to another service, each node can request its configuration from an external store on boot up. This pattern solves the challenges of handling large number of nodes in BD systems and provide with a scalable solution for handling configurations. This pattern is portrayed in Figure \ref{fig:RA}.
 
 \begin{figure*}[h]
     \centering 
@@ -940,9 +1019,8 @@ By externalizing all nodes configuration to another service, each node can reque
 
 To address some of the challenges associated with the velocity aspect of BD systems, we recommend the following patterns for the requirements Vel-1, Vel-2, Vel-3, and Vel-4; 1) Competing Consumers, 2) Circuit Breaker and 3) Log Aggregation.
 
-\subsection{Competing Consumers}
-
-According to a recent MIT report in collaboration with Databricks, one of the main challenges of BD 'low-achievers' is the 'slow processing of large amounts of data' \citep{DataBricksSurvey}. If the business desires to go data driven, it should be able to have an acceptable time-to-insight. 
+\vspace{6px}
+\textbf{1. Competing Consumers:} According to a recent MIT report in collaboration with Databricks, one of the main challenges of BD 'low-achievers' is the 'slow processing of large amounts of data' \citep{DataBricksSurvey}. If the business desires to go data driven, it should be able to have an acceptable time-to-insight. 
 
 % Given the very contrived scenario of a BD system described in the previous section, at the very core, 
 
@@ -962,13 +1040,11 @@ While this communication may improve the availability and idle time, it can fail
 
 % This can change the nature of the communication to asynchronous mode, and allow for a better fault tolerance, because if one node is down, the other nodes can listen to the event and handle it. In other terms, because now there are a few consumers listening on the events being dispatched on a certain topic, there's a competition of consumers, therefore the name 'competing consumers'. 
 
-\subsection{Circuit Breaker}
-
-On the other hand, given the large number of nodes one can assume for any BD system, one can employ the circuit breaker pattern to signal the service unavailability. Circuit breakers can protect the overall integrity of data and processes by tripping and closing the incoming request to the unhealthy service. This communicates effectively to the rest of the system that the node is unavailable, allowing engineers to handle such incidents gracefully. This pattern, mixed with competing consumers pattern can increase the overall availability and reliability of the system, and this is achieved by providing an even-driven asynchronous fault tolerance communication mechanisms among BD services. This allows system to be able to be resilient and responsive to bursty, high-throughput data as well as small, batch oriented data, addressing requirements Vel-1, Vel-4, and Vel-4. 
+\vspace{6px}
+\textbf{2. Circuit Breaker:} On the other hand, given the large number of nodes one can assume for any BD system, one can employ the circuit breaker pattern to signal the service unavailability. Circuit breakers can protect the overall integrity of data and processes by tripping and closing the incoming request to the unhealthy service. This communicates effectively to the rest of the system that the node is unavailable, allowing engineers to handle such incidents gracefully. This pattern, mixed with competing consumers pattern can increase the overall availability and reliability of the system, and this is achieved by providing an even-driven asynchronous fault tolerance communication mechanisms among BD services. This allows system to be able to be resilient and responsive to bursty, high-throughput data as well as small, batch oriented data, addressing requirements Vel-1, Vel-4, and Vel-4. 
     
-\subsection{Log Aggregator}
-
-Given that BD systems are comprising of many services, log aggregation can be implemented to shed lights on these services and their audit trail. Traditional single node logging does not work very well in distributed environments, as engineers are required to understand the whole flow of data from one end to another. To address this issue, log aggregation can be implemented, which usually comes with a unified interface that services communicate to and log their processes from. This interface then, does the necessary processes on the logs, and finally store the logs. 
+\vspace{6px}
+\textbf{3. Log Aggregator:} Given that BD systems are comprising of many services, log aggregation can be implemented to shed lights on these services and their audit trail. Traditional single node logging does not work very well in distributed environments, as engineers are required to understand the whole flow of data from one end to another. To address this issue, log aggregation can be implemented, which usually comes with a unified interface that services communicate to and log their processes from. This interface then, does the necessary processes on the logs, and finally store the logs. 
 
 In addition, reliability engineers can configure alerts to be triggered underlying certain metrics. This increases teams agility to proactively resolve issues, which in turn increases reliability and availability which in turn addresses the velocity requirement of BD systems. While this design pattern does not directly affect any system requirements, it indirectly affects all of them. A simplistic presentation of this pattern is portrayed in Figure \ref{fig:RA}. 
 
@@ -980,30 +1056,27 @@ In addition, reliability engineers can configure alerts to be triggered underlyi
 % \end{figure*}
 
 
-\subsection{Variety}
+\section{Variety}
 To address some of the challenges of this endeavour, we recommend the following patterns to address requirements Var-1, Var-3, Var-4; 1) API Gateway, 2) Gateway Offloading.
 
-\subsubsection{API Gateway and Gateway Offloading}
+\vspace{6px}
+\textbf{1. API Gateway and Gateway Offloading:} We have previously discussed the benefits of API Gateway and Gateway Offloading, however in this section we aim to relate it more to BD system requirements Var-1, Var-3, and Var-4. Data engineers need to keep an open line of communication to data producers on changes that could break the data pipelines and analytics. Suppose that developer A changes a field in a schema of an object that may break a data pipeline or introduce a privacy threat. How can data engineers handle this scenario effectively? 
 
-We have previously discussed the benefits of API Gateway and Gateway Offloading, however in this section we aim to relate it more to BD system requirements Var-1, Var-3, and Var-4. Data engineers need to keep an open line of communication to data producers on changes that could break the data pipelines and analytics. Suppose that developer A changes a field in a schema of an object that may break a data pipeline or introduce a privacy threat. How can data engineers handle this scenario effectively? 
+To address this problem, API Gateway and Gateway Offloading can be used. These patterns can be used to offload some of the light-weight processes that may be associated to the data structure or the type of data. Moreover, as the data engineering loads increases, there will be more servers spawned for batch and stream processing. Gateways help with handling the traffic to these new servers and provide with zero down-time transitions. High-level overview of API Gateway pattern is portrayed in Figure \ref{fig:RA}.
 
-To address this problem, API Gateway and Gateway Offloading can be used. API Gateway and Gateway Offloading could be good patterns to offload some of the light-weight processes that maybe associated to the data structure or the type of data. Moreover, as the data engineering loads increases, there will be more servers spawned for batch and stream processing. Gateways help with handling the traffic to these new servers and provide with zero down-time transitions. High-level overview of API Gateway pattern is portrayed in Figure \ref{fig:RA}.
-
-\subsection{Value}
+\section{Value}
 
 To address some of these challenges, we propose the following patterns to address the requirements Val-1, Val-3, and Val-4; 1) Command and Query Responsibility Segregation (CQRS), 2) Anti-Corruption Layer.
 
-\subsubsection{Command and Query Responsibility Segregation}
-
-Different consumers such as business analysts and machine learning engineers have very different demands, and would therefore create different workloads for the BD systems. As the consumers grow, the application has to handle more object mappings and mutations to meet the consumers demands. This may result in complex validation logics, transformations, and serialization that can be write-heavy on the data storage. As a result, the data serving layer can end up with an overly complex logic that does too much. 
+\vspace{6px}
+\textbf{1. CQRS:} Different consumers such as business analysts and machine learning engineers have very different demands, and would therefore create different workloads for the BD systems. As the consumers grow, the application has to handle more object mappings and mutations to meet the consumers demands. This may result in complex validation logics, transformations, and serialization that can be write-heavy on the data storage. As a result, the data serving layer can end up with an overly complex logic that does too much. 
 
 Read and write representation of the data are often different and miss-matching and require a specific approach and modeling. This is something a data engineer should consider from the initial data modeling, to data storage, retrieval and serialization. And while the system may be more tolerant on the write side, it may have a requirement to provide reads in a timely manner.  For instance a snowflake schema maybe expensive for writes, but cheap for reads. 
 
 To address some of these challenges, we suggest CQRS pattern. CQRS separates the read from writes, using commands to update the data, and query to read data. This implies that the read and write databases can be physically segregated and consistency can be achieved through an event. To keep databases in sync, the write database can publish an event whenever an update occurs, and the read database can listen to it, retrieve the data, optimize for  read and persist. This allows for elastic scaling of the read nodes, and increased query performance. This also allows for a read optimized data modeling tailored specifically for data consumers. Therefore, this pattern can potentially address the requirement Val-1, and Val-3. This pattern is portrated in Figure \ref{fig:RA}.
 
-\subsubsection{Anti-Corruption Layer}
-
-Given that the number of consumers and producers can grow and data can be created and requested in different formats with different characteristics, the ingestion and serving layer may be coupled to these foreign domains and try to account for an abstraction that aims to encapsulate all the logic in regards to all the external nodes. As the system grows, this abstraction layer becomes harder to maintain, and its maintainability becomes more difficult. 
+\vspace{6px}
+\textbf{2. Anti-Corruption Layer:} Given that the number of consumers and producers can grow and data can be created and requested in different formats with different characteristics, the ingestion and serving layer may be coupled to these foreign domains and try to account for an abstraction that aims to encapsulate all the logic in regards to all the external nodes. As the system grows, this abstraction layer becomes harder to maintain, and its maintainability becomes more difficult. 
 
 One approach to solve this issue is anti-corruption layer. Anti-corruption layer is a node that can be placed between the serving layer and data consumers or data producer, isolating different systems and translating between domains. This eliminates all the complexity and coupling that could have been otherwise introduced to the ingestion layer or the serving layer. This also allows for nodes to follow the 'single responsibility' pattern. This pattern can help with requirements Val-3 and Val-4. We have portrayed this pattern in Figure \ref{fig:RA}.
 
@@ -1013,37 +1086,34 @@ One approach to solve this issue is anti-corruption layer. Anti-corruption layer
 %     \label{fig:Value Requirements}
 % \end{figure*}
 
-\subsection{Security and Privacy}
+\section{Security and Privacy}
 
 Security and privacy should be on top of mind for any BD system development, as these two aspects play an important role in the overall data strategy and architecture of the company. To this end, we propose the following pattern to address requirements SaP-1 and SaP-2; 1) Backend for Frontend (BFF)
 
-\subsubsection{Backend for Frontend}
-
-In terms of privacy, given the increasing load of data producers, and how they should be directed to the right processing node, how does one comply with regional policies such as GDPR? how do we ensure, for example, that data is anonymized and identifiable properties are omitted? one approach is to do this right in the API gateway. However as data consumers grow and more data gets in, maintaining the privacy rules in the API gateway becomes more difficult. This can result in a bloated API gateway with many responsibilities, that can be a potential bottleneck to the system.
+\vspace{6px}
+\textbf{1. Backend for Frontend:} In terms of privacy, given the increasing load of data producers, and how they should be directed to the right processing node, how does one comply with regional policies such as GDPR? how do we ensure, for example, that data is anonymized and identifiable properties are omitted? one approach is to do this right in the API gateway. However as data consumers grow and more data gets in, maintaining the privacy rules in the API gateway becomes more difficult. This can result in a bloated API gateway with many responsibilities, that can be a potential bottleneck to the system.
 
 On approach to this problem can be the BFF pattern. By creating backends (services) for frontends (data producers), we can logically segregate API gateways for data that requires different level of privacy and security. Implementing this pattern means that instead of trying to account for all privacy related concerns in one node (API gateway), we separate the concerns to a number of services (backends) that are each responsible for a specific class of requirements. In addition, this pattern introduces a great opportunity for data mutation, schema validation, and potentially interface change (receive REST, and return GraphQL).
 
 On the other hand, from the security point of view, BFF can be implemented to achieve token isolation, cookie termination, and a security gate before requests can reach to upstream servers. Other security procedures such as sanitization, data masking, tokenization, and obfuscation can be done in this layer as well. This addresses the requirements SaP-1 and SaP-2. 
 
 
-\subsection{Veracity}
+\section{Veracity}
 
 For veracity, we propose the following patterns for addressing requirements Ver-1, and Ver-4; 1) Pipes and Filters, 2) Circuit breaker 
 
-\subsubsection{Pipes and Filters}
-
-Suppose that there is a data processing node that is responsible for performing variety of data transformation and other processes with different level of complexities. As requirements emerge, newer approaches of processing may be required, and soon this node will turn into a big monolithic unit that aims to achieve too much. Furthermore, this node is likely to reduce the opportunities of optimization, refactoring, testing and reusing. This is not elastic and can produce unwanted idle times. 
+\vspace{6px}
+\textbf{1. Pipes and Filters:} Suppose that there is a data processing node that is responsible for performing variety of data transformation and other processes with different level of complexities. As requirements emerge, newer approaches of processing may be required, and soon this node will turn into a big monolithic unit that aims to achieve too much. Furthermore, this node is likely to reduce the opportunities of optimization, refactoring, testing and reusing. This is not elastic and can produce unwanted idle times. 
 
 One approach to this problem could be the pipes and filters pattern. By implementing pipes and filters, processing required for each stream can be separated into its own node (filter) that performs a single task. Following this approach allows for standardization of the format of the data and processing required for each step. This can help avoiding code duplication, and results in easier removal, replacement, augmentation and customization of data processing pipelines, addressing the requirements Ver-1 and Ver-4.
 
-\subsubsection{Circuit breaker}
- 
- Circuit breakers can help with veracity by preventing data from getting into an unhealthy node and therefore getting corrupted. In addition, circuit breakers combined with `pipes and filters' pattern can provide a great level of fault tolerance, by preventing data to be piped into the next filter, if the filter is not healthy. This indirectly increases the quality of data, and improves reliability. Having circuit breakers as proxies in place provides stability to the overall BD system, when the service of interest is recovering from an incident. This can indirectly help with Ver-4.
+\vspace{6px}
+\textbf{2.Circuit breaker:} Circuit breakers can help with veracity by preventing data from getting into an unhealthy node and therefore getting corrupted. In addition, circuit breakers combined with `pipes and filters' pattern can provide a great level of fault tolerance, by preventing data to be piped into the next filter, if the filter is not healthy. This indirectly increases the quality of data, and improves reliability. Having circuit breakers as proxies in place provides stability to the overall BD system, when the service of interest is recovering from an incident. This can indirectly help with Ver-4.
 
 
 \chapter{Validation}
 
-After the generation of the design theories, we sought for a suitable model of validation. This involved a thorough research in some of the well-established methods for validation such as single-case mechanism experiment, technical action research and focus groups \citep{wieringa2014design}. For the purposes of this study we chose semi-structured interviews (SSIs), following the guidelines of \citet{kallio2016systematic}. 
+After the generation of the design theories, we sought for a suitable model of validation. This involved a thorough research in some of the well-established methods for validation such as single-case mechanism experiment and technical action research \citep{wieringa2014design}. For the purposes of this study we chose semi-structured interviews (SSIs), following the guidelines of \citet{kallio2016systematic}. 
 
 \section{Interview design and Sampling strategy}
 Our SSI methodology is made up of four phases: 1) identifying the rationale for using semi-structured interviews, 2) formulating the preliminary semi-structured interview guide, 3) pilot testing the interview guide, 4) presenting the results of the interview. SSI are suitable for our study, because our conceptual framework is made up of architectural constructs that can benefit from in-depth probing and analysis. Our questions are categorized into main themes and follow-up questions, with main themes being progressing and logical. We pilot tested our interview guide using internal testing, which involved an evaluation of the preliminary interview guide with the members of the research team. Our interview guide is available at \cite{interviewGuide}.
@@ -1286,7 +1356,7 @@ An interviewee discussed how pipe and filters have been the key for them in prod
 
 The result of our interviews provided us with more confident in our theories. In addition, this study shed lights on two major findings; 1) the progress in the data engineering space seems to be uneven in comparison to software engineering, 2) MS pattern provide with a great potential for resolving some of the BD system development challenges. While there has been adoption of a few practices from software engineering into data engineering like DataOps, we posit that data engineering space can benefit more from well-established practices of software engineering. 
 
-Majority of the studies that we've analyzed to understand BD systems, seems to revolve around crunching and transforming data without much attention to data lifecycle management. This is bold when it comes to addressing major cross-cutting concerns of successful data engineering practice such as security, data quality, DataOps, data architecture, data interoperability, data versioning and testing. Based on this, we think that data architecture remains a significant challenge and requires more attention from both academia and industry. 
+Majority of the studies that we've analyzed to understand BD systems, seems to revolve around crunching and transforming data without much attention to data lifecycle management. This is bold when it comes to addressing major cross-cutting concerns of successful data engineering practice such as security, data quality, DataOps, data architecture, data interoperability, and data versioning. Based on this, we think that data architecture remains a significant challenge and requires more attention from both academia and industry. 
 
 % A part of it is due to adoption of microservices architecture in the industry, and in specifically by IT giants (\citet{Statisica}). While BD is not been successfully adopted as much. A survey by MIT technology review insights presented that only 13\% of companies excel at delivering their BD strategy. 
 
@@ -1298,7 +1368,8 @@ Majority of the studies that we've analyzed to understand BD systems, seems to r
 
 With all the undeniable benefits of BD, the success rate of BD projects is still rare. One of the core challenges of adopting BD lies in data architecture and data engineering. While software engineers have adopted many well-established methods and technologies, data engineering and BD architectures don't seem to benefit a lot from these advancements. 
 
-The aim of this study was to explore the relationship and application of MS architecture to BD systems through two distinct SLR. The results derived from these SLRs presented us with interesting data on the potential of MS patterns for BD systems. Given the distributed nature of BD systems, MS architectures seems to be a natural fit to solve myriad of problems that comes with decentralization. Even though we created many design theories, modeled patterns against systems, and validated our theories, we believe that our results could be further validated by more empirical studies, such as prototyping.
+The aim of this study was to explore the relationship and application of MS architecture to BD systems through two distinct SLR. The results derived from these SLRs presented us with interesting data on the potential of MS patterns for BD systems. Given the distributed nature of BD systems, MS architectures seems to be a natural fit to solve myriad of problems that comes with decentralization. Therefore, further emperical research in this area is required.
+
 
 
 
