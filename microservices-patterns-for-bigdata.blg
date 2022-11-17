@@ -1,25 +1,25 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'microservices-patterns-for-bigdata.blg'
-[72] biber-MSWIN64:322> INFO - === 
-[93] Biber.pm:415> INFO - Reading 'microservices-patterns-for-bigdata.bcf'
-[201] Biber.pm:943> INFO - Found 29 citekeys in bib section 0
-[219] Biber.pm:4256> INFO - Processing section 0
-[220] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[230] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[245] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
-[262] bibtex.pm:1653> INFO - LaTeX decoding ...
-[733] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
-[742] Utils.pm:304> WARN - Duplicate entry key: 'kitchenham2002preliminary' in file 'references.bib', skipping ...
-[748] Utils.pm:304> WARN - Duplicate entry key: 'klein2016reference' in file 'references.bib', skipping ...
-[748] Utils.pm:304> WARN - Duplicate entry key: 'gamma1995design' in file 'references.bib', skipping ...
-[751] Utils.pm:304> WARN - Duplicate entry key: 'page2021prisma' in file 'references.bib', skipping ...
-[751] Utils.pm:304> WARN - Duplicate entry key: 'rethlefsen2021prisma' in file 'references.bib', skipping ...
-[755] Utils.pm:304> WARN - Duplicate entry key: 'richardson2018microservices' in file 'references.bib', skipping ...
-[785] Utils.pm:304> WARN - Entry 'Richardson.2022' (references.bib): Invalid format '07.08.2022' of date field 'urldate' - ignoring
-[992] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[992] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[993] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[993] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[1035] bbl.pm:652> INFO - Writing 'microservices-patterns-for-bigdata.bbl' with encoding 'UTF-8'
-[1058] bbl.pm:755> INFO - Output to microservices-patterns-for-bigdata.bbl
-[1059] Biber.pm:128> INFO - WARNINGS: 7
+[85] biber-MSWIN64:322> INFO - === 
+[108] Biber.pm:415> INFO - Reading 'microservices-patterns-for-bigdata.bcf'
+[249] Biber.pm:943> INFO - Found 29 citekeys in bib section 0
+[267] Biber.pm:4256> INFO - Processing section 0
+[268] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[279] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[295] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[314] bibtex.pm:1653> INFO - LaTeX decoding ...
+[849] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[859] Utils.pm:304> WARN - Duplicate entry key: 'kitchenham2002preliminary' in file 'references.bib', skipping ...
+[866] Utils.pm:304> WARN - Duplicate entry key: 'klein2016reference' in file 'references.bib', skipping ...
+[867] Utils.pm:304> WARN - Duplicate entry key: 'gamma1995design' in file 'references.bib', skipping ...
+[870] Utils.pm:304> WARN - Duplicate entry key: 'page2021prisma' in file 'references.bib', skipping ...
+[870] Utils.pm:304> WARN - Duplicate entry key: 'rethlefsen2021prisma' in file 'references.bib', skipping ...
+[875] Utils.pm:304> WARN - Duplicate entry key: 'richardson2018microservices' in file 'references.bib', skipping ...
+[910] Utils.pm:304> WARN - Entry 'Richardson.2022' (references.bib): Invalid format '07.08.2022' of date field 'urldate' - ignoring
+[1162] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1162] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1162] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1162] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[1216] bbl.pm:652> INFO - Writing 'microservices-patterns-for-bigdata.bbl' with encoding 'UTF-8'
+[1243] bbl.pm:755> INFO - Output to microservices-patterns-for-bigdata.bbl
+[1244] Biber.pm:128> INFO - WARNINGS: 7
