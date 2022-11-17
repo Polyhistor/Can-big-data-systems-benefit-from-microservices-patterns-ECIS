@@ -133,6 +133,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Access}
       \field{title}{The state of big data reference architectures: a systematic literature review}
+      \field{volume}{10}
       \field{year}{2022}
     \endentry
     \entry{baltes2022sampling}{article}{}

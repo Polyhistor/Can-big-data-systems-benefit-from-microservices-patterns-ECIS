@@ -33,7 +33,7 @@
 %%% Enter Document Info here: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \maintitle{Application of Microservices Patterns to Big Data Systems} % ← Don't use UPPERCASE here, we do that automatically.
-\shorttitle{Short Title (up to 5 words)} % ← This goes into the header.
+\shorttitle{Big Data and Microservices} % ← This goes into the header.
 \category{Complete Research} % ← Choose one by deleting the others.
 
 % The review process is double blind.
@@ -65,7 +65,7 @@
 }
 
 \begin{abstract}\noindent
-    The panorama of data is ever evolving, and big data has emerged to become one of the most hyped terms in the industry. Today, users are the perpetual producers of data that if gleaned and crunched, will yield game-changing patterns. This has introduced an important shift about the role of data in organizations and many strived to harness to power of this new material. Howbeit, institutionalizing data is not an easy task and requires the absorption of a great deal of complexity. According to various sources, it is estimated that only 13\% of organizations succeeded in delivering on their data strategy. Among the root challenges, big data system development and data architecture are prominent. To this end, this study aims to facilitate data architecture and big data system development by applying well-established patterns of microservices architecture to big data systems. This objective is achieved by two systematic literature reviews, and infusion of results through thematic synthesis. The result of this work is a series of theories that explicates how microservices patterns could be useful for big data systems. These theories are then validated through a semi-structured interview with 6 experts from the industry. The findings emerged from this study indicates that big data architecture can benefit from many principles and patterns of microservices architecture. 
+    The panorama of data is ever evolving, and big data has emerged to become one of the most hyped terms in the industry. Today, users are the perpetual producers of data that if gleaned and crunched, will yield game-changing patterns. This has introduced an important shift about the role of data in organizations and many strived to harness to power of this new material. Howbeit, institutionalizing data is not an easy task and requires the absorption of a great deal of complexity. According to a recent survey, it is estimated that only 13\% of organizations succeeded in delivering on their data strategy. Among the root challenges, big data system development and data architecture are prominent. To this end, this study aims to facilitate data architecture and big data system development by applying well-established patterns of microservices architecture to big data systems. This objective is achieved by two systematic literature reviews, and infusion of results through thematic synthesis. The result of this work is a series of theories that explicates how microservices patterns could be useful for big data systems. These theories are then validated through a semi-structured interview with 6 experts from the industry. The findings emerged from this study indicates that big data architecture can benefit from many principles and patterns of microservices architecture. 
 \end{abstract}
 
 \begin{keywords}
@@ -100,7 +100,7 @@ Therefore, there is an increasing need for more research on reducing the complex
 
 % While practitioners in the domain of MS architecture seem to benefit from many well-established practices, data engineering does not seem be absorbing many of these concepts. 
 
-To this end, this study aims to explore the application of MS patterns to BD systems, in aspiration to solve some of the complexities of BD system development. For this purposes, the result of two distinct systematic literature review (SLR) are combined. The first SLR is done by \citet{ataei2022state} to find all BD reference architectures (RAs) available in the body of knowledge and to point out architectural constructus and limitations. The second SLR is conducted as part of this study to collect all MS patterns in the body of knowledge. The results of these SLRs are collected, captured and combined through thematic synthesis. As a result, various design theories are generated and validated through a semi-structured interview.
+To this end, this study aims to explore the application of MS patterns to BD systems, in aspiration to solve some of the complexities of BD system development. For this purposes, the result of two distinct systematic literature review (SLR) are combined. The first SLR is conducted as part of this study to collect all MS patterns in the body of knowledge. The results of these SLRs are collected, captured and combined through thematic synthesis. As a result, various design theories are generated and validated through a semi-structured interview. The second SLR is done by \citet{ataei2022state} to find all BD reference architectures (RAs) available in the body of knowledge and to point out architectural constructus and limitations. 
 
 
 % For this purpose, following this introduction as well as a background section and a description of the followed methodology, the literature review on BD reference architectures (Ataei and Litchfield 2020) is updated up until June 2022. Further, a thorough literature review on microservice patterns is conducted, complying with the Prisma guidelines (Page et al. 2021). Subsequently, the identified patterns are matched to the updated list of BD reference architectures. Finally, the results are discussed and a conclusion is given.
@@ -275,7 +275,7 @@ Overall, the keyword search yielded 3064 contributions. The total number of foun
 
 \begin{figure}
     \centering 
-    \includegraphics[width=8cm]{Media/PRISMA-Flowchart.JPG}
+    \includegraphics[width=14cm]{Media/PRISMA-Flowchart-Compact.JPG}
     \caption{Overview of the search process}
     \label{fig:PRISMA}
 \end{figure}
@@ -412,7 +412,7 @@ While we could find BD major building blocks and system requirements by coding t
 
 \begin{enumerate}
     \item \textbf{Type of requirements:} For the purposes of this study, we opted for a well-received approach discussed by \citet{laplante2017requirements}. In this approach, requirements are classified into three major types of 1) functional requirements, 2) non-functional requirements, and 3) domain requirements. Our primary focus is one functional and domain requirements. 
-    \item \textbf{Categorizing Requirements:} For categorization of requirements, we followed the well-established categorization method based on BD characteristics, that is the 5Vs. These 5Vs are velocity, veracity, volume, variety and value \citep{rad2017big}. We took inspiration from various studies such as the work of \citet{nadal2017software}, and the requirements categories presented in NIST BD Public Working Group \citep{Chang.2019}. This resulted in addition of `security and privacy' to the category of requirements. We do not aim to define these characteristics in this study. This can be found in the works of \citet{rada2017hype}.
+    \item \textbf{Categorizing Requirements:} For categorization of requirements, we followed the well-established categorization method based on BD characteristic, that is the 5Vs. These 5Vs are velocity, veracity, volume, variety and value \citep{rad2017big}. We took inspiration from various studies such as the work of \citet{nadal2017software}, and the requirements categories presented in NIST BD Public Working Group \citep{Chang.2019}. This resulted in addition of `security and privacy' to the category of requirements. We do not aim to define these characteristics in this study. This can be found in the works of \citet{rada2017hype}.
     \item \textbf{Presenting Requirements:} For the purposes of this study, we opted for an informal method because it is a well established method in the industry and academia \citep{kassab2014state}. Our approach follows the guidelines explained in ISO/IEC/IEEE standard \citet{ISO29148} for representing functional requirements. These requirements are described in Table \ref{table-requirements}.
 
 \end{enumerate}
@@ -1048,7 +1048,7 @@ After the generation of the design theories, we sought for a suitable model of v
 \section{Interview design and Sampling strategy}
 Our SSI methodology is made up of four phases: 1) identifying the rationale for using semi-structured interviews, 2) formulating the preliminary semi-structured interview guide, 3) pilot testing the interview guide, 4) presenting the results of the interview. SSI are suitable for our study, because our conceptual framework is made up of architectural constructs that can benefit from in-depth probing and analysis. Our questions are categorized into main themes and follow-up questions, with main themes being progressing and logical. We pilot tested our interview guide using internal testing, which involved an evaluation of the preliminary interview guide with the members of the research team. Our interview guide is available at \cite{interviewGuide}.
 
-For sampling strategy, we used purposive sampling \citep{baltes2022sampling} to select experts. We chose purposive sampling because it allowed us to collect rich information by expert sampling. In addition, this approach enabled us to ensure representativeness and removed the need for a sampling frame. We reached out to colleagues, our connections on ResearchGate and Linkedin, and tried to look for experts in BD system development and architecture. We interviewed 6 experts from various industries over a period of 3 months. An overview of these experts are as following: \textbf{i1}) Lead development architect with 18 years of experience working in health care industry, \textbf{i2}) Software architect with 8 years of experience working in human resource, \textbf{i3}) Associate professor with 15 years of of exprience working in consulting, \textbf{i4}) Senior Data Engineer with 20 years of experience working in Software industry, \textbf{i5}) Big Data Architect with 8 years of experience working in insurance industry, \textbf{i6}) Technical Solution Manager with 40 years of experience working in consulting
+For sampling strategy, we used purposive sampling \citep{baltes2022sampling} to select experts. We chose purposive sampling because it allowed us to collect rich information by expert sampling. In addition, this approach enabled us to ensure representativeness and removed the need for a sampling frame. We reached out to experts in BD system development and architecture through different mediums such as Linkedin and ResearchGate. We interviewed 6 experts from various industries over a period of 3 months. An overview of these experts are as following: \textbf{i1}) Lead development architect with 18 years of experience working in health care industry, \textbf{i2}) Software architect with 8 years of experience working in human resource, \textbf{i3}) Associate professor with 15 years of of exprience working in consulting, \textbf{i4}) Senior Data Engineer with 20 years of experience working in Software industry, \textbf{i5}) Big Data Architect with 8 years of experience working in insurance industry, \textbf{i6}) Technical Solution Manager with 40 years of experience working in consulting.
 
 % \begin{enumerate}[label=\textbf{i-\arabic*}] 
 %     \item Lead development architect with 18 years of experience working in health care industry
@@ -1086,7 +1086,7 @@ For sampling strategy, we used purposive sampling \citep{baltes2022sampling} to 
 
 \section{Data Synthesis}
 
-All the interviews have been done through the software Zoom. We saved all of the recordings, and then downloaded the automatically generated transcripts. Transcripts for each interview has been added to Nvivo and then codes are created. We created a code for each BD characteristics discussed in Section~\ref{requirements}. 
+All the interviews have been done through the software Zoom. We saved all of the recordings, and then downloaded the automatically generated transcripts. Transcripts for each interview have been added to Nvivo and then codes were created. We created a code for each BD characteristics discussed in Section~\ref{requirements}. 
 
 % After the initial coding process, through axial coding, we created higher level codes. These higher level codes were connected to create themes. From the results of these interviews, we gathered a lot of insights and probed deep into our architectural constructs.
 
@@ -1157,7 +1157,7 @@ In another interview, interviewee asked about the amalgamation technique for the
 
 \subsection{Variety}
 
-For variety, we discussed common data types that need support, and how system may use parquet, JSON, or how unstructured data can introduce challenges. An interviewee suggested the 'API composition' pattern and suggested that we may have various services that handle different data types, but the composition of these data may be necessary. The interviewee suggested that 'API composition' can occur at the egress level. 
+For variety, we discussed common data types that need support, and how systems may use parquet, JSON, or how unstructured data can introduce challenges. An interviewee suggested the 'API composition' pattern and suggested that we may have various services that handle different data types, but the composition of these data may be necessary. The interviewee suggested that 'API composition' can occur at the egress level. 
 
 One interviewee provided details on how painful it has been for his team to onboard new data producers and how that dramatically slowed the project deadline. The interviewee added that data received from data producers hardly have the standards necessary, as these data are generated by third-party software that they have no control over. Another interviewee from insurance sector discussed how the rate of change is very low and most things are standard in insurance and finance sectors. For instance, he stated that if Avro is being used as the data format, the industry will be using the same format for the next 5 years. 
 

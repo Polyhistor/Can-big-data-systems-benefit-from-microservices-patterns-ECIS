@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2022.1.31)  16 NOV 2022 22:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2022.1.31)  17 NOV 2022 18:34
 entering extended mode
 **"c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/microservices-patterns-for-bigdata.tex"
 ("c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/microservices-patterns-for-bigdata.tex"
@@ -1230,12 +1230,15 @@ Package microtype Info: Loading generic protrusion settings for font family
  [1
 
 {C:/Users/Admin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-<Media/PRISMA-Flowchart.JPG, id=108, 638.385pt x 822.82407pt>
-File: Media/PRISMA-Flowchart.JPG Graphic file (type jpg)
-<use Media/PRISMA-Flowchart.JPG>
-Package pdftex.def Info: Media/PRISMA-Flowchart.JPG  used on input line 278.
-(pdftex.def)             Requested size: 227.62204pt x 293.37895pt.
- [3]
+<Media/PRISMA-Flowchart-Compact.JPG, id=108, 789.70032pt x 313.17pt>
+File: Media/PRISMA-Flowchart-Compact.JPG Graphic file (type jpg)
+<use Media/PRISMA-Flowchart-Compact.JPG>
+Package pdftex.def Info: Media/PRISMA-Flowchart-Compact.JPG  used on input line 278.
+(pdftex.def)             Requested size: 398.33858pt x 157.9704pt.
+
+Underfull \vbox (badness 1102) has occurred while \output is active []
+
+ [3 <c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/Media/PRISMA-Flowchart-Compact.JPG>]
 Overfull \hbox (3.35655pt too wide) in paragraph at lines 347--347
 []|\T1/ptm/m/n/10.95 (-20) Quality
  []
@@ -1255,7 +1258,7 @@ Overfull \hbox (7.5649pt too wide) in paragraph at lines 345--380
 [][]
  []
 
-[4 <c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/Media/PRISMA-Flowchart.JPG>]
+[4]
 Overfull \hbox (1.59837pt too wide) in paragraph at lines 451--451
 []|\T1/ptm/m/n/10.95 (-20) Velocity| 
  []
@@ -1284,7 +1287,7 @@ Overfull \hbox (2.68178pt too wide) in paragraph at lines 442--487
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5] [6]
-<Media/All together.jpg, id=174, 1896.08376pt x 728.7225pt>
+<Media/All together.jpg, id=176, 1896.08376pt x 728.7225pt>
 File: Media/All together.jpg Graphic file (type jpg)
 <use Media/All together.jpg>
 Package pdftex.def Info: Media/All together.jpg  used on input line 934.
@@ -1297,7 +1300,10 @@ Overfull \hbox (14.47046pt too wide) in paragraph at lines 934--935
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7] [8 <c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/Media/All together.jpg>] [9] [10] [11] [12] [13]
+[7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/Media/All together.jpg>] [9] [10] [11] [12] [13]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1307.
  (D:\MikTex\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -1320,16 +1326,16 @@ Package logreq Info: Writing requests to 'microservices-patterns-for-bigdata.run
  ) 
 Here is how much of TeX's memory you used:
  32329 strings out of 480795
- 612032 string characters out of 2913777
- 1352992 words of memory out of 3000000
+ 612080 string characters out of 2913777
+ 1350991 words of memory out of 3000000
  47495 multiletter control sequences out of 15000+200000
  599316 words of font info for 230 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,71p,1514b,1779s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,13n,71p,1514b,1779s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Admin\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk>{D:/MikTex/fonts/enc/dvips/base/8r.enc}<D:/MikTex/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/MikTex/fonts/type1/urw/helvetic/uhvr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users\Admin\OneDrive - AUT University\PHD Journey\Papers\ECIS 2023 - BD and MS\microservices-patterns-for-bigdata.pdf" (15 pages, 558209 bytes).
+Output written on "c:/Users\Admin\OneDrive - AUT University\PHD Journey\Papers\ECIS 2023 - BD and MS\microservices-patterns-for-bigdata.pdf" (15 pages, 508775 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
+ 364 PDF objects out of 1000 (max. 8388607)
  94 named destinations out of 1000 (max. 500000)
  34967 words of extra memory for PDF output out of 35830 (max. 10000000)
 
