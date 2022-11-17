@@ -648,6 +648,48 @@
       \field{title}{Requirements engineering for software and systems}
       \field{year}{2017}
     \endentry
+    \entry{maamouri2021phi}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=29a6d651f3f1640f12822b1a756e16d5}{%
+           family={Maamouri},
+           familyi={M\bibinitperiod},
+           given={Amine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47ea74cadd32cd3b7af97570107bf3d0}{%
+           family={Sfaxi},
+           familyi={S\bibinitperiod},
+           given={Lilia},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=870505b0f2aaffd5be4d1edf9b3264e2}{%
+           family={Robbana},
+           familyi={R\bibinitperiod},
+           given={Riadh},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{8bf2dd097417d7f3575ec374d8e3673b}
+      \strng{fullhash}{8bf2dd097417d7f3575ec374d8e3673b}
+      \strng{bibnamehash}{8bf2dd097417d7f3575ec374d8e3673b}
+      \strng{authorbibnamehash}{8bf2dd097417d7f3575ec374d8e3673b}
+      \strng{authornamehash}{8bf2dd097417d7f3575ec374d8e3673b}
+      \strng{authorfullhash}{8bf2dd097417d7f3575ec374d8e3673b}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{European, Mediterranean, and Middle Eastern Conference on Information Systems}
+      \field{title}{Phi: A Generic Microservices-Based Big Data Architecture}
+      \field{year}{2021}
+      \field{pages}{3\bibrangedash 16}
+      \range{pages}{14}
+    \endentry
     \entry{MSPatterns}{misc}{}
       \field{sortinit}{M}
       \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
@@ -1157,6 +1199,44 @@
       \field{labeltitlesource}{title}
       \field{title}{Design science methodology for information systems and software engineering}
       \field{year}{2014}
+    \endentry
+    \entry{zhelev2019using}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=029c361d628202c1c7d264ea6cd50b4c}{%
+           family={Zhelev},
+           familyi={Z\bibinitperiod},
+           given={Svetoslav},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e3bfeb045ddaa5e79f34108f35425bde}{%
+           family={Rozeva},
+           familyi={R\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {AIP Publishing LLC}%
+      }
+      \strng{namehash}{f7b4e1df0f6558079ea10e4a4a2acc41}
+      \strng{fullhash}{f7b4e1df0f6558079ea10e4a4a2acc41}
+      \strng{bibnamehash}{f7b4e1df0f6558079ea10e4a4a2acc41}
+      \strng{authorbibnamehash}{f7b4e1df0f6558079ea10e4a4a2acc41}
+      \strng{authornamehash}{f7b4e1df0f6558079ea10e4a4a2acc41}
+      \strng{authorfullhash}{f7b4e1df0f6558079ea10e4a4a2acc41}
+      \field{sortinit}{Z}
+      \field{sortinithash}{8f7b480688e809b50b6f6577b16f3db5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{AIP Conference Proceedings}
+      \field{number}{1}
+      \field{title}{Using microservices and event driven architecture for big data stream processing}
+      \field{volume}{2172}
+      \field{year}{2019}
+      \field{pages}{090010}
+      \range{pages}{1}
     \endentry
   \enddatalist
 \endrefsection

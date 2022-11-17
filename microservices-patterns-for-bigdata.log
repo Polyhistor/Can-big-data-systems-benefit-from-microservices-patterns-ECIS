@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2022.1.31)  17 NOV 2022 19:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2022.1.31)  17 NOV 2022 20:33
 entering extended mode
 **"c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/microservices-patterns-for-bigdata.tex"
 ("c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/microservices-patterns-for-bigdata.tex"
@@ -1229,7 +1229,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
  [1
 
-{C:/Users/Admin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+{C:/Users/Admin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \vbox (badness 3482) has occurred while \output is active []
+
+ [2]
 Overfull \hbox (3.35655pt too wide) in paragraph at lines 164--164
 []|\T1/ptm/m/n/10.95 (-20) Quality
  []
@@ -1249,7 +1252,7 @@ Overfull \hbox (7.5649pt too wide) in paragraph at lines 162--197
 [][]
  []
 
-<Media/PRISMA-Flowchart-Compact.JPG, id=124, 789.70032pt x 313.17pt>
+<Media/PRISMA-Flowchart-Compact.JPG, id=128, 789.70032pt x 313.17pt>
 File: Media/PRISMA-Flowchart-Compact.JPG Graphic file (type jpg)
 <use Media/PRISMA-Flowchart-Compact.JPG>
 Package pdftex.def Info: Media/PRISMA-Flowchart-Compact.JPG  used on input line 203.
@@ -1257,10 +1260,7 @@ Package pdftex.def Info: Media/PRISMA-Flowchart-Compact.JPG  used on input line 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4 <c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/Media/PRISMA-Flowchart-Compact.JPG>]
+[3] [4 <c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/Media/PRISMA-Flowchart-Compact.JPG>]
 Overfull \hbox (1.59837pt too wide) in paragraph at lines 499--499
 []|\T1/ptm/m/n/10.95 (-20) Velocity| 
  []
@@ -1289,7 +1289,7 @@ Overfull \hbox (2.68178pt too wide) in paragraph at lines 490--535
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5] [6]
-<Media/All together.jpg, id=183, 1896.08376pt x 728.7225pt>
+<Media/All together.jpg, id=187, 1896.08376pt x 728.7225pt>
 File: Media/All together.jpg Graphic file (type jpg)
 <use Media/All together.jpg>
 Package pdftex.def Info: Media/All together.jpg  used on input line 1013.
@@ -1321,17 +1321,17 @@ Package logreq Info: Writing requests to 'microservices-patterns-for-bigdata.run
 
  ) 
 Here is how much of TeX's memory you used:
- 32316 strings out of 480795
- 611819 string characters out of 2913777
- 1352991 words of memory out of 3000000
- 47499 multiletter control sequences out of 15000+200000
- 599316 words of font info for 230 fonts, out of 3000000 for 9000
+ 32329 strings out of 480795
+ 612127 string characters out of 2913777
+ 1353127 words of memory out of 3000000
+ 47507 multiletter control sequences out of 15000+200000
+ 599541 words of font info for 232 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,13n,71p,1514b,1781s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Admin\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk>{D:/MikTex/fonts/enc/dvips/base/8r.enc}<D:/MikTex/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/MikTex/fonts/type1/urw/helvetic/uhvr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/MikTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users\Admin\OneDrive - AUT University\PHD Journey\Papers\ECIS 2023 - BD and MS\microservices-patterns-for-bigdata.pdf" (15 pages, 504744 bytes).
+Output written on "c:/Users\Admin\OneDrive - AUT University\PHD Journey\Papers\ECIS 2023 - BD and MS\microservices-patterns-for-bigdata.pdf" (15 pages, 506081 bytes).
 PDF statistics:
- 354 PDF objects out of 1000 (max. 8388607)
- 77 named destinations out of 1000 (max. 500000)
+ 359 PDF objects out of 1000 (max. 8388607)
+ 79 named destinations out of 1000 (max. 500000)
  34999 words of extra memory for PDF output out of 35830 (max. 10000000)
 

@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber microservices-patterns-for-bigdata"] 1668666272 "microservices-patterns-for-bigdata.bcf" "microservices-patterns-for-bigdata.bbl" "microservices-patterns-for-bigdata" 1668667704
-  "microservices-patterns-for-bigdata.bcf" 1668667704 104782 7bb504f612a672b7b9be3c85ba741f3c "pdflatex"
+["biber microservices-patterns-for-bigdata"] 1668670306 "microservices-patterns-for-bigdata.bcf" "microservices-patterns-for-bigdata.bbl" "microservices-patterns-for-bigdata" 1668670545
+  "microservices-patterns-for-bigdata.bcf" 1668670424 104956 d29384c327a1a0678ffd335a4bbc4888 "pdflatex"
   "references.bib" 1668663116 108721 ec3139dca7c8377b771fc1da2c6465c3 ""
   (generated)
-  "microservices-patterns-for-bigdata.blg"
   "microservices-patterns-for-bigdata.bbl"
-["pdflatex"] 1668667701 "c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/microservices-patterns-for-bigdata.tex" "c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/microservices-patterns-for-bigdata.pdf" "microservices-patterns-for-bigdata" 1668667704
+  "microservices-patterns-for-bigdata.blg"
+["pdflatex"] 1668670421 "c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/microservices-patterns-for-bigdata.tex" "c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/microservices-patterns-for-bigdata.pdf" "microservices-patterns-for-bigdata" 1668670545
   "C:/Users/Admin/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk" 1667800037 21972 1cbc21058db3c2b9962463c4d711ac6d ""
   "C:/Users/Admin/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1643603142 10002696 7a3616ce906e4689083dab4d83aaed18 ""
   "C:/Users/Admin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1668495544 204481 bc1538ee6169b5e3d57cecfb39bb1e15 ""
@@ -212,21 +212,21 @@
   "D:/MikTex/tex/latex/xcolor/xcolor.sty" 1463139181 57049 34128738f682d033422ca125f82e5d62 ""
   "Media/All together.jpg" 1662259732 240716 799ae5fed04c3ad235ca9601e5bd77c6 ""
   "Media/PRISMA-Flowchart-Compact.JPG" 1668660484 87824 0e4b0d06e96492b83dd5551992634e5c ""
-  "c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/microservices-patterns-for-bigdata.aux" 1668667704 14205 c6663d307f39637fb66a357c25ad38f6 ""
-  "c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/microservices-patterns-for-bigdata.tex" 1668667699 113705 e3af0b3c14158a26fd2767278f25548d ""
+  "c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/microservices-patterns-for-bigdata.aux" 1668670424 14643 a301f7ee6f8ec7e55cfb16b871064f8a ""
+  "c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/microservices-patterns-for-bigdata.tex" 1668670543 113984 a118d982d80aaff85ed7edf358f2f077 ""
   "ecis2023.sty" 1664268972 5561 d10b93badb20529f30056a08edd72852 ""
-  "microservices-patterns-for-bigdata.aux" 1668667704 14205 c6663d307f39637fb66a357c25ad38f6 "pdflatex"
-  "microservices-patterns-for-bigdata.bbl" 1668666275 48010 79bcc34305d36414a53641c36f5e0d59 "biber microservices-patterns-for-bigdata"
-  "microservices-patterns-for-bigdata.out" 1668667704 1172 1e5c19fe6ec30a2c1201c4588c882356 "pdflatex"
-  "microservices-patterns-for-bigdata.run.xml" 1668667704 2631 6573b4f84aa5cabde4589372189fb6a9 "pdflatex"
-  "microservices-patterns-for-bigdata.tex" 1668667699 113705 e3af0b3c14158a26fd2767278f25548d ""
+  "microservices-patterns-for-bigdata.aux" 1668670424 14643 a301f7ee6f8ec7e55cfb16b871064f8a "pdflatex"
+  "microservices-patterns-for-bigdata.bbl" 1668670309 51296 5fb48d304b7463a7f621e741b16c3a48 "biber microservices-patterns-for-bigdata"
+  "microservices-patterns-for-bigdata.out" 1668670424 1172 1e5c19fe6ec30a2c1201c4588c882356 "pdflatex"
+  "microservices-patterns-for-bigdata.run.xml" 1668670424 2631 6573b4f84aa5cabde4589372189fb6a9 "pdflatex"
+  "microservices-patterns-for-bigdata.tex" 1668670543 113984 a118d982d80aaff85ed7edf358f2f077 ""
   "references.bib" 1668663116 108721 ec3139dca7c8377b771fc1da2c6465c3 ""
   (generated)
   "microservices-patterns-for-bigdata.pdf"
-  "microservices-patterns-for-bigdata.run.xml"
   "c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/microservices-patterns-for-bigdata.pdf"
-  "microservices-patterns-for-bigdata.log"
-  "microservices-patterns-for-bigdata.out"
   "microservices-patterns-for-bigdata.bcf"
-  "microservices-patterns-for-bigdata.aux"
+  "microservices-patterns-for-bigdata.run.xml"
   "c:/Users/Admin/OneDrive - AUT University/PHD Journey/Papers/ECIS 2023 - BD and MS/microservices-patterns-for-bigdata.log"
+  "microservices-patterns-for-bigdata.out"
+  "microservices-patterns-for-bigdata.aux"
+  "microservices-patterns-for-bigdata.log"
